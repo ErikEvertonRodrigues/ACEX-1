@@ -1,0 +1,111 @@
+[
+    {
+      "imagem": "imgs/EDUXMTFODA2.jpg",
+      "categoria": "Tecnologia",
+      "titulo": "Desenvolvimento Web",
+      "descricao": "HTML, CSS e JavaScript para projetos reais.",
+      "horas": "40 horas",
+      "link": "#",
+      "destaque": true
+    },
+    {
+      "imagem": "imgs/EDUXMTFODA2.jpg",
+      "categoria": "Tecnologia",
+      "titulo": "Git e GitHub",
+      "descricao": "Controle de versão e hospedagem de projetos.",
+      "horas": "20 horas",
+      "link": "#",
+      "destaque": true
+    },
+    {
+      "imagem": "imgs/EDUXMTFODA2.jpg",
+      "categoria": "Banco de Dados",
+      "titulo": "MySQL Básico",
+      "descricao": "Aprenda consultas SQL e modelagem de dados.",
+      "horas": "30 horas",
+      "link": "#",
+      "destaque": true
+    },
+    {
+      "imagem": "imgs/EDUXMTFODA2.jpg",
+      "categoria": "Design",
+      "titulo": "UI/UX Design",
+      "descricao": "Princípios de design para interfaces intuitivas.",
+      "horas": "25 horas",
+      "link": "#",
+      "destaque": false
+    },
+    {
+      "imagem": "imgs/EDUXMTFODA2.jpg",
+      "categoria": "Banco de Dados",
+      "titulo": "SEO para Iniciantes",
+      "descricao": "Otimize seu site para motores de busca.",
+      "horas": "15 horas",
+      "link": "#",
+      "destaque": false
+    },
+    {
+      "imagem": "imgs/EDUXMTFODA2.jpg",
+      "categoria": "Banco de Dados",
+      "titulo": "Empreendedorismo 101",
+      "descricao": "Dicas para iniciar e gerir seu próprio negócio.",
+      "horas": "35 horas",
+      "link": "#",
+      "destaque": false
+    },
+    {
+      "imagem": "imgs/EDUXMTFODA2.jpg",
+      "categoria": "Design",
+      "titulo": "Fotografia Digital",
+      "descricao": "Técnicas para capturar fotos incríveis.",
+      "horas": "20 horas",
+      "link": "#",
+      "destaque": false
+    },
+    {
+      "imagem": "imgs/EDUXMTFODA2.jpg",
+      "categoria": "Design",
+      "titulo": "Meditação para Iniciantes",
+      "descricao": "Aprenda a meditar e reduzir o estresse.",
+      "horas": "10 horas",
+      "link": "#",
+      "destaque": true
+    },
+    {
+      "imagem": "imgs/EDUXMTFODA2.jpg",
+      "categoria": "Tecnologia",
+      "titulo": "Python para Iniciantes",
+      "descricao": "Aprenda a programar com Python do zero.",
+      "horas": "45 horas",
+      "link": "#",
+      "destaque": false
+    },
+    {
+      "imagem": "imgs/EDUXMTFODA2.jpg",
+      "categoria": "Design",
+      "titulo": "Ilustração Digital",
+      "descricao": "Crie arte digital usando ferramentas modernas.",
+      "horas": "30 horas",
+      "link": "#",
+      "destaque": false
+    },
+    {
+      "imagem": "imgs/EDUXMTFODA2.jpg",
+      "categoria": "Banco de Dados",
+      "titulo": "Excel Avançado",
+      "descricao": "Domine fórmulas, gráficos e análise de dados.",
+      "horas": "25 horas",
+      "link": "#",
+      "destaque": false
+    },
+    {
+      "imagem": "imgs/EDUXMTFODA2.jpg",
+      "categoria": "Tecnologia",
+      "titulo": "Inteligência Artificial",
+      "descricao": "Introdução aos conceitos e aplicações de IA.",
+      "horas": "50 horas",
+      "link": "#",
+      "destaque": false
+    }
+  ]
+

@@ -1,0 +1,171 @@
+@import url('../assets/css/variables.css');
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0 0 12px;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.hero {
+    padding: 40px 0 20px;
+    text-align: center;
+}
+
+.container_hero {
+    padding: 18px 10px 26px;
+}
+
+.titulohero {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--muted);
+    margin-bottom: 6px;
+}
+
+.hero h1 {
+    font-size: clamp(30px, 3%, 44px);
+}
+
+.herosubtitulo {
+    max-width: 620px;
+    margin: 0 auto 18px;
+}
+
+.hero_busca {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sec_destaques,
+.catalogo {
+    padding: 24px 0 10px;
+}
+
+.titulo_dtq,
+.titulo_secao {
+    font-size: clamp(20px, 2.6%, 28px);
+    margin-bottom: 16px;
+}
+
+.cards_cursos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
+    gap: 18px;
+    justify-content: center;
+}
+
+.card_curso {
+    background: var(--card);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.dados {
+    height: 140px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+
+.img_card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.dados {
+    background: #ffffff;
+}
+
+.dados {
+    background: #ffffff;
+}
+
+.card__tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(31, 143, 77, 0.92);
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-weight: 600;
+}
+
+.card__body {
+    padding: 16px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.card__body h3 {
+    margin-bottom: 4px;
+    font-size: 18px;
+}
+
+.horas {
+    display: flex;
+    gap: 16px;
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 4px;
+}
+
+.card__link,
+.bt_link {
+    text-decoration: none;
+    color: var(--accent-dark);
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+.carregar_mais {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.steps {
+    padding: 20px 0 40px;
+}
+
+.steps .container {
+    background: #fff;
+    border-radius: 14px;
+    padding: 18px 22px;
+    box-shadow: var(--shadow);
+}
+
+.lista_num {
+    padding-left: 20px;
+    margin: 0;
+    color: var(--muted);
+}
+
+
+@media (max-width: 720px) {
+    .dados
+     {
+        height: 120px;
+    }
+
+    .hero_busca {
+        flex-direction: column;
+    }
+}
