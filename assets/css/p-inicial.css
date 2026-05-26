@@ -1,3 +1,4 @@
+/* Parte inicial, resets e etc.*/
 * {
     padding: 0;
     margin: 0;
@@ -11,6 +12,7 @@ body {
     min-height: 100vh;
 }
 
+/* Primeira section */
 .inicio h1 {
     font-size: 55px;
     font-weight: 300;
@@ -30,13 +32,13 @@ body {
     gap: 30px;
 }
 
-/* Essa é a section inicial */
 .inicial {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 10% 10% 5% 10%;
+    padding: 5% 10% 5% 10%;
     background-color: rgb(235, 235, 235);
+    gap: 30px;
 }
 
 
@@ -140,12 +142,14 @@ body {
     height: 250px;
 }
 
+/* Terceira section */
+
 summary {
-    list-style: none; /* remove a seta padrão do navegador */
+    list-style: none;
 }
 
 .accordion-header::after {
-    content: "⌄"; /* ou um ícone do fontawesome */
+    content: "⌄";
     transition: transform 0.3s;
 }
 
@@ -159,14 +163,11 @@ summary {
     padding: 15px;
 }
 
-/* Quando aberto, tira o border-radius de baixo do summary
-   para "grudar" com o conteúdo */
 details[open] summary {
     border-radius: 8px 8px 0 0;
     border-bottom: none;
 }
 
-/* O conteúdo recebe a borda apenas quando visível */
 details[open] .accordion-content {
     padding: 0px 30px 0px 30px;
 }
@@ -196,10 +197,11 @@ details {
     cursor: pointer;
 }
 
-/* Linha separadora entre header e content */
 details[open] .accordion-header {
     border-bottom: 1px solid #ccc;
 }
+
+/* Quarta section */
 
 .contato {
     display: flex;
@@ -230,10 +232,57 @@ details[open] .accordion-header {
     text-align: center;
 }
 
-details .accordion-content {
-    transition: 1s;
-}
+/* Parte da responsividade */
 
-details[open] .accordion-content{
-    transition: 1s;
+@media screen and (max-width: 898px){
+    /* primeira section */
+    .inicial {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .inicio {
+        width: auto;
+    }
+    .card {
+        width: auto;
+    }
+    .alunos {
+        border: 4px #48b456 solid;
+    }
+    /* Segunda section */
+
+    .info, .egresso {
+        min-height: 250px;
+        height: auto;
+        width: 100%;
+    }
+    .info:hover {
+        transform: scale(1.02);
+    }
+    .egresso p{
+        text-align: start;
+        margin-bottom: 10px;
+    }
+    .egresso li{
+        margin: 5px;
+    }
+    /* Terceira section */
+    .accord-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+    .accordion {
+        width: 100%;
+    }
+    .accordion-content {
+        height: 300px;
+    }
+    .accordion-content li {
+        padding: 7px;
+    }
+    /* Quarta section */
+    .cont {
+        gap: 10px;
+    }
 }
