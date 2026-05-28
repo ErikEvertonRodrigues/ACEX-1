@@ -141,8 +141,15 @@ body {
     width:76%;
     height: 250px;
 }
+.egresso li{
+    margin: 5px;
+}
 
 /* Terceira section */
+
+.accordion-content li {
+    padding: 7px;
+}
 
 summary {
     list-style: none;
@@ -219,6 +226,10 @@ details[open] .accordion-header {
     height: 250px;
 }
 
+.sobre-curso:nth-child(1){
+    background-color: rgb(235, 235, 235)
+}
+
 .sobre-curso:nth-child(3){
     background-color: rgb(235, 235, 235)
 }
@@ -231,6 +242,39 @@ details[open] .accordion-header {
     font-size: 22px;
     text-align: center;
 }
+
+.box-cont{
+    display: flex;
+    justify-content: center;
+}
+
+.dados{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.box-cont>.cont>.info {
+    width: 250px;
+}
+
+.box-cont>.cont {
+    width: 40%;
+}
+
+.dados>form>input{
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+    height: 150px;
+    margin: 10px 0 10px 0;
+}
+
+.dados {
+    width: 40%;
+}
+
 
 /* Parte da responsividade */
 
@@ -263,9 +307,6 @@ details[open] .accordion-header {
         text-align: start;
         margin-bottom: 10px;
     }
-    .egresso li{
-        margin: 5px;
-    }
     /* Terceira section */
     .accord-box {
         display: grid;
@@ -278,11 +319,19 @@ details[open] .accordion-header {
     .accordion-content {
         height: 300px;
     }
-    .accordion-content li {
-        padding: 7px;
-    }
     /* Quarta section */
     .cont {
         gap: 10px;
+    }
+    .box-cont {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-cont>.cont {
+        width: 100%;
+    }
+    .dados>form>input {
+        font-size: 20px;
+        height: 100px;
     }
 }
