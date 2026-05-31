@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal Mandacaru Tech - Extensão</title>
+    <script src="https://kit.fontawesome.com/898f59f198.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/p-inicial.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo-container"><img class="logo" src="../assets/imgs/logo-ifba.png" alt=""></div>
+            <div class="logo-container"><img class="logo" src="./assets/imgs/logo-ifba.png" alt=""></div>
 
             <ul class="hamburguer-container hide" type="none">
                 <li class="hamburguer"></li>
@@ -20,15 +21,26 @@
 
             <nav class="navigation">
                 <ul type="none">
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Sobre o Curso</a></li>
-                    <li><a href="pagina cursos/cursos.html">Minicursos</a></li>
-                    <li><a href="ebooks/ebooks.html">E-books</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a class="nav-link" href="./index.html">Inicio</a></li>
+                    <li><a class="nav-link" href="#">Sobre o Curso</a></li>
+                    <li><a class="nav-link" href="pagina cursos/cursos.html">Minicursos</a></li>
+                    <li><a class="nav-link" href="ebooks/ebooks.html">E-books</a></li>
+                    <li><a class="nav-link" href="#">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <nav class="navigation-mob">
+        <ul type="none">
+            <li><a class="nav-link" href="./index.html">Inicio</a></li>
+            <li><a class="nav-link" href="#">Sobre o Curso</a></li>
+            <li><a class="nav-link" href="./pagina cursos/cursos.html">Minicursos</a></li>
+            <li><a class="nav-link" href="./ebooks/ebooks.html">E-books</a></li>
+            <li><a class="nav-link" href="#">Contato</a></li>
+        </ul>
+    </nav>
+
     <main>
         <section class="inicial">   
             <div class="inicio">
@@ -190,6 +202,16 @@
         <section class="contato">
             <h1>Contato</h1>
             <p>Entre em contato conosco para mais informações sobre o curso</p>
+            <div class="box-cont">
+                <div class="dados">
+                    <form action="">
+                        <h2>Coloque aqui o seu email e receba mais informações</h2>
+                        <input placeholder="pessoa@email.com" type="email" id="emai" name="email">
+                        <h2>Telefone:</h2>
+                        <input placeholder="Ex: 75 98888-8888" type="tel" id="telefone" name="telefone">
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
             <div class="cont">
                 <div class="info">
                     <img class="img-info" src="img/5920.jpg" alt="">
@@ -217,6 +239,29 @@
                 </div>
         </section>
     </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col footer-logo">
+                <img class="logo" src="assets/imgs/logo-ifba-branca.png" alt="">
+            </div>
+            <div class="footer-col">
+                <h3>Redes Sociais</h3>  
+                <p>Siga-nos nas redes sociais e fique por dentro das novidades</p>
+
+                <div class="redes">
+                    <div>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-desc">
+            <p>&copy; 2026 IFBA - Instituto Federal da Bahia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
