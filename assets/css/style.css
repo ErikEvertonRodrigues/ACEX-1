@@ -245,7 +245,9 @@ footer .footer-container {
 
 .footer-logo img {
     margin-top: -20px;
+    height: 150px;
     width: 100%;
+    object-fit: contain;
 }
 
 .footer-col {

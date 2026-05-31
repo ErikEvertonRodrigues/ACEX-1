@@ -13,3 +13,23 @@ links.forEach(link => {
     link.classList.add('active');
   }
 });
+
+document.addEventListener('click', (event) => {
+  const hamburguerClicked = hamburguer.contains(event.target);
+  const navigationClicked = navigation.contains(event.target);
+
+  if (!hamburguerClicked && !navigationClicked && navigation.classList.contains("active")) {
+    toggle();
+  }
+});
+
+window.addEventListener('scroll', () => {
+  if (hamburguer.classList.contains('active') && navigation.classList.contains('active')) {
+    toggle();
+  }
+});
+
+function toggle() {
+  hamburguer.classList.toggle("active");
+  navigation.classList.toggle("active");
+}
