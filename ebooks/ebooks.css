@@ -6,42 +6,64 @@
     box-sizing: border-box;
 }
 
+main {
+    min-height: calc(100vh - 115px);
+}
+
 .main-title {
     text-align: center;
 }
 
+.container-content {
+    padding-bottom: 20px;
+}
+
 .content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 0 10px 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    place-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    max-width: 1040px;
+    margin: auto;
 }
 
 .card {
-    min-width: 240px;
-    width: 30%;
-    min-height: 744px;
+    position: relative;
+    width: 250px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.474);
     background-color: #fff;
     border-radius: 20px;
-    margin: 5px 10px;
+    height: 650px;
+}
+
+.card span {
+    position: absolute;
+    background-color: var(--verde-mandacaru);
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 10px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.card h2 {
+    font-size: 18px;
 }
 
 .card-info {
-    height: auto;
+    height: calc(100% - 375px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
-}
-
-.card-info p {
-    margin: 5px 0;
+    padding: 0 10px 15px 10px;
 }
 
 .card-image {
-    width: 100%;
-    height: 427px;
+    width: 250px;
+    aspect-ratio: 2/3;
     border-radius: 20px 20px 0 0;
 }
 
@@ -49,7 +71,7 @@
     align-self: center;
     width: 192px;
     height: 39px;
-    background-color: #33b154;
+    background-color: var(--verde-mandacaru);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,4 +82,11 @@
     border-radius: 10px;
 }
 
+.download:hover {
+    background-color: var(--verde-neon);
+}
 
+.carregar_mais {
+    margin-top: 18px;
+    text-align: center;
+}
