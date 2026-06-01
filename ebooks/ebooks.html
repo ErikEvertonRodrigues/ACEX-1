@@ -6,15 +6,15 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="ebooks.css">
     <script src="https://kit.fontawesome.com/898f59f198.js" crossorigin="anonymous"></script>
+    <script src="../assets/js/ebooks-pag.js" defer></script>
     <script src="../assets/js/script.js" defer></script>
-
-    <title>Document</title>
+    <title>E-books</title>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo-container">
-                <img class="logo" src="../assets/imgs/nome_cacto_claro.svg" alt="">
+                <a href="../index.html"><img class="logo" src="../assets/imgs/nome_cacto_claro.svg" alt=""></a>
             </div>
 
             <ul class="hamburguer-container hide" type="none">
@@ -37,16 +37,35 @@
 
     <nav class="navigation-mob">
         <ul type="none">
-            <li><a class="nav-link" href="../index.html">Inicio</a></li>
-            <li><a class="nav-link" href="#">Sobre o Curso</a></li>
-            <li><a class="nav-link" href="../pagina cursos/cursos.html">Minicursos</a></li>
-            <li><a class="nav-link" href="./ebooks.html">E-books</a></li>
-            <li><a class="nav-link" href="#">Contato</a></li>
+            <li><a class="nav-link" href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li><a class="nav-link" href="#"><i class="fa-solid fa-circle-question"></i> Sobre o Curso</a></li>
+            <li><a class="nav-link" href="../pagina cursos/cursos.html"><i class="fa-solid fa-play"></i> Minicursos</a></li>
+            <li><a class="nav-link" href="./ebooks.html"><i class="fa-solid fa-book"></i> E-books</a></li>
+            <li><a class="nav-link" href="#"><i class="fa-solid fa-phone"></i> Contato</a></li>
         </ul>
     </nav>
 
     <main>
-        <h1 class="main-title">E-Books</h1>
+        <section class="hero">
+            <div class="container_hero">
+                <p class="titulohero">IFBA Paulo Afonso</p>
+                <h1 id="titulohero2">E-Books Disponíveis</h1>
+                <p class="herosubtitulo">
+                    Expanda seus conhecimentos com nossos <strong>e-books</strong> gratuítos.
+                    Aprenda no seu ritmo com conteúdo de qualidade.
+                </p>
+                <div class="hero_busca">
+                    <a class="btn" href="#cursos">Ver cursos</a>
+                    <a class="btn2" href="#destaques">Destaques</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="destaques" class="container">
+            <h2 class="titulo_dtq">E-books em destaque</h2>
+
+            <div id="cards_ebooks_destaques"></div>
+        </section>
 
         <section class="filtros">
             <div class="container">
@@ -55,7 +74,7 @@
                     <div class="field">
                         <label for="area">Área</label>
                         <select id="area">
-                            <option value="todos">Todas</option>
+                            <option value="">Todas</option>
                             <option value="tecnologia">Tecnologia</option>
                             <option value="design">Design</option>
                             <option value="banco de dados">Banco de Dados</option>
@@ -71,62 +90,13 @@
             </div>
         </section>
         
-        <section class="container content">
-            <div class="card">
-                <img class="card-image" src="https://www.oficinadanet.com.br/imagens/post/8412/alta-performance-web-sites.jpg" alt="">
-                <div class="card-info">
-                    <h2>Alta Performance em Sites Web</h2>
-                    <p>Steve Souders</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id.</p>
-                    <p><i class="fa-regular fa-file-lines"></i> 152 páginas</p>
-                    <a class="download" href=""><i class="fa-solid fa-download"></i> Baixar PDF</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-image" src="https://www.oficinadanet.com.br/imagens/post/8412/alta-performance-web-sites.jpg" alt="">
-                <div class="card-info">
-                    <h2>Alta Performance em Sites Web</h2>
-                    <p>Steve Souders</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id.</p>
-                    <p><i class="fa-regular fa-file-lines"></i> 152 páginas</p>
-                    <a class="download" href=""><i class="fa-solid fa-download"></i> Baixar PDF</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-image" src="https://www.oficinadanet.com.br/imagens/post/8412/alta-performance-web-sites.jpg" alt="">
-                <div class="card-info">
-                    <h2>Alta Performance em Sites Web</h2>
-                    <p>Steve Souders</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id.</p>
-                    <p><i class="fa-regular fa-file-lines"></i> 152 páginas</p>
-                    <a class="download" href=""><i class="fa-solid fa-download"></i> Baixar PDF</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-image" src="https://www.oficinadanet.com.br/imagens/post/8412/alta-performance-web-sites.jpg" alt="">
-                <div class="card-info">
-                    <h2>Alta Performance em Sites Web</h2>
-                    <p>Steve Souders</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id.</p>
-                    <p><i class="fa-regular fa-file-lines"></i> 152 páginas</p>
-                    <a class="download" href=""><i class="fa-solid fa-download"></i> Baixar PDF</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-image" src="https://www.oficinadanet.com.br/imagens/post/8412/alta-performance-web-sites.jpg" alt="">
-                <div class="card-info">
-                    <h2>Alta Performance em Sites Web</h2>
-                    <p>Steve Souders</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id.</p>
-                    <p><i class="fa-regular fa-file-lines"></i> 152 páginas</p>
-                    <a class="download" href=""><i class="fa-solid fa-download"></i> Baixar PDF</a>
-                </div>
+        <section class="container-content">
+            <div class="content"></div>
+            <div class="carregar_mais">
+                <button class="btn_bt" type="button">Carregar mais</button>
             </div>
         </section>
+
     </main>
 
     <footer>
