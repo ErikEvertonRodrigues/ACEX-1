@@ -35,11 +35,11 @@ body {
 }
 
 .inicial {
+    background-color: rgb(240, 240, 240);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 5% 10% 5% 10%;
-    background-color: var(--areia-quente);
     gap: 30px;
 }
 
@@ -62,7 +62,7 @@ body {
 }
 
 .btn-inicio:hover{
-    background-color: var(--laranja);
+    background-color: #48b456;
     transition: 1s;
 }
 
@@ -77,7 +77,7 @@ body {
 }
 
 .alunos:hover {
-    border: 8px var(--laranja) solid;
+    border: 8px var(--verde-neon) solid;
 }
 
 .card {
@@ -90,7 +90,7 @@ body {
 /* Segunda section */
 
 .sobre-curso {
-    background-color: var(--areia-clara);
+    background-color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -108,7 +108,7 @@ body {
 }
 
 .info {
-    background-color: var(--duna);
+    background-color: #48b456;
     border: 1px rgb(211, 211, 211) solid;
     border-radius: 8px;
     padding: 15px;
@@ -118,7 +118,8 @@ body {
 }
 
 .info:hover {
-    border-color: #a32638;
+    border-color: var(--verde-neon);
+    border-width: 2px;
     transform: scale(1.1);
     transition: 0.2s;
 }
@@ -126,6 +127,9 @@ body {
 .img-info {
     width: 50px;
     height: 50px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
 }
 
 .cont {
@@ -137,13 +141,20 @@ body {
 }
 
 .egresso {
-    background-color: var(--duna);
+    background-color: #48b456;
     border: 1px rgb(211, 211, 211) solid;
     border-radius: 8px;
     padding: 30px;
     width:76%;
-    height: 250px;
+    min-height: 250px;
+    height: auto;
+    font-size: 20px;
 }
+
+.egresso p {
+    text-align: left;
+}
+
 .egresso li{
     margin: 5px;
 }
@@ -196,7 +207,7 @@ details {
 }
 
 .accordion {
-    background-color: var(--duna);
+    background-color: white;
     width: 20%;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -215,7 +226,7 @@ details[open] .accordion-header {
 /* Quarta section */
 
 .contato {
-    background-color: var(--areia-clara);
+    background-color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -223,17 +234,13 @@ details[open] .accordion-header {
     gap: 10px;
 }
 
-.contato>.cont>.info {
+.contato>.cont .info {
+    background-color: rgb(234, 234, 234);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     height: 250px;
-}
-
-
-.sobre-curso:nth-child(3){
-    background-color: var(--areia-quente)
 }
 
 .contato h1 {
@@ -258,7 +265,7 @@ details[open] .accordion-header {
 }
 
 .box-cont>.cont>.info {
-    width: 250px;
+    height: 250px;
 }
 
 .box-cont>.cont {
@@ -266,6 +273,7 @@ details[open] .accordion-header {
 }
 
 .dados>form>input{
+    background-color: rgb(234, 234, 234);
     text-align: center;
     font-size: 25px;
     width: 100%;
@@ -279,12 +287,14 @@ details[open] .accordion-header {
 }
 
 .dados>form>button {
+    color: white;
+    background-color: #48b456;
     justify-content: center;
     font-size: 20px;
     width: 100px;
     padding: 15px;
     border-radius: 10px;
-    border: 1px black solid;
+    border: 1px rgb(216, 216, 216) solid;
 }
 
 .dados>form {
@@ -351,6 +361,24 @@ details[open] .accordion-header {
     }
     .dados>form>input {
         font-size: 20px;
-        height: 100px;
+        height: 70px;
     }
+    .dados{
+        width: auto;
+    }
+    .cont .info {
+        width: 100%;
+    }
+}
+
+.sobre-curso:nth-child(3){
+    background-color: rgb(234, 234, 234);
+}
+
+.contato .info {
+    background-color: rgb(234, 234, 234);
+}
+
+.contato .info .img-info {
+    background-color: #48b456;
 }
