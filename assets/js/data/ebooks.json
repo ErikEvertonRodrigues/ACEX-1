@@ -5,6 +5,7 @@
         "titulo": "Alta Performance em Sites Web",
         "autor": "Steve Souders",
         "categoria": "Design",
+        "destaque": true,
         "paginas":"152",
         "imagem": "https://m.media-amazon.com/images/I/71nj3JM-igL.jpg",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
@@ -14,6 +15,7 @@
         "titulo": "Memória de Cálculo",
         "autor": "Steve Souders",
         "categoria": "Tecnologia",
+        "destaque": false,
         "paginas":"152",
         "imagem": "https://m.media-amazon.com/images/I/71Vkg7GfPFL._AC_UF1000,1000_QL80_.jpg",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
@@ -23,6 +25,7 @@
         "titulo": "Banco de Dados",
         "autor": "Steve Souders",
         "categoria": "Banco de dados",
+        "destaque": false,
         "paginas":"152",
         "imagem": "https://m.media-amazon.com/images/I/81sTm5M7wjL.jpg",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
@@ -32,6 +35,7 @@
         "titulo": "Redstone",
         "autor": "Steve Souders",
         "categoria": "Tecnologia",
+        "destaque": false,
         "paginas":"152",
         "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Ohqs5XLNYEAkmE5eROfH_JWOg9aUD5t-_Q&s",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
@@ -41,6 +45,7 @@
         "titulo": "Inteligência Artificial",
         "autor": "Steve Souders",
         "categoria": "Design",
+        "destaque": true,
         "paginas":"152",
         "imagem": "https://www.oficinadanet.com.br/imagens/post/8412/alta-performance-web-sites.jpg",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
@@ -50,6 +55,7 @@
         "titulo": "Dragon ball",
         "autor": "Steve Souders",
         "categoria": "Tecnologia",
+        "destaque": true,
         "paginas":"152",
         "imagem": "https://m.media-amazon.com/images/I/71nj3JM-igL.jpg",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
@@ -59,6 +65,7 @@
         "titulo": "Naruto",
         "autor": "Steve Souders",
         "categoria": "Banco de dados",
+        "destaque": false,
         "paginas":"152",
         "imagem": "https://m.media-amazon.com/images/I/71Vkg7GfPFL._AC_UF1000,1000_QL80_.jpg",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
@@ -68,6 +75,7 @@
         "titulo": "Yu Yu Hakusho",
         "autor": "Steve Souders",
         "categoria": "Tecnologia",
+        "destaque": false,
         "paginas":"152",
         "imagem": "https://m.media-amazon.com/images/I/81sTm5M7wjL.jpg",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
@@ -77,6 +85,7 @@
         "titulo": "Kimetsu no yiaba",
         "autor": "Steve Souders",
         "categoria": "Banco de dados",
+        "destaque": false,
         "paginas":"152",
         "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Ohqs5XLNYEAkmE5eROfH_JWOg9aUD5t-_Q&s",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."

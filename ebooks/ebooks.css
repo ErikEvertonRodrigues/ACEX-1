@@ -8,17 +8,51 @@
 
 main {
     min-height: calc(100vh - 115px);
+    padding-top: 30px;
 }
 
 .main-title {
     text-align: center;
 }
 
-.container-content {
+.hero {
+    padding: 40px 0 20px;
+    text-align: center;
+}
+
+.container_hero {
+    padding: 18px 10px 26px;
+}
+
+.titulohero {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--muted);
+    margin-bottom: 6px;
+}
+
+.hero h1 {
+    font-size: clamp(30px, 3%, 44px);
+}
+
+.herosubtitulo {
+    max-width: 620px;
+    margin: 0 auto 18px;
+}
+
+.hero_busca {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container-content, #destaques {
     padding-bottom: 20px;
 }
 
-.content {
+.content, #cards_ebooks_destaques {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     place-items: center;
@@ -89,4 +123,40 @@ main {
 .carregar_mais {
     margin-top: 18px;
     text-align: center;
+}
+
+@media (max-width: 720px) {
+    .hero_busca {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 420px) {
+    .hero {
+        padding: 20px 0 10px;
+    }
+
+    .container_hero {
+        padding: 10px 8px 18px;
+    }
+
+    .hero h1 {
+        font-size: clamp(20px, 6%, 34px);
+    }
+
+    .herosubtitulo {
+        max-width: 100%;
+        padding: 0 6px;
+    }
+
+    .hero_busca {
+        gap: 8px;
+    }
+
+    .btn,
+    .btn2,
+    .btn_bt {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
 }

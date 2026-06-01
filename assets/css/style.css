@@ -72,6 +72,7 @@ ul.active li:nth-child(3) {
     transition: 
         transform 1s ease,
         opacity 1s ease;
+    z-index: 1000;
 }
 
 .navigation-mob ul {
@@ -254,7 +255,7 @@ footer .footer-container {
 
 .footer-logo img {
     margin-top: -20px;
-    height: 150px;
+    height: 100px;
     width: 100%;
     object-fit: contain;
 }

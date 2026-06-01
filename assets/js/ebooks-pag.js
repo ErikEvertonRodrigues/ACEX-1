@@ -67,13 +67,13 @@ function gerarCard(ebook){
 
 function gerarEbooks(listEbooks){
     const mainCards = document.querySelector('.content');
-    //const dtqCards = document.querySelector('#cards_cursos_destaques');
+    const dtqCards = document.querySelector('#cards_ebooks_destaques');
 
     const htmlMainCards = listEbooks.map(ebook => gerarCard(ebook)).join('');
     mainCards.innerHTML = htmlMainCards;
 
-    /*const htmlDtqCards = cursos.filter(curso => curso.destaque === true).map(curso => gerarCard(curso)).join('');
-    /dtqCards.innerHTML = htmlDtqCards;*/
+    const htmlDtqCards = listEbooks.filter(ebook => ebook.destaque === true).map(ebook => gerarCard(ebook)).join('');
+    dtqCards.innerHTML = htmlDtqCards;
 }
 
 const btnCarregarMais = document.querySelector('.carregar_mais');
@@ -81,4 +81,4 @@ const btnCarregarMais = document.querySelector('.carregar_mais');
 btnCarregarMais.addEventListener('click', () => {
     gerarEbooks(ebooks);
     btnCarregarMais.style.display = 'none';
-})
+});

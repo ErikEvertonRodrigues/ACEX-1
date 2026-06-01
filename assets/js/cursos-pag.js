@@ -59,7 +59,7 @@ function gerarCard(curso){
                 <div class="horas">
                     <span>${curso.horas} horas</span>    
                 </div>
-                <a class="card__link" href="#">Acessar playlist</a>
+                <a class="card__link" href="curso_in.html">Acessar playlist</a>
             </div>
         </article>
     `
