@@ -55,9 +55,8 @@ function gerarCard(ebook){
             <span>${ebook.categoria}</span>
             <img class="card-image" src=${ebook.imagem} alt="">
             <div class="card-info">
-                <h2>${ebook.titulo}</h2>
+                <h2>${ebook.titulo.substring(0, 25)}</h2>
                 <p>${ebook.autor}</p>
-                <p>${ebook.descricao.substring(0, 120)}...</p>
                 <p><i class="fa-regular fa-file-lines"></i> ${ebook.paginas} páginas</p>
                 <a class="download" href=""><i class="fa-solid fa-download"></i> Baixar PDF</a>
             </div>

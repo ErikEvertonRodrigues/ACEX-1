@@ -1,7 +1,8 @@
 @import url('./variables.css');
 
 header {
-    background-color: #fff;
+    background-color: #F4EDDA;
+    border-bottom: 1px #d4cebd solid;
 }
 
 header > div {
