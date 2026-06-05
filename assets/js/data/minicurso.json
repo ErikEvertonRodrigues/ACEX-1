@@ -1,0 +1,63 @@
+{
+  "python": {
+    "nomeCurso": "Introducao a Programacao Python",
+    "descricaoCurso": "Aprenda os fundamentos da programacao com Python, desde variaveis ate estruturas de dados.",
+    "aulas": [
+      {
+        "id": 1,
+        "titulo": "Introducao ao Python",
+        "tempo": "Duracao: 15:30",
+        "descricao": "Nesta aula voce aprendera os conceitos fundamentais e praticos necessarios para dominar este topico. Assista com atencao e pratique os exercicios propostos.",
+        "videoUrl": "https://www.youtube.com/embed/9JNqj8ARj_4?si=BOoSBQOw4t7umQfW"
+      },
+      {
+        "id": 2,
+        "titulo": "Variaveis e Tipos de Dados",
+        "tempo": "Duracao: 22:10",
+        "descricao": "Entenda como o Python armazena informações na memória. Vamos aprender sobre Strings, Inteiros, Floats e Booleanos na prática.",
+        "videoUrl": "https://www.youtube.com/embed/9JNqj8ARj_4?si=BOoSBQOw4t7umQfW"
+      },
+      {
+        "id": 3,
+        "titulo": "Estruturas Condicionais",
+        "tempo": "Duracao: 18:45",
+        "descricao": "Aprenda a tomar decisões no seu código utilizando as estruturas if, elif e else para controlar o fluxo do programa.",
+        "videoUrl": "https://www.youtube.com/embed/9JNqj8ARj_4?si=BOoSBQOw4t7umQfW"
+      },
+      {
+        "id": 4,
+        "titulo": "Loops e Repeticoes",
+        "tempo": "Duracao: 21:10",
+        "descricao": "Domine as estruturas de repetição for e while. Saiba como automatizar tarefas repetitivas de forma eficiente.",
+        "videoUrl": "https://www.youtube.com/embed/9JNqj8ARj_4?si=BOoSBQOw4t7umQfW"
+      },
+      {
+        "id": 5,
+        "titulo": "Funcoes em Python",
+        "tempo": "Duracao: 20:20",
+        "descricao": "Aprenda a modularizar seu código criando funções com def, definindo parâmetros, argumentos e retornando valores.",
+        "videoUrl": "https://www.youtube.com/embed/9JNqj8ARj_4?si=BOoSBQOw4t7umQfW"
+      },
+      {
+        "id": 6,
+        "titulo": "Listas e Tuplas",
+        "tempo": "Duracao: 23:00",
+        "descricao": "Trabalhe com coleções de dados. Veja as diferenças entre listas mutáveis e tuplas imutáveis e como manipulá-las.",
+        "videoUrl": "https://www.youtube.com/embed/9JNqj8ARj_4?si=BOoSBQOw4t7umQfW"
+      }
+    ]
+  },
+  "bancodedados": {
+    "nomeCurso": "Introducao a Banco de Dados",
+    "descricaoCurso": "Insira a descricao geral do curso de banco de dados aqui.",
+    "aulas": [
+      {
+        "id": 1,
+        "titulo": "",
+        "tempo": "Duracao: ",
+        "descricao": "",
+        "videoUrl": ""
+      }
+    ]
+  }
+}
