@@ -57,6 +57,31 @@ main {
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.btn svg {
+    width: 25px;
+    margin: 0px 0px 0px 0px;
+}
+
+.btn .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px rgb(83, 96, 87) solid;
+    background-color: var(--verde-hover);
+    height: 51px;
+    width: 100px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+form .btn {
+    padding: 0 0 0 20px;
+    height: 51px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .container-content, #destaques {
     padding-bottom: 20px;
 }
