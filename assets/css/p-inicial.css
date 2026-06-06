@@ -120,8 +120,8 @@ body {
 .carrossel {
     position: relative;
     display: flex;
-    overflow: hidden;
     gap: 10px;  
+    
 }
 
 .img-container {
