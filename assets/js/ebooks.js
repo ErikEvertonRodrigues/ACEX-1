@@ -14,27 +14,27 @@ carregarEbooks();
 
 const filterForm = document.querySelector('.filters__form');
 const inputBusca = document.querySelector('#busca');
-const inputArea = document.querySelector('#area');
+// const inputArea = document.querySelector('#area');
 
 function aplicarFiltros() {
     
     const termoBuscado = inputBusca.value.toLowerCase().trim();
-    const areaEscolhida = inputArea.value.toLowerCase(); 
+    //const areaEscolhida = inputArea.value.toLowerCase(); 
 
     const ebooksFiltrados = ebooks.filter(ebook => {
 
-        const categoriaEbook = (ebook.categoria || "").toLowerCase();
+        //const categoriaEbook = (ebook.categoria || "").toLowerCase();
         const tituloEbook = (ebook.titulo || "").toLowerCase();
 
-        console.log(`categoria: ${categoriaEbook}`);
-        console.log(`area: ${areaEscolhida}`);
+        // console.log(`categoria: ${categoriaEbook}`);
+        // console.log(`area: ${areaEscolhida}`);
 
         const tituloOk = tituloEbook.includes(termoBuscado);
-        const areaOk = areaEscolhida === "" || categoriaEbook.includes(areaEscolhida);
+        //const areaOk = areaEscolhida === "" || categoriaEbook.includes(areaEscolhida);
 
         console.log(tituloOk);
 
-        return tituloOk && areaOk;
+        return tituloOk;
     });
 
     gerarEbooks(ebooksFiltrados);
@@ -43,7 +43,7 @@ function aplicarFiltros() {
 }
 
 inputBusca.addEventListener('input', aplicarFiltros); 
-inputArea.addEventListener('change', aplicarFiltros); 
+// inputArea.addEventListener('change', aplicarFiltros); 
 
 filterForm.addEventListener('submit', (event) => {
     event.preventDefault();

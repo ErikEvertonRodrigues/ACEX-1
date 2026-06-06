@@ -58,21 +58,17 @@ main {
     flex-wrap: wrap;
 }
 
-.btn svg {
-    width: 25px;
+.icon i {
+    font-size: 25px;
     margin: 0px 0px 0px 0px;
 }
 
-.btn .icon {
+.icon {
+    width: 70px;
+    height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    border-left: 1px rgb(83, 96, 87) solid;
-    background-color: var(--verde-hover);
-    height: 51px;
-    width: 100px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    justify-content: center;
 }
 
 form .btn {
@@ -94,6 +90,27 @@ form .btn {
     padding-bottom: 20px;
     max-width: 1300px;
     margin: auto;
+}
+
+.container_busca {
+    display: flex;
+    padding: 0;
+}
+.filters__form {
+    display: flex;
+    width: 100%;
+}
+#busca {
+    border-radius: 16px 0 0 16px;
+}
+
+.buscar {
+    display: flex;
+    width: 100%;
+    height: 45px;
+}
+#busca {
+    width: 100%;
 }
 
 .card {
