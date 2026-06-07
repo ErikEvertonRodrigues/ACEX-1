@@ -5,52 +5,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IFBA Paulo Afonso | Video do Curso</title>
-    <link rel="stylesheet" href="cursos.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="curso_in.css">
+    <script src="https://kit.fontawesome.com/898f59f198.js" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js" defer></script>
 </head>
 
 <body>
-    <main class="video-page">
-        <header class="video-header">
-              <div class="container">
-                <a class="voltar" href="index.html">Voltar para os cursos</a>
-        
-                <h1 id="curso-titulo-principal">Carregando curso...</h1>
-                <p id="curso-descricao-principal"></p>
-        
-               </div>
-           </header>
+    <header>
+        <div class="container">
+            <div class="logo-container"><a href="../index.html"><img class="logo" src="../assets/imgs/nome_cacto_claro.svg" alt=""></a></div>
 
-        <section class="video-layout">
-            <div class="container">
-                <div class="video-col">
-                    <article class="video-card">
-                           <iframe 
-                               id="video-player"
-                               width="100%" 
-                               height="450" 
-                               src="" 
-                               title="YouTube video player" 
-                               frameborder="0" 
-                               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                               allowfullscreen>
-                           </iframe>
-                    </article>
+            <ul class="hamburguer-container hide" type="none">
+                <li class="hamburguer"></li>
+                <li class="hamburguer"></li>
+                <li class="hamburguer"></li>
+            </ul>
 
-                    <div class="video-desc">
-                        <h2>Introducao ao Python</h2>
-                        <p>Nesta aula voce aprendera os conceitos fundamentais e praticos necessarios para dominar este topico. Assista com atencao eifique os exercicios propostos.</p>
-                    </div>
-                </div>
+            <nav class="navigation">
+                <ul type="none">
+                    <li><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li><a class="nav-link" href="#">Sobre o Curso</a></li>
+                    <li><a class="nav-link" href="./cursos.html">Minicursos</a></li>
+                    <li><a class="nav-link" href="../ebooks/ebooks.html">E-books</a></li>
+                    <li><a class="nav-link" href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-                <aside class="playlist">
-                    <h3>Conteudo do Curso</h3>
-                    <ul class="playlist-list" id="playlist-dinamica"></ul>
-                </aside>
+    <nav class="navigation-mob">
+        <ul type="none">
+            <li><a class="nav-link" href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li><a class="nav-link" href="#"><i class="fa-solid fa-circle-question"></i> Sobre o Curso</a></li>
+            <li><a class="nav-link" href="../pagina cursos/cursos.html"><i class="fa-solid fa-play"></i> Minicursos</a></li>
+            <li><a class="nav-link" href="../ebooks/ebooks.html"><i class="fa-solid fa-book"></i> E-books</a></li>
+            <li><a class="nav-link" href="#"><i class="fa-solid fa-phone"></i> Contato</a></li>
+        </ul>
+    </nav>
+
+    <main class="curso-layout">
+        <aside class="sidebar">
+            <div class="curso-info">
+                <h2>Git e GitHub para Iniciantes</h2>
             </div>
-        </section>
+
+            <ul class="aulas">
+                <li class="active">1. O que é Git e por que usar?</li>
+                <li>2. Instalando o Git</li>
+                <li>3. Configurando o Git</li>
+                <li>4. Repositórios</li>
+                <li>5. Commit</li>
+                <li>6. Branches</li>
+                <li>7. Merge</li>
+                <li>8. GitHub</li>
+            </ul>
+        </aside>
+
+    <section class="conteudo">
+
+        <div class="topbar">
+            <a href="cursos.html">← Voltar para minicursos</a>
+            <button class="open-sidebar">Exibir aulas</button>
+            <button>Próxima Aula →</button>
+        </div>
+
+        <h1>1. O que é Git e por que usar?</h1>
+
+        <div class="video-container">
+            <iframe
+                src="https://www.youtube.com/embed/GDGMf2bnHlE?si=CHeiqgc1aGQUKQoo"
+                title="Video Aula"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <article class="aula-conteudo">
+
+            <h2>Introdução</h2>
+
+            <p>
+                Git é um sistema de controle de versão distribuído criado para
+                facilitar o desenvolvimento de software e o trabalho em equipe.
+            </p>
+
+            <p>
+                Com ele é possível acompanhar alterações no código,
+                voltar para versões anteriores e colaborar com outros
+                desenvolvedores sem perder histórico.
+            </p>
+
+            <h2>Por que usar Git?</h2>
+
+            <ul>
+                <li>Controle de versões.</li>
+                <li>Histórico completo de alterações.</li>
+                <li>Trabalho colaborativo.</li>
+                <li>Integração com GitHub.</li>
+                <li>Maior segurança para o projeto.</li>
+            </ul>
+
+            <p>
+                Nesta aula você entenderá os conceitos fundamentais antes de
+                instalar e configurar o Git em sua máquina.
+            </p>
+
+        </article>
+
+    </section>
     </main>
 
     <script src="../assets/js/minicurso.js"></script>
+    <script>
+        const button = document.querySelector('.open-sidebar');
+        const sidebar = document.querySelector('.sidebar');
+        
+        button.addEventListener('click', () => {
+            sidebar.classList.add('open');
+            button.style.display = 'none';
+        });
+
+        window.addEventListener('click', () => {
+            const buttonClicked = button.contains(event.target);
+            const sidebarClicked = sidebar.contains(event.target);
+
+            if (!buttonClicked && !sidebarClicked) {
+                sidebar.classList.remove('open');
+                button.style.display = "block";
+            }
+        });
+
+    </script>
 </body>
 
 </html>

@@ -21,7 +21,6 @@ function gerarCardCurso(curso) {
             <img src="${curso.imagem}" alt="Capa do curso">
             <p class="title">${curso.titulo}</p>
             <span class="tag">${curso.categoria}</span>
-            <span class="horas">Duração: ${curso.horas}</span>
         </div>
     `;
 }
