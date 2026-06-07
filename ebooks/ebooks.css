@@ -71,6 +71,48 @@ main {
     margin: auto;
 }
 
+.container_busca {
+    width: 1300px;
+    display: flex;
+    justify-content: start;
+    padding: 25px;
+}
+
+.filtros {
+    display: flex;
+    justify-content: center;
+}
+
+.filters__form {
+    background-color: white;
+    display: flex;
+    width: 280px;
+    border: 1px black solid;
+    border-radius: 12px;
+    gap: 0;
+}
+
+#busca {
+    outline: none;
+    width: 80%;
+    border: none;
+}
+
+.icon {
+    border-left: 1px black solid;
+    padding: 0 10px 0 10px;
+    height: 40px;
+    background-color: white;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon i {
+    font-size: 25px;
+}
+
 .card {
     position: relative;
     width: 250px;
@@ -178,5 +220,25 @@ main {
     }
     .card-image {
         height: 245px;
+    }
+    .container_busca {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .filters__form {
+        width: 100%;
+    }
+
+    #busca {
+        width: 80%;
+    }
+
+    .icon {
+        width: 15%;
+    }
+
+    .icon i {
+        font-size: 25px;
     }
 }
