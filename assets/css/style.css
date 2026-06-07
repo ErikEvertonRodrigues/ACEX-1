@@ -143,8 +143,7 @@ h1, h2, h3 {
 }
 
 .btn,
-.btn2,
-.btn_bt {
+.btn2 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -169,14 +168,8 @@ h1, h2, h3 {
     border-color: rgba(31, 143, 77, 0.35);
 }
 
-.btn_bt {
-    background: #222b2f;
-    color: #fff;
-}
-
 .btn:hover,
-.btn2:hover,
-.btn_bt:hover {
+.btn2:hover:hover {
     transform: translateY(-2px);
 }
 
@@ -298,7 +291,7 @@ footer .footer-container {
     gap: 20px;
 }
 
-.redes > div {
+.redes > a {
     width: 50px;
     height: 50px;
     border-radius: 5px;
@@ -307,9 +300,11 @@ footer .footer-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.redes div i {
+.redes a i {
     font-size: 45px;
 }
 
@@ -356,4 +351,3 @@ footer .footer-container {
         width: 250px;
     }
 }
-
