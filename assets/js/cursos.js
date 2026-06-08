@@ -50,7 +50,7 @@ function gerarCard(curso){
     const tagColor = curso.categoria.toLowerCase().replace(/\s+/g, '-');
 
     return `
-        <a href="curso_in.html" class="course-card">
+        <a href="curso_in.html?curso=${curso.link}" class="course-card">
             <article class="card_curso">
                 <div class="dados">
                     <span class="tag ${tagColor}">${curso.categoria}</span>

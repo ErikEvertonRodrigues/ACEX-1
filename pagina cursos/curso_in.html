@@ -45,75 +45,38 @@
     </nav>
 
     <main class="curso-layout">
-        <aside class="sidebar">
-            <div class="curso-info">
-                <h2>Git e GitHub para Iniciantes</h2>
-            </div>
+    <aside class="sidebar">
+        <div class="curso-info">
+            <h2 id="curso-titulo-principal"></h2>
+        </div>
 
-            <ul class="aulas">
-                <li class="active">1. O que é Git e por que usar?</li>
-                <li>2. Instalando o Git</li>
-                <li>3. Configurando o Git</li>
-                <li>4. Repositórios</li>
-                <li>5. Commit</li>
-                <li>6. Branches</li>
-                <li>7. Merge</li>
-                <li>8. GitHub</li>
-            </ul>
-        </aside>
+        <ul class="aulas" id="playlist-dinamica">
+        </ul>
+    </aside>
 
     <section class="conteudo">
 
         <div class="topbar">
             <a href="cursos.html">← Voltar para minicursos</a>
             <button class="open-sidebar">Exibir aulas</button>
-            <button>Próxima Aula →</button>
+            <button id="btn-proxima-aula">Próxima Aula →</button>
         </div>
 
-        <h1>1. O que é Git e por que usar?</h1>
+        <h1 id="titulo-aula"></h1>
 
         <div class="video-container">
             <iframe
-                src="https://www.youtube.com/embed/GDGMf2bnHlE?si=CHeiqgc1aGQUKQoo"
+                id="video-player"
                 title="Video Aula"
                 allowfullscreen>
             </iframe>
         </div>
 
-        <article class="aula-conteudo">
-
-            <h2>Introdução</h2>
-
-            <p>
-                Git é um sistema de controle de versão distribuído criado para
-                facilitar o desenvolvimento de software e o trabalho em equipe.
-            </p>
-
-            <p>
-                Com ele é possível acompanhar alterações no código,
-                voltar para versões anteriores e colaborar com outros
-                desenvolvedores sem perder histórico.
-            </p>
-
-            <h2>Por que usar Git?</h2>
-
-            <ul>
-                <li>Controle de versões.</li>
-                <li>Histórico completo de alterações.</li>
-                <li>Trabalho colaborativo.</li>
-                <li>Integração com GitHub.</li>
-                <li>Maior segurança para o projeto.</li>
-            </ul>
-
-            <p>
-                Nesta aula você entenderá os conceitos fundamentais antes de
-                instalar e configurar o Git em sua máquina.
-            </p>
-
+        <article class="aula-conteudo" id="conteudo-aula">
         </article>
 
     </section>
-    </main>
+</main>
 
     <script src="../assets/js/minicurso.js"></script>
     <script>

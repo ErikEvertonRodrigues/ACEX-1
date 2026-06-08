@@ -1,78 +1,127 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Pega o parâmetro 'curso' da URL (Ex: curso_in.html?curso=bancodedados)
-    // Se não tiver nenhum parâmetro na URL, ele usa 'python' como padrão
+
     const urlParams = new URLSearchParams(window.location.search);
     const cursoChave = urlParams.get("curso") || "python";
 
-    // Elementos do HTML que vamos atualizar
     const cursoTituloPrincipal = document.getElementById("curso-titulo-principal");
-    const cursoDescricaoPrincipal = document.getElementById("curso-descricao-principal");
     const playlistContainer = document.getElementById("playlist-dinamica");
     const videoPlayer = document.getElementById("video-player");
-    const descTitulo = document.querySelector(".video-desc h2");
-    const descTexto = document.querySelector(".video-desc p");
+    const tituloAula = document.getElementById("titulo-aula");
+    const conteudoAula = document.getElementById("conteudo-aula");
+    const btnProximaAula = document.getElementById("btn-proxima-aula");
 
-    // Função para atualizar os dados do player principal
-    function atualizarPlayer(aula) {
-        if (videoPlayer) videoPlayer.src = aula.videoUrl;
-        if (descTitulo) descTitulo.textContent = aula.titulo;
-        if (descTexto) descTexto.textContent = aula.descricao;
+    let aulas = [];
+    let aulaAtual = 0;
+
+    function atualizarPlayer(aula, index) {
+
+        aulaAtual = index;
+
+        if (videoPlayer) {
+            videoPlayer.src = aula.videoUrl;
+        }
+
+        if (tituloAula) {
+            tituloAula.textContent = `${index + 1}. ${aula.titulo}`;
+        }
+
+        if (conteudoAula) {
+            conteudoAula.innerHTML = aula.conteudo || "<p>Conteúdo não disponível.</p>";
+        }
+
+        document.querySelectorAll(".playlist-item").forEach(item => {
+            item.classList.remove("active");
+        });
+
+        const itemAtual = document.querySelector(
+            `.playlist-item[data-index="${index}"]`
+        );
+
+        if (itemAtual) {
+            itemAtual.classList.add("active");
+        }
     }
 
-    // Faz a requisição para ler o arquivo JSON
     fetch("../assets/js/data/minicurso.json")
         .then(response => {
+
             if (!response.ok) {
                 throw new Error("Não foi possível carregar o arquivo JSON.");
             }
+
             return response.json();
         })
         .then(dados => {
-            // 2. Busca o curso específico usando a chave da URL (ex: dados["python"] ou dados["bancodedados"])
+
             const cursoSelecionado = dados[cursoChave];
 
-            // Se o usuário inventar um curso que não existe na URL, avisa na tela
             if (!cursoSelecionado) {
-                if (cursoTituloPrincipal) cursoTituloPrincipal.textContent = "Curso não encontrado";
-                if (cursoDescricaoPrincipal) cursoDescricaoPrincipal.textContent = "Verifique o link acessado.";
-                playlistContainer.innerHTML = "";
+
+                if (cursoTituloPrincipal) {
+                    cursoTituloPrincipal.textContent = "Curso não encontrado";
+                }
+
                 return;
             }
 
-            // 3. Atualiza o cabeçalho da página com as informações gerais do curso atual
-            if (cursoTituloPrincipal) cursoTituloPrincipal.textContent = cursoSelecionado.nomeCurso;
-            if (cursoDescricaoPrincipal) cursoDescricaoPrincipal.textContent = cursoSelecionado.descricaoCurso;
+            aulas = cursoSelecionado.aulas;
 
-            // Limpa a playlist antiga antes de preencher
+            if (cursoTituloPrincipal) {
+                cursoTituloPrincipal.textContent =
+                    cursoSelecionado.nomeCurso;
+            }
+
             playlistContainer.innerHTML = "";
 
-            // 4. Passa apenas pelas aulas do curso que foi selecionado
-            cursoSelecionado.aulas.forEach((aula, index) => {
-                const li = document.createElement("li");
-                li.classList.add("playlist-item");
-                
-                // Ativa a primeira aula por padrão
-                if (index === 0) {
-                    li.classList.add("active");
-                    atualizarPlayer(aula);
-                }
+            aulas.forEach((aula, index) => {
 
-                const tempoLimpo = aula.tempo.replace("Duracao: ", "");
+                const li = document.createElement("li");
+
+                li.classList.add("playlist-item");
+                li.dataset.index = index;
+
+                const tempoLimpo =
+                    aula.tempo?.replace("Duracao: ", "") || "--:--";
 
                 li.innerHTML = `
-                    <span class="item-title">${aula.titulo || "Aula Sem Título"}</span>
-                    <span class="item-time">${tempoLimpo || "--:--"}</span>
+                    <span class="item-title">
+                        ${aula.titulo || "Aula sem título"}
+                    </span>
+
+                    <span class="item-time">
+                        ${tempoLimpo}
+                    </span>
                 `;
 
-                // Evento de clique para trocar de vídeo dentro do curso atual
                 li.addEventListener("click", () => {
-                    document.querySelector(".playlist-item.active")?.classList.remove("active");
-                    li.classList.add("active");
-                    atualizarPlayer(aula);
+                    atualizarPlayer(aula, index);
                 });
 
                 playlistContainer.appendChild(li);
             });
+
+            if (aulas.length > 0) {
+                atualizarPlayer(aulas[0], 0);
+            }
+
+            btnProximaAula?.addEventListener("click", () => {
+
+                if (aulaAtual < aulas.length - 1) {
+
+                    aulaAtual++;
+
+                    atualizarPlayer(
+                        aulas[aulaAtual],
+                        aulaAtual
+                    );
+                }
+            });
         })
-        .catch(error => console.error("Erro ao processar a playlist dinâmica:", error));
+        .catch(error => {
+            console.error(
+                "Erro ao processar a playlist dinâmica:",
+                error
+            );
+        });
+
 });
