@@ -1,5 +1,9 @@
 @import url('./variables.css');
 
+* {
+    font-family: var(--inter);
+}
+
 header {
     background-color: #F4EDDA;
     border-bottom: 1px #d4cebd solid;
@@ -94,6 +98,7 @@ ul.active li:nth-child(3) {
     font-size: 20px;
     font-weight: 600;
     transition: 0.25s;
+    font-family: var(--inter);
 }
 
 .navigation-mob.active {
@@ -142,6 +147,20 @@ h1, h2, h3 {
 .destaque {
     color: var(--verde-escuro);
 }
+
+/*Define cor para cada categoria*/
+.tag.tecnologia {
+    background: #2d7ff9;
+}
+
+.tag.design {
+    background: #ff7b00;
+}
+
+.tag.banco-de-dados {
+    background: #28a745;
+}
+
 
 .btn,
 .btn2 {
@@ -281,6 +300,7 @@ footer .footer-container {
   font-size: 1.1rem;
   margin-bottom: 10px;
   font-weight: normal;
+  font-family: var(--poppins);
 }
 
 .footer-col ul li a:hover {

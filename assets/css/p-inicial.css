@@ -8,7 +8,6 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     color: var(--text);
     min-height: 100vh;
 }
@@ -44,6 +43,7 @@ body {
 
 .inicio h1 {
     font-size: 4rem;
+    font-family: var(--poppins);
     font-weight: 600;
 }
 
@@ -109,8 +109,9 @@ body {
     padding-top: 30px;
 }
 
-.destaques > h2 {
+.destaques > .container > h2 {
     font-size: 2rem;
+    font-family: var(--poppins);
 }
 
 .destaques > div {
@@ -142,7 +143,7 @@ body {
     border-radius: 10px;
 }
 
-.img-container .tag, .img-container .horas {
+.img-container .tag {
     padding: 2px 4px;   
     border-radius: 8px;
     color: #fff;
@@ -153,7 +154,6 @@ body {
 .img-container .tag {
     top: 5px;
     right: 5px;
-    background-color: var(--verde-claro);
 }
 
 .img-container .horas {
@@ -187,7 +187,8 @@ body {
 }
 
 .sobre-curso h1 {
-    color: #48b456;
+    color: var(--verde-escuro);
+    font-family: var(--poppins);
 }
 
 .sobre-curso p {

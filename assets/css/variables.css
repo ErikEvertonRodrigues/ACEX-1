@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Poppins:wght@500;600;800&display=swap');
+
 :root {
     --fundo-principal: #F4EDDA;
     --fundo-geral: #FFF9ED;
@@ -12,4 +14,6 @@
     --produto-profundo: #232220;
     --fundo-conteudo: #FDF8F0;
     --shadow: 0 2px 16px rgba(0,0,0,0.08);
+    --poppins: "Poppins", sans-serif;
+    --inter: "Inter", sans-serif;
 }

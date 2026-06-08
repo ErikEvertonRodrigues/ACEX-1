@@ -47,11 +47,13 @@ filterForm.addEventListener('submit', (event) => {
 });
 
 function gerarCard(curso){
+    const tagColor = curso.categoria.toLowerCase().replace(/\s+/g, '-');
+
     return `
         <a href="curso_in.html" class="course-card">
             <article class="card_curso">
                 <div class="dados">
-                    <span class="card__tag">${curso.categoria}</span>
+                    <span class="tag ${tagColor}">${curso.categoria}</span>
                 </div>
                 <div class="card__body">
                     <h3>${curso.titulo}</h3>

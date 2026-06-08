@@ -4,7 +4,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -44,6 +43,7 @@ main {
 
 .hero h1 {
     font-size: clamp(30px, 3%, 44px);
+    font-family: var(--poppins);
 }
 
 .herosubtitulo {
@@ -57,14 +57,15 @@ main {
     justify-content: center;
     flex-wrap: wrap;
 }
-.container-content, #destaques {
+.container-content {
+    padding-top: 30px;
     padding-bottom: 20px;
 }
 
 .content, #cards_ebooks_destaques {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    place-items: center;
+    align-items: stretch;
     gap: 20px;
     padding-bottom: 20px;
     max-width: 1300px;
@@ -84,7 +85,6 @@ main {
 }
 
 .filters__form {
-    background-color: white;
     display: flex;
     width: 280px;
     border: 1px black solid;
@@ -121,11 +121,10 @@ main {
     border-radius: 20px;
 }
 
-.card span {
+.card .tag {
     position: absolute;
-    background-color: var(--verde-escuro);
     top: 10px;
-    right: 10px;
+    left: 10px;
     color: #fff;
     font-size: 12px;
     padding: 4px 10px;
@@ -133,8 +132,10 @@ main {
     border-radius: 10px;
 }
 
-.card h2 {
-    font-size: 18px;
+.card-info h2 {
+    font-size: 1.2rem;
+    min-height: 48px;
+    font-family: var(--poppins);
 }
 
 .card-info {

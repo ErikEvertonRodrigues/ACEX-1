@@ -16,11 +16,14 @@ async function carregarCursos() {
 }
 
 function gerarCardCurso(curso) {
+
+    const tagColor = curso.categoria.toLowerCase().replace(/\s+/g, '-');
+
     return `
         <div class="img-container">
             <img src="${curso.imagem}" alt="Capa do curso">
             <p class="title">${curso.titulo}</p>
-            <span class="tag">${curso.categoria}</span>
+            <span class="tag ${tagColor}">${curso.categoria}</span>
         </div>
     `;
 }

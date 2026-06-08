@@ -50,9 +50,10 @@ filterForm.addEventListener('submit', (event) => {
 });
 
 function gerarCard(ebook){
+    const tagColor = ebook.categoria.toLowerCase().replace(/\s+/g, '-');
     return `
         <div class="card">
-            <span>${ebook.categoria}</span>
+            <span class="tag ${tagColor}">${ebook.categoria}</span>
             <img class="card-image" src=${ebook.imagem} alt="">
             <div class="card-info">
                 <h2>${ebook.titulo.substring(0, 25)}</h2>

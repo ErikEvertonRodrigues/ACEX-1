@@ -38,6 +38,7 @@ main {
 
 .hero h1 {
     font-size: clamp(30px, 3%, 44px);
+    font-family: var(--poppins);
 }
 
 .herosubtitulo {
@@ -81,11 +82,10 @@ main {
     min-height: 180px;
 }
 
-.card_curso .card__tag {
+.card_curso .tag {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: var(--verde-escuro);
     padding: 5px 10px;
     border-radius: 7px;
     color: #fff;
@@ -98,6 +98,7 @@ main {
 
 .card_curso .card__body h3 {
     min-height: 40px;
+    font-family: var(--poppins);
 }
 
 .card_curso .card__body p, .card_curso .card__body span {
