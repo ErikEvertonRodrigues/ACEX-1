@@ -14,12 +14,12 @@ carregarEbooks();
 
 const filterForm = document.querySelector('.filters__form');
 const inputBusca = document.querySelector('#busca');
-const inputArea = document.querySelector('#area');
+//const inputArea = document.querySelector('#area');
 
 function aplicarFiltros() {
     
     const termoBuscado = inputBusca.value.toLowerCase().trim();
-    const areaEscolhida = inputArea.value.toLowerCase(); 
+    //const areaEscolhida = inputArea.value.toLowerCase(); 
 
     const ebooksFiltrados = ebooks.filter(ebook => {
 
@@ -27,14 +27,14 @@ function aplicarFiltros() {
         const tituloEbook = (ebook.titulo || "").toLowerCase();
 
         console.log(`categoria: ${categoriaEbook}`);
-        console.log(`area: ${areaEscolhida}`);
+        //console.log(`area: ${areaEscolhida}`);
 
         const tituloOk = tituloEbook.includes(termoBuscado);
-        const areaOk = areaEscolhida === "" || categoriaEbook.includes(areaEscolhida);
+        //const areaOk = areaEscolhida === "" || categoriaEbook.includes(areaEscolhida);
 
         console.log(tituloOk);
 
-        return tituloOk && areaOk;
+        return tituloOk;
     });
 
     gerarEbooks(ebooksFiltrados);
@@ -43,21 +43,21 @@ function aplicarFiltros() {
 }
 
 inputBusca.addEventListener('input', aplicarFiltros); 
-inputArea.addEventListener('change', aplicarFiltros); 
+//inputArea.addEventListener('change', aplicarFiltros); 
 
 filterForm.addEventListener('submit', (event) => {
     event.preventDefault();
 });
 
 function gerarCard(ebook){
+    const tagColor = ebook.categoria.toLowerCase().replace(/\s+/g, '-');
     return `
         <div class="card">
-            <span>${ebook.categoria}</span>
+            <span class="tag ${tagColor}">${ebook.categoria}</span>
             <img class="card-image" src=${ebook.imagem} alt="">
             <div class="card-info">
-                <h2>${ebook.titulo}</h2>
+                <h2>${ebook.titulo.substring(0, 25)}</h2>
                 <p>${ebook.autor}</p>
-                <p>${ebook.descricao.substring(0, 120)}...</p>
                 <p><i class="fa-regular fa-file-lines"></i> ${ebook.paginas} páginas</p>
                 <a class="download" href=""><i class="fa-solid fa-download"></i> Baixar PDF</a>
             </div>

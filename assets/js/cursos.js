@@ -47,21 +47,21 @@ filterForm.addEventListener('submit', (event) => {
 });
 
 function gerarCard(curso){
+    const tagColor = curso.categoria.toLowerCase().replace(/\s+/g, '-');
+
     return `
-        <article class="card_curso">
-            <div class="dados">
-                <img class="img_card" src="${curso.imagem}" alt="Imagem do curso">
-                <span class="card__tag">${curso.categoria}</span>
-            </div>
-            <div class="card__body">
-                <h3>${curso.titulo}</h3>
-                <p>${curso.descricao}</p>
-                <div class="horas">
-                    <span>${curso.horas} horas</span>    
+        <a href="curso_in.html?curso=${curso.link}" class="course-card">
+            <article class="card_curso">
+                <div class="dados">
+                    <span class="tag ${tagColor}">${curso.categoria}</span>
                 </div>
-                <a class="card__link" href="curso_in.html">Acessar playlist</a>
-            </div>
-        </article>
+                <div class="card__body">
+                    <h3>${curso.titulo}</h3>
+                    <p>${curso.descricao}</p>
+                    <span>${curso.horas} horas</span>
+                </div>
+            </article>
+        </a>
     `
 }
 

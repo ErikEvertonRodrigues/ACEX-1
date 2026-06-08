@@ -48,44 +48,19 @@
     <main>
         <section class="hero">
             <div class="container_hero">
-                <p class="titulohero">IFBA Paulo Afonso</p>
+                <p class="titulohero">Mandacaru Tech - Extensão</p>
                 <h1 id="titulohero2">E-Books Disponíveis</h1>
                 <p class="herosubtitulo">
                     Expanda seus conhecimentos com nossos <strong>e-books</strong> gratuítos.
                     Aprenda no seu ritmo com conteúdo de qualidade.
                 </p>
-                <div class="hero_busca">
-                    <a class="btn" href="#cursos">Ver cursos</a>
-                    <a class="btn2" href="#destaques">Destaques</a>
-                </div>
             </div>
         </section>
-
-        <section id="destaques" class="container">
-            <h2 class="titulo_dtq">E-books em destaque</h2>
-
-            <div id="cards_ebooks_destaques"></div>
-        </section>
-
-        <section class="filtros">
-            <div class="container">
-                <h2 class="titulo_secao">Filtre por área</h2>
+        <section class="filtros container">
+            <div class="container_busca">
                 <form class="filters__form" action="#" method="get">
-                    <div class="field">
-                        <label for="area">Área</label>
-                        <select id="area">
-                            <option value="">Todas</option>
-                            <option value="tecnologia">Tecnologia</option>
-                            <option value="design">Design</option>
-                            <option value="banco de dados">Banco de Dados</option>
-                        </select>
-                    </div>
-
-                    <div class="busca">
-                        <label for="busca">Buscar</label>
-                        <input id="busca" type="text" placeholder="Digite o nome do e-book" />
-                    </div>
-                    <button class="btn" type="submit">Aplicar filtros</button>
+                    <input id="busca" type="text" placeholder="Digite o nome do e-book" />
+                    <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
                 </form>
             </div>
         </section>
@@ -93,7 +68,7 @@
         <section class="container-content">
             <div class="content"></div>
             <div class="carregar_mais">
-                <button class="btn_bt" type="button">Carregar mais</button>
+                <button class="btn" type="button">Carregar mais</button>
             </div>
         </section>
 
@@ -102,22 +77,22 @@
     <footer>
         <div class="footer-container">
             <div class="footer-col footer-logo">
-                <img class="logo" src="../assets/imgs/cacto_escuro.svg" alt="">
+                <img class="logo" src="../assets/imgs/somente_nome_claro.svg" alt="">
             </div>
             <div class="footer-col footer-logo">
-                <img class="logo" src="../assets/imgs/logo-ifba-branca.png" alt="">
+                <img class="logo" src="../assets/imgs/logo-ifba.png" alt="">
             </div>
             <div class="footer-col">
                 <h3>Redes Sociais</h3>
                 <p>Siga-nos nas redes sociais e fique por dentro das novidades</p>
 
                 <div class="redes">
-                    <div>
+                    <a target="_blank" href="https://www.instagram.com/mandacarutech_ext/">
                         <i class="fa-brands fa-instagram"></i>
-                    </div>
-                    <div>
+                    </a>
+                    <a href="">
                         <i class="fa-brands fa-youtube"></i>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>

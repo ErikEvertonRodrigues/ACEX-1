@@ -7,6 +7,7 @@
 }
 
 main {
+    background-color: var(--fundo-conteudo);
     min-height: calc(100vh - 115px);
     padding-top: 30px;
 }
@@ -16,8 +17,15 @@ main {
 }
 
 .hero {
-    padding: 40px 0 20px;
     text-align: center;
+}
+
+.btn {
+    background-color: var(--verde-escuro);
+}
+
+.btn:hover {
+    background-color: var(--verde-hover);
 }
 
 .container_hero {
@@ -35,6 +43,7 @@ main {
 
 .hero h1 {
     font-size: clamp(30px, 3%, 44px);
+    font-family: var(--poppins);
 }
 
 .herosubtitulo {
@@ -48,18 +57,60 @@ main {
     justify-content: center;
     flex-wrap: wrap;
 }
-.container-content, #destaques {
+.container-content {
+    padding-top: 30px;
     padding-bottom: 20px;
 }
 
 .content, #cards_ebooks_destaques {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    place-items: center;
+    align-items: stretch;
     gap: 20px;
     padding-bottom: 20px;
-    max-width: 1040px;
+    max-width: 1300px;
     margin: auto;
+}
+
+.container_busca {
+    width: 1300px;
+    display: flex;
+    justify-content: start;
+    padding: 25px;
+}
+
+.filtros {
+    display: flex;
+    justify-content: center;
+}
+
+.filters__form {
+    display: flex;
+    width: 280px;
+    border: 1px black solid;
+    border-radius: 12px;
+    gap: 0;
+}
+
+#busca {
+    outline: none;
+    width: 80%;
+    border: none;
+}
+
+.icon {
+    border-left: 1px black solid;
+    padding: 0 10px 0 10px;
+    height: 40px;
+    background-color: white;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon i {
+    font-size: 25px;
 }
 
 .card {
@@ -68,14 +119,12 @@ main {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.474);
     background-color: #fff;
     border-radius: 20px;
-    height: 650px;
 }
 
-.card span {
+.card .tag {
     position: absolute;
-    background-color: var(--verde-mandacaru);
     top: 10px;
-    right: 10px;
+    left: 10px;
     color: #fff;
     font-size: 12px;
     padding: 4px 10px;
@@ -83,29 +132,32 @@ main {
     border-radius: 10px;
 }
 
-.card h2 {
-    font-size: 18px;
+.card-info h2 {
+    font-size: 1.2rem;
+    min-height: 48px;
+    font-family: var(--poppins);
 }
 
 .card-info {
-    height: calc(100% - 375px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 10px;
     padding: 0 10px 15px 10px;
 }
 
 .card-image {
     width: 250px;
-    aspect-ratio: 2/3;
+    height: 350px;
     border-radius: 20px 20px 0 0;
+    background-color: #d82a2a;
 }
 
 .download {
     align-self: center;
-    width: 192px;
+    width: 100%;
     height: 39px;
-    background-color: var(--verde-mandacaru);
+    background-color: var(--verde-escuro);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,7 +169,7 @@ main {
 }
 
 .download:hover {
-    background-color: var(--verde-neon);
+    background-color: var(--verde-hover);
 }
 
 .carregar_mais {
@@ -158,5 +210,36 @@ main {
     .btn_bt {
         padding: 8px 12px;
         font-size: 14px;
+    }
+
+    .content {
+        grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+    }
+
+    .card, .card-image  {
+        width: 175px;
+    }
+    .card-image {
+        height: 245px;
+    }
+    .container_busca {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .filters__form {
+        width: 100%;
+    }
+
+    #busca {
+        width: 80%;
+    }
+
+    .icon {
+        width: 15%;
+    }
+
+    .icon i {
+        font-size: 25px;
     }
 }
