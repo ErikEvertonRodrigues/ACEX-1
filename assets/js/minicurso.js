@@ -71,11 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     cursoSelecionado.nomeCurso;
             }
 
-            if (cursoDescricaoPrincipal) {
-                cursoDescricaoPrincipal.textContent =
-                    cursoSelecionado.descricaoCurso;
-            }
-
             playlistContainer.innerHTML = "";
 
             aulas.forEach((aula, index) => {
