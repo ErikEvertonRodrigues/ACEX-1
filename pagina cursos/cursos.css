@@ -9,6 +9,7 @@
 main {
     background-color: var(--fundo-conteudo);
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .hero {
@@ -46,15 +47,135 @@ main {
     margin: 0 auto 18px;
 }
 
+.filtros-container {
+    width: auto;
+    height: auto;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtros-container .principio {
+    width: 1300px;
+}
+
+.filtros-container h1 {
+    font-size: 45px;
+    margin: 10px 0;
+}
+
+.filtros-container .principio h4 {
+    color: var(--verde-hover);
+    font-weight: bold;
+}
+
+.filtros-container .area-busca {
+    background-color: #f6f2ea;
+    padding: 30px;
+    border-radius: 25px;
+    border: 2px solid #d7d4c0;
+}
+
+.filtros-container h3 {
+    margin-top: 15px;
+}
+
+.filters__form {
+    margin-bottom: 10px;
+    background-color: var(--fundo-conteudo);
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border: 2px solid #d7d4c0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#busca {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    background-color: var(--fundo-conteudo);
+    font-size: 16px;
+}
+
+.icon {
+    width: 60px;
+    min-width: 60px;
+    height: 100%;
+    border-left: 2px solid #d7d4c0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fundo-conteudo);
+}
+
+.icon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    line-height: 1;
+    color: var(--verde-escuro);
+}
+
+.filtros-container .btn-filtros {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 10px 16px;
+    border: 1px solid #d7d4c0;
+    border-radius: 20px;
+    background-color: var(--fundo-conteudo);
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.filtros-container .btn-filtros:hover {
+    background-color: var(--verde-hover);
+    color: #fff;
+}
+
+.btn-filtros.ativo {
+    background-color: var(--verde-hover);
+    color: #fff;
+}
+
+.filtros-container #limpar {
+    background-color: #A32638;
+    color: #fff;
+}
+
+.filtros-container p {
+    color: #7e7e7e;
+}
+
+.filtros-container hr {
+    height: 1px;
+    border: none;
+    background-color: #d8d5cc;
+    margin: 10px 0;
+}
+
+.btn-filtros.ativo {
+    background-color: var(--verde-hover);
+    color: white;
+}
+
 #cursos {
     padding-top: 20px;
 }
 
 .cards_cursos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 345px));
     align-items: stretch;
     gap: 20px;
+    
 }
 
 .course-card {

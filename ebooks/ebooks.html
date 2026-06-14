@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="ebooks.css">
+    <link rel="stylesheet" href="../assets/css/variables.css">
     <script src="https://kit.fontawesome.com/898f59f198.js" crossorigin="anonymous"></script>
     <script src="../assets/js/ebooks.js" defer></script>
     <script src="../assets/js/script.js" defer></script>
@@ -59,7 +60,7 @@
         <section class="filtros-container">
             <div class="principio">
                 <h4><strong>EXPLORE O CATÁLOGO</strong></h4>
-                <h1>Encontre seu próximo minicurso</h1>
+                <h1>Encontre seu próximo E-book</h1>
                 <div class="area-busca">
                     <form class="filters__form" action="#" method="get">
                         <input id="busca" type="text" placeholder="Digite o nome do e-book"/>
@@ -67,12 +68,12 @@
                     </form>
                     <h3>Filtrar por área</h3>
                     <button class="btn-filtros" id="todos">Todos</button>
-                    <button class="btn-filtros" id="front">Front-end</button>
-                    <button class="btn-filtros" id="back">Back-end</button>
-                    <button class="btn-filtros" id="data">Database</button>
+                    <button class="btn-filtros" id="front">Design</button>
+                    <button class="btn-filtros" id="back">Banco de dados</button>
+                    <button class="btn-filtros" id="data">Tecnologia</button>
                     <button class="btn-filtros" id="limpar">Limpar</button>
                     <hr>
-                    <p>X minicursos encontrados</p>
+                    <p><span id="contador-ebooks">0</span> E-books encontrados</p>
                 </div>
             </div>
         </section>
