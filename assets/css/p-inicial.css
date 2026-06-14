@@ -42,7 +42,8 @@ body {
 }
 
 .inicio h1 {
-    font-size: 4rem;
+    font-size: 6rem;
+    line-height: 6rem;
     font-family: var(--poppins);
     font-weight: 600;
 }
@@ -94,7 +95,7 @@ body {
     font-size: 1.5rem;
     padding: 10px;
     border-radius: 4px;
-    background-color: #fff;
+    color: var(--verde-escuro);
 }
 
 .inicio .hero-icons > div p {
@@ -240,52 +241,81 @@ body {
 /* Quarta section */
 
 .contato {
-    background-color: var(--fundo-principal);
-    padding: 30px 0;
+    background-color: #f7f1e5;
+    padding: 40px 0;
 }
 
-.contato > div {
+.contato .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 40px;
 }
 
-.contato > div > div p {
-    font-size: 1rem;
+.grupo-inputs {
+    display: flex;
+    flex: 1;
+    border: 1px solid #d8c7a6;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.contato h2 {
-    color: #000;
+.grupo-inputs input {
+    flex: 1;
+    height: 56px;
+    border: none;
+    outline: none;
+    padding: 0 16px;
+    border-radius: 0;
 }
 
-.contato p {
-    font-size: 22px;
-    text-align: center;
+.grupo-inputs input:first-child {
+    border-right: 1px solid #d8c7a6;
+}
+
+.texto {
+    flex: 1;
+}
+
+.texto h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.texto p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.dados {
+    flex: 1.5;
 }
 
 .dados form {
-    display: block;
-    text-align: center;
-}
-
-.dados form input {
-    width: 100%;
-    outline: none;
-    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .dados form button {
-    background-color: var(--verde-escuro);
-    padding: 10px 20px;
+    height: 58px;
+    padding: 0 30px;
     border: none;
-    border-radius: 7px;
-    font-weight: 600;
-    font-size: 1.2rem;
-    cursor: pointer;
+    border-radius: 10px;
+    background: var(--verde-escuro);
     color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: .3s;
 }
 
 .dados form button:hover {
-    background-color: var(--verde-hover);
+    background: var(--verde-hover);
+    transform: translateY(-2px);
 }
 
 /* Parte da responsividade */
@@ -294,6 +324,11 @@ body {
     .inicial > div {
         width: 100%;
         padding: 0 20px;
+    }
+
+    .inicio h1 {
+        font-size: 5rem;
+        line-height: 5rem;
     }
 
     .destaques > div {
@@ -329,10 +364,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .inicio h1 {
-        font-size: 3rem;
-    }
-
     .hero-container .card {
         display: none;
     }
@@ -357,6 +388,11 @@ body {
 }
 
 @media screen and (max-width: 578px) {
+    .inicio h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
     .img-container {
         flex: 0 0 100%;
     }
@@ -364,6 +400,27 @@ body {
 
 @media screen and (max-width: 420px) {
     .inicio h1 {
-        font-size: 2rem;
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .contato .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dados {
+        width: 100%;
+    }
+
+    .dados form {
+        flex-direction: column;
+    }
+
+    .dados form input,
+    .dados form button {
+        width: 100%;
     }
 }
