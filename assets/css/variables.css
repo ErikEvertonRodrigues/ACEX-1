@@ -1,19 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Poppins:wght@500;600;800&display=swap');
+
 :root {
-    --bg: #eef0f2;
-    --bg-dark: #dcdfe3;
-    --text: #1e1f24;
-    --muted: #6a707a;
-    --accent: #1f8f4d;
-    --accent-dark: #166c39;
-    --card: #ffffff;
-    --shadow: 0 12px 25px rgba(19, 26, 28, 0.12);
-    --areia-clara: #F4E7C5;
-    --areia-quente: #E8D4A2;
-    --duna: #D9BE85;
-    --vermelho: #A32638;
-    --verde-mandacaru: #7BAE3F;
-    --verde-neon: #A7D948;
-    --laranja: #E98C3A;
-    --preto-suave: #2A2A2A;
-    --marrom-terra: #6A4B2A;
+    --fundo-principal: #F4EDDA;
+    --fundo-geral: #FFF9ED;
+    --fundo-de-cards: #F3E3C9;
+    --verde-escuro: #679227;
+    --verde-hover: #77A22E;
+    --verde-claro: #AFCF40;
+    --cinza-texto: #7C7875;
+    --cinza-claro: #EADECE;
+    --branco-suave: #FEFAF1;
+    --bege-suave: #EFD9B0;
+    --produto-profundo: #232220;
+    --fundo-conteudo: #FDF8F0;
+    --shadow: 0 2px 16px rgba(0,0,0,0.08);
+    --poppins: "Poppins", sans-serif;
+    --inter: "Inter", sans-serif;
 }

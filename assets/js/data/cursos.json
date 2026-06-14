@@ -1,24 +1,24 @@
 [
     {
-      "imagem": "imgs/EDUXMTFODA2.jpg",
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPndEjRei_mhmTX1qV6XcfWgB8DQKNW1tUO2IY7_eNug&s=10",
       "categoria": "Tecnologia",
       "titulo": "Desenvolvimento Web",
       "descricao": "HTML, CSS e JavaScript para projetos reais.",
       "horas": "40 horas",
-      "link": "#",
+      "link": "dweb",
       "destaque": true
     },
     {
-      "imagem": "imgs/EDUXMTFODA2.jpg",
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsHZvfWNxb7-8zwU2FM1W2yhcCQFZIW0jyMEYlQAIddw&s=10",
       "categoria": "Tecnologia",
       "titulo": "Git e GitHub",
       "descricao": "Controle de versão e hospedagem de projetos.",
       "horas": "20 horas",
       "link": "#",
-      "destaque": true
+      "destaque": false
     },
     {
-      "imagem": "imgs/EDUXMTFODA2.jpg",
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRddt0mcECD8f0_Q0YZcVG1CnAJ0yCGtJqPka41C-zkUw&s=10",
       "categoria": "Banco de Dados",
       "titulo": "MySQL Básico",
       "descricao": "Aprenda consultas SQL e modelagem de dados.",
@@ -27,7 +27,7 @@
       "destaque": true
     },
     {
-      "imagem": "imgs/EDUXMTFODA2.jpg",
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRIdxxmWzauPtpcinNPlYu44-rC66Z3hqeV8V9ttRiug&s=10",
       "categoria": "Design",
       "titulo": "UI/UX Design",
       "descricao": "Princípios de design para interfaces intuitivas.",
@@ -36,16 +36,16 @@
       "destaque": false
     },
     {
-      "imagem": "imgs/EDUXMTFODA2.jpg",
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSONu8_rJI4iUcFXJ0Q9xKmwKBuhERjxLjJSDWRBeaepw&s",
       "categoria": "Banco de Dados",
       "titulo": "SEO para Iniciantes",
       "descricao": "Otimize seu site para motores de busca.",
       "horas": "15 horas",
       "link": "#",
-      "destaque": false
+      "destaque": true
     },
     {
-      "imagem": "imgs/EDUXMTFODA2.jpg",
+      "imagem": "https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/a3149881-6517-11ed-aa6e-9587410378a2/voldemort.jpg",
       "categoria": "Banco de Dados",
       "titulo": "Empreendedorismo 101",
       "descricao": "Dicas para iniciar e gerir seu próprio negócio.",
@@ -54,16 +54,16 @@
       "destaque": false
     },
     {
-      "imagem": "imgs/EDUXMTFODA2.jpg",
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW-rHIxbdk-cododIyzpZ-ijzVcljjpryL60c5EmPXzg&s=10",
       "categoria": "Design",
       "titulo": "Fotografia Digital",
       "descricao": "Técnicas para capturar fotos incríveis.",
       "horas": "20 horas",
       "link": "#",
-      "destaque": false
+      "destaque": true
     },
     {
-      "imagem": "imgs/EDUXMTFODA2.jpg",
+      "imagem": "https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/a3149881-6517-11ed-aa6e-9587410378a2/voldemort.jpg",
       "categoria": "Design",
       "titulo": "Meditação para Iniciantes",
       "descricao": "Aprenda a meditar e reduzir o estresse.",
@@ -72,7 +72,7 @@
       "destaque": true
     },
     {
-      "imagem": "imgs/EDUXMTFODA2.jpg",
+      "imagem": "https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/a3149881-6517-11ed-aa6e-9587410378a2/voldemort.jpg",
       "categoria": "Tecnologia",
       "titulo": "Python para Iniciantes",
       "descricao": "Aprenda a programar com Python do zero.",
@@ -81,7 +81,7 @@
       "destaque": false
     },
     {
-      "imagem": "imgs/EDUXMTFODA2.jpg",
+      "imagem": "https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/a3149881-6517-11ed-aa6e-9587410378a2/voldemort.jpg",
       "categoria": "Design",
       "titulo": "Ilustração Digital",
       "descricao": "Crie arte digital usando ferramentas modernas.",
@@ -90,22 +90,22 @@
       "destaque": false
     },
     {
-      "imagem": "imgs/EDUXMTFODA2.jpg",
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo6UJbW9X3Hh7M0QwSVwz41jMi3rjPxgqgt9yp15ujwQ&s",
       "categoria": "Banco de Dados",
       "titulo": "Excel Avançado",
       "descricao": "Domine fórmulas, gráficos e análise de dados.",
       "horas": "25 horas",
       "link": "#",
-      "destaque": false
+      "destaque": true
     },
     {
-      "imagem": "imgs/EDUXMTFODA2.jpg",
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3zi5Goh5sPQ9sKbNak74e5MpEyIhOen7gcfOn_hp37g&s",
       "categoria": "Tecnologia",
       "titulo": "Inteligência Artificial",
       "descricao": "Introdução aos conceitos e aplicações de IA.",
       "horas": "50 horas",
       "link": "#",
-      "destaque": false
+      "destaque": true
     }
   ]
 
