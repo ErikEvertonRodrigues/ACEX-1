@@ -22,7 +22,7 @@
             <nav class="navigation">
                 <ul type="none">
                     <li><a class="nav-link" href="../index.html">Inicio</a></li>
-                    <li><a class="nav-link" href="#">Sobre o Curso</a></li>
+                    <li><a class="nav-link" href="../sobre-curso/sobre-curso.html">Sobre Nós</a></li>
                     <li><a class="nav-link" href="./cursos.html">Minicursos</a></li>
                     <li><a class="nav-link" href="../ebooks/ebooks.html">E-books</a></li>
                     <li><a class="nav-link" href="#">Contato</a></li>
@@ -34,7 +34,7 @@
     <nav class="navigation-mob">
         <ul type="none">
             <li><a class="nav-link" href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
-            <li><a class="nav-link" href="#"><i class="fa-solid fa-circle-question"></i> Sobre o Curso</a></li>
+            <li><a class="nav-link" href="../sobre-curso/sobre-curso.html"><i class="fa-solid fa-circle-question"></i> Sobre Nós</a></li>
             <li><a class="nav-link" href="../pagina cursos/cursos.html"><i class="fa-solid fa-play"></i> Minicursos</a></li>
             <li><a class="nav-link" href="../ebooks/ebooks.html"><i class="fa-solid fa-book"></i> E-books</a></li>
             <li><a class="nav-link" href="#"><i class="fa-solid fa-phone"></i> Contato</a></li>
@@ -56,37 +56,30 @@
 
 <!-- adicao da funcionalidade de filtros para a pagina de cursos jsguys deixei um form ai p facilitar a vida de vcs -->
 
-        <section class="filtros-container">
-    <div class="principio">
-        <h4><strong>EXPLORE O CATÁLOGO</strong></h4>
-        <h1>Encontre seu próximo minicurso</h1>
+        <section class="filtros container">
 
-        <div class="area-busca">
-            <form class="filters__form" action="#" method="get">
-                <input
-                    id="busca"
-                    type="text"
-                    placeholder="Digite o nome do minicurso"
-                />
-                <div class="icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </form>
+            <div class="">
+                
+                <h2 class="titulo_secao">Filtre por área</h2>
+                <form class="filters__form" action="#" method="get">
+                    <div class="field">
+                        <label for="area">Área</label>
+                        <select id="area">
+                           <option value="">Todas</option>
+                           <option value="tecnologia">Tecnologia</option>
+                           <option value="design">Design</option>
+                           <option value="banco de dados">Banco de Dados</option>
+                        </select>
+                    </div>
 
-            <h3>Filtrar por área</h3>
-
-            <button class="btn-filtros" id="todos">Todos</button>
-            <button class="btn-filtros" id="design">Design</button>
-            <button class="btn-filtros" id="banco">Banco de dados</button>
-            <button class="btn-filtros" id="tecnologia">Tecnologia</button>
-            <button class="btn-filtros" id="limpar">Limpar</button>
-
-            <hr>
-
-            <p><span id="contador-cursos">0</span> minicursos encontrados</p>
-        </div>
-    </div>
-</section>
+                    <div class="busca">
+                        <label for="busca">Buscar</label>
+                        <input id="busca" type="text" placeholder="Digite o nome do curso" />
+                    </div>
+                    <button class="btn" type="submit">Aplicar filtros</button>
+                </form>
+            </div>
+         </section>
 
         <section id="cursos" class="catalogo">
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Poppins:wght@500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@500;600;800&display=swap');
 
 :root {
     --fundo-principal: #F4EDDA;
@@ -13,6 +13,13 @@
     --bege-suave: #EFD9B0;
     --produto-profundo: #232220;
     --fundo-conteudo: #FDF8F0;
+    --areia-clara: #FBF7EE;
+    --duna: #FAF3E4;
+    --text: #232220;
+    --bg: #F7F2E8;
+    --accent: #679227;
+    --accent-dark: #4e6e1d;
+    --muted: #7C7875;
     --shadow: 0 2px 16px rgba(0,0,0,0.08);
     --poppins: "Poppins", sans-serif;
     --inter: "Inter", sans-serif;

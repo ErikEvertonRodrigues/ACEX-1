@@ -1,0 +1,364 @@
+@import url('../assets/css/variables.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+/* ── Hero ───────────────────────────────────────────── */
+.sc-hero {
+    background-color: var(--fundo-principal);
+    padding: 60px 0 50px;
+    text-align: center;
+    border-bottom: 1px solid var(--cinza-claro);
+}
+
+.sc-hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-family: var(--poppins);
+    color: var(--produto-profundo);
+    margin: 8px 0 14px;
+}
+
+.sc-hero p {
+    font-size: 1.15rem;
+    color: var(--cinza-texto);
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+/* ── Label reutilizável ─────────────────────────────── */
+.sc-label {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--verde-escuro);
+    margin-bottom: 10px;
+}
+
+/* ── Seção Projeto ACEX I ───────────────────────────── */
+.sc-projeto {
+    background-color: var(--fundo-conteudo);
+    padding: 70px 0;
+}
+
+.sc-projeto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.sc-projeto-texto h2 {
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-family: var(--poppins);
+    color: var(--produto-profundo);
+    margin-bottom: 18px;
+    line-height: 1.2;
+}
+
+.sc-projeto-texto p {
+    font-size: 1rem;
+    color: var(--cinza-texto);
+    line-height: 1.7;
+}
+
+/* Cards AC / AB / ON */
+.sc-projeto-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sc-card {
+    background: #fff;
+    border: 1px solid var(--cinza-claro);
+    border-radius: 14px;
+    padding: 20px 22px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.sc-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.09);
+    transform: translateY(-2px);
+}
+
+.sc-card-icon {
+    min-width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #d6eab0;
+    color: var(--verde-escuro);
+    font-weight: 700;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--poppins);
+}
+
+.sc-card h3 {
+    font-size: 1rem;
+    font-family: var(--poppins);
+    color: var(--produto-profundo);
+    margin-bottom: 4px;
+}
+
+.sc-card p {
+    font-size: 0.9rem;
+    color: var(--cinza-texto);
+    line-height: 1.5;
+}
+
+/* ── Seção Bacharelado ──────────────────────────────── */
+.sc-bacharelado {
+    background-color: var(--fundo-principal);
+    padding: 70px 0;
+    text-align: center;
+}
+
+.sc-bacharelado h2 {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-family: var(--poppins);
+    color: var(--produto-profundo);
+    margin-bottom: 14px;
+}
+
+.sc-bach-desc {
+    font-size: 1.05rem;
+    color: var(--cinza-texto);
+    max-width: 620px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+.sc-bach-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    text-align: left;
+}
+
+.sc-bach-card {
+    background: #fff;
+    border: 1px solid var(--cinza-claro);
+    border-radius: 14px;
+    padding: 24px 20px;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.sc-bach-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.09);
+    transform: translateY(-3px);
+}
+
+.sc-bach-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: #d6eab0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+
+.sc-bach-icon i {
+    font-size: 1.3rem;
+    color: var(--verde-escuro);
+}
+
+.sc-bach-card h3 {
+    font-size: 1rem;
+    font-family: var(--poppins);
+    color: var(--produto-profundo);
+    margin-bottom: 8px;
+}
+
+.sc-bach-card p {
+    font-size: 0.9rem;
+    color: var(--cinza-texto);
+    line-height: 1.55;
+}
+
+/* ── Seção O que oferecemos ─────────────────────────── */
+.sc-conteudo {
+    background-color: var(--fundo-conteudo);
+    padding: 70px 0;
+    text-align: center;
+}
+
+.sc-conteudo h2 {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-family: var(--poppins);
+    color: var(--produto-profundo);
+    margin-bottom: 14px;
+}
+
+.sc-oferta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.sc-oferta-item {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    background: #fff;
+    border: 1px solid var(--cinza-claro);
+    border-radius: 14px;
+    padding: 22px 20px;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.sc-oferta-item:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.09);
+    transform: translateY(-2px);
+}
+
+.sc-oferta-item > i {
+    font-size: 1.6rem;
+    color: var(--verde-escuro);
+    margin-top: 2px;
+    min-width: 26px;
+}
+
+.sc-oferta-item h3 {
+    font-size: 1rem;
+    font-family: var(--poppins);
+    color: var(--produto-profundo);
+    margin-bottom: 6px;
+}
+
+.sc-oferta-item p {
+    font-size: 0.9rem;
+    color: var(--cinza-texto);
+    line-height: 1.5;
+}
+
+/* ── CTA ────────────────────────────────────────────── */
+.sc-cta {
+    background-color: var(--verde-escuro);
+    padding: 70px 0;
+    text-align: center;
+}
+
+.sc-cta h2 {
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-family: var(--poppins);
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.sc-cta p {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 480px;
+    margin: 0 auto 36px;
+    line-height: 1.6;
+}
+
+.sc-cta-botoes {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sc-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 10px 24px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-family: var(--poppins);
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.sc-cta-btn.primario {
+    background-color: #fff;
+    color: var(--verde-escuro);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+}
+
+.sc-cta-btn.primario:hover {
+    background-color: var(--fundo-principal);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+}
+
+.sc-cta-btn.secundario {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.sc-cta-btn.secundario:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-color: #fff;
+    transform: translateY(-2px);
+}
+
+/* ── Responsividade ─────────────────────────────────── */
+@media (max-width: 900px) {
+    .sc-projeto-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sc-hero {
+        padding: 40px 20px 36px;
+    }
+
+    .sc-projeto,
+    .sc-bacharelado,
+    .sc-conteudo {
+        padding: 50px 20px;
+    }
+
+    .sc-cta {
+        padding: 50px 20px;
+    }
+
+    .sc-bach-cards,
+    .sc-oferta-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .sc-card {
+        flex-direction: column;
+    }
+
+    .sc-cta-botoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sc-cta .btn-inicio {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+}

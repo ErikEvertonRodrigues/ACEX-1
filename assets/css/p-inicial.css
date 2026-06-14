@@ -177,24 +177,127 @@ body {
 }
 
 /* Terceira section */
- 
+
 .sobre-curso {
     background-color: var(--areia-clara);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 5%;
-    gap: 30px;
+    padding: 60px 0;
 }
 
-.sobre-curso h1 {
+/* Grid: texto esquerda | cards direita */
+.sc-index-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.sc-index-label {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     color: var(--verde-escuro);
+    margin-bottom: 10px;
+}
+
+.sc-index-texto h2 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-family: var(--poppins);
+    font-weight: 600;
+    color: var(--produto-profundo);
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.sc-index-texto p {
+    font-size: 0.97rem;
+    color: var(--cinza-texto);
+    line-height: 1.7;
+    text-align: left;
+}
+
+.sc-index-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 20px;
+    color: var(--verde-escuro);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: gap 0.2s;
+}
+
+.sc-index-link:hover {
+    gap: 10px;
+}
+
+/* Cards AC / AB / ON — layout vertical lado a lado */
+.sc-index-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.sc-index-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px 18px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.sc-index-card:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+}
+
+.sc-index-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #d6eab0;
+    color: var(--verde-escuro);
+    font-weight: 700;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: var(--poppins);
 }
 
-.sobre-curso p {
-    font-size: 22px;
-    text-align: center;
+.sc-index-card-body h3 {
+    font-size: 0.95rem;
+    font-family: var(--poppins);
+    font-weight: 600;
+    color: var(--produto-profundo);
+    margin-bottom: 6px;
+}
+
+.sc-index-card-body p {
+    font-size: 0.85rem;
+    color: var(--cinza-texto);
+    line-height: 1.55;
+    text-align: left;
+}
+
+@media (max-width: 900px) {
+    .sc-index-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sobre-curso {
+        padding: 44px 0;
+    }
 }
 
 .info {

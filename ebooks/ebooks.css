@@ -102,6 +102,7 @@ main {
 .filtros-container .btn-filtros {
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 100px;
     height: 50px;
     border-radius: 20px;
     border: none;
@@ -111,11 +112,6 @@ main {
     margin-right: 10px;
     padding: 10px;
     transition: 200ms ease-in-out;
-}
-
-.btn-filtros.ativo {
-    background-color: var(--verde-hover);
-    color: white;
 }
 
 .filtros-container #limpar {
@@ -171,6 +167,7 @@ main {
     height: 100%;
     outline: none;
     width: 95%;
+    height: ;
     border: none;
 }
 
@@ -304,12 +301,26 @@ main {
         padding: 10px;
     }
 
+    .filtros-container {
+
+    }
+
     .filtros-container h1 {
         font-size: 30px;
     }
 
+    .filtros-container .principio h4{
+        
+    }
+
     .filtros-container .btn-filtros {
         width: 100px;
+    }
+
+    .filtros-container p {
+    }
+
+    .filtros-container .principio {
     }
 
     .filtros-container .area-busca {

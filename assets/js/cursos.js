@@ -1,142 +1,60 @@
 let cursos = [];
-let categoriasSelecionadas = [];
 
-const inputBusca = document.querySelector('#busca');
-const contadorCursos = document.querySelector('#contador-cursos');
-const btnCarregarMais = document.querySelector('.carregar_mais');
-
-const btnTodos = document.querySelector('#todos');
-const btnDesign = document.querySelector('#design');
-const btnBanco = document.querySelector('#banco');
-const btnTecnologia = document.querySelector('#tecnologia');
-const btnLimpar = document.querySelector('#limpar');
-
-const botoesFiltro = document.querySelectorAll('.btn-filtros');
-
-async function carregarCursos() {
+async function carregarCursos(){
     try {
         const resposta = await fetch('../assets/js/data/cursos.json');
         cursos = await resposta.json();
-
         gerarCursos(cursos.slice(0, 8));
-        atualizarContador(cursos.length);
-
-    } catch (erro) {
+    }catch(erro) {
         console.log("Erro ao carregar o JSON:", erro);
     }
 }
 
 carregarCursos();
 
-function atualizarContador(qtd) {
-    contadorCursos.textContent = qtd;
-}
+const filterForm = document.querySelector('.filters__form');
+const inputBusca = document.querySelector('#busca');
+const inputArea = document.querySelector('#area');
 
 function aplicarFiltros() {
-
+    
     const termoBuscado = inputBusca.value.toLowerCase().trim();
+    const areaEscolhida = inputArea.value.toLowerCase(); 
 
     const cursosFiltrados = cursos.filter(curso => {
 
-        const titulo = (curso.titulo || "").toLowerCase();
-        const categoria = (curso.categoria || "").toLowerCase();
+        const categoriaCurso = (curso.categoria || "").toLowerCase();
+        const tituloCurso = (curso.titulo || "").toLowerCase();
 
-        const tituloOk = titulo.includes(termoBuscado);
+        const tituloOk = tituloCurso.includes(termoBuscado);
+        const areaOk = areaEscolhida === "" || categoriaCurso.includes(areaEscolhida);
 
-        const categoriaOk =
-            categoriasSelecionadas.length === 0 ||
-            categoriasSelecionadas.some(cat =>
-                categoria.includes(cat)
-            );
+        console.log(tituloOk && areaOk);
 
-        return tituloOk && categoriaOk;
+        return tituloOk && areaOk;
     });
 
     gerarCursos(cursosFiltrados);
-    atualizarContador(cursosFiltrados.length);
 
     btnCarregarMais.style.display = 'none';
 }
 
-function alternarFiltro(botao, categoria) {
+inputBusca.addEventListener('input', aplicarFiltros); 
+inputArea.addEventListener('change', aplicarFiltros); 
 
-    if (categoriasSelecionadas.includes(categoria)) {
-
-        categoriasSelecionadas =
-            categoriasSelecionadas.filter(cat => cat !== categoria);
-
-        botao.classList.remove('ativo');
-
-    } else {
-
-        categoriasSelecionadas.push(categoria);
-
-        botao.classList.add('ativo');
-    }
-
-    aplicarFiltros();
-}
-
-inputBusca.addEventListener('input', aplicarFiltros);
-
-btnDesign.addEventListener('click', () => {
-    alternarFiltro(btnDesign, 'design');
+filterForm.addEventListener('submit', (event) => {
+    event.preventDefault();
 });
 
-btnBanco.addEventListener('click', () => {
-    alternarFiltro(btnBanco, 'banco');
-});
-
-btnTecnologia.addEventListener('click', () => {
-    alternarFiltro(btnTecnologia, 'tecnologia');
-});
-
-btnTodos.addEventListener('click', () => {
-
-    categoriasSelecionadas = [];
-
-    botoesFiltro.forEach(btn => {
-        if (btn.id !== 'todos' && btn.id !== 'limpar') {
-            btn.classList.remove('ativo');
-        }
-    });
-
-    gerarCursos(cursos);
-    atualizarContador(cursos.length);
-
-    btnCarregarMais.style.display = 'none';
-});
-
-btnLimpar.addEventListener('click', () => {
-
-    categoriasSelecionadas = [];
-    inputBusca.value = '';
-
-    botoesFiltro.forEach(btn =>
-        btn.classList.remove('ativo')
-    );
-
-    gerarCursos(cursos.slice(0, 8));
-    atualizarContador(cursos.length);
-
-    btnCarregarMais.style.display = 'block';
-});
-
-function gerarCard(curso) {
-
-    const tagColor = curso.categoria
-        .toLowerCase()
-        .replace(/\s+/g, '-');
+function gerarCard(curso){
+    const tagColor = curso.categoria.toLowerCase().replace(/\s+/g, '-');
 
     return `
         <a href="curso_in.html?curso=${curso.link}" class="course-card">
             <article class="card_curso">
                 <div class="dados">
-                    <span class="tag ${tagColor}">
-                        ${curso.categoria}
-                    </span>
+                    <span class="tag ${tagColor}">${curso.categoria}</span>
                 </div>
-
                 <div class="card__body">
                     <h3>${curso.titulo}</h3>
                     <p>${curso.descricao}</p>
@@ -144,23 +62,23 @@ function gerarCard(curso) {
                 </div>
             </article>
         </a>
-    `;
+    `
 }
 
-function gerarCursos(listaCursos) {
-
+function gerarCursos(listCursos){
     const mainCards = document.querySelector('#cards_cursos');
+    const dtqCards = document.querySelector('#cards_cursos_destaques');
 
-    mainCards.innerHTML = listaCursos
-        .map(curso => gerarCard(curso))
-        .join('');
+    const htmlMainCards = listCursos.map(curso => gerarCard(curso)).join('');
+    mainCards.innerHTML = htmlMainCards;
+
+    const htmlDtqCards = cursos.filter(curso => curso.destaque === true).map(curso => gerarCard(curso)).join('');
+    dtqCards.innerHTML = htmlDtqCards;
 }
+
+const btnCarregarMais = document.querySelector('.carregar_mais');
 
 btnCarregarMais.addEventListener('click', () => {
-
     gerarCursos(cursos);
-
-    atualizarContador(cursos.length);
-
     btnCarregarMais.style.display = 'none';
-});
+})
