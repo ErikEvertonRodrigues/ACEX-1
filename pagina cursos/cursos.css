@@ -172,24 +172,25 @@ main {
 
 .cards_cursos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 345px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: stretch;
     gap: 20px;
     
 }
 
 .course-card {
-  background: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: var(--shadow);
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  color: #000;
-  text-decoration: none;
+    max-width: 345px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #000;
+    text-decoration: none;
 }
 
 .course-card:hover {
