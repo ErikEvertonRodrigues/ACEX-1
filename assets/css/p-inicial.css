@@ -42,7 +42,8 @@ body {
 }
 
 .inicio h1 {
-    font-size: 4rem;
+    font-size: 6rem;
+    line-height: 6rem;
     font-family: var(--poppins);
     font-weight: 600;
 }
@@ -94,7 +95,7 @@ body {
     font-size: 1.5rem;
     padding: 10px;
     border-radius: 4px;
-    background-color: #fff;
+    color: var(--verde-escuro);
 }
 
 .inicio .hero-icons > div p {
@@ -298,8 +299,6 @@ body {
     gap: 12px;
 }
 
-
-
 .dados form button {
     height: 58px;
     padding: 0 30px;
@@ -325,6 +324,11 @@ body {
     .inicial > div {
         width: 100%;
         padding: 0 20px;
+    }
+
+    .inicio h1 {
+        font-size: 5rem;
+        line-height: 5rem;
     }
 
     .destaques > div {
@@ -360,10 +364,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .inicio h1 {
-        font-size: 3rem;
-    }
-
     .hero-container .card {
         display: none;
     }
@@ -388,6 +388,11 @@ body {
 }
 
 @media screen and (max-width: 578px) {
+    .inicio h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
     .img-container {
         flex: 0 0 100%;
     }
@@ -395,7 +400,8 @@ body {
 
 @media screen and (max-width: 420px) {
     .inicio h1 {
-        font-size: 2rem;
+        font-size: 3rem;
+        line-height: 3rem;
     }
 }
 
