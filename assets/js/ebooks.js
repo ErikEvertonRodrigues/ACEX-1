@@ -1,84 +1,206 @@
 let ebooks = [];
+let quantidadeExibida = 8;
 
-async function carregarEbooks(){
+const filtrosSelecionados = new Set();
+
+const filterForm = document.querySelector('.filters__form');
+const inputBusca = document.querySelector('#busca');
+
+const btnTodos = document.querySelector('#todos');
+const btnLimpar = document.querySelector('#limpar');
+const btnCarregarMais = document.querySelector('.carregar_mais');
+
+const contadorEbooks = document.querySelector('#contador-ebooks');
+
+async function carregarEbooks() {
     try {
         const resposta = await fetch('../assets/js/data/ebooks.json');
         ebooks = await resposta.json();
-        gerarEbooks(ebooks.slice(0, 6));
-    }catch(erro) {
-        console.log("Erro ao carregar o JSON:", erro);
+
+        gerarEbooks(ebooks.slice(0, quantidadeExibida));
+        atualizarContador(ebooks.length);
+        atualizarBotaoCarregarMais();
+
+    } catch (erro) {
+        console.log('Erro ao carregar o JSON:', erro);
     }
+}
+
+function atualizarContador(quantidade) {
+    contadorEbooks.textContent = quantidade;
 }
 
 carregarEbooks();
 
-const filterForm = document.querySelector('.filters__form');
-const inputBusca = document.querySelector('#busca');
-//const inputArea = document.querySelector('#area');
+function atualizarBotaoCarregarMais() {
+    const buscaAtiva = inputBusca.value.trim() !== '';
+    const filtrosAtivos = filtrosSelecionados.size > 0;
+
+    if (buscaAtiva || filtrosAtivos) {
+        btnCarregarMais.style.display = 'none';
+        return;
+    }
+
+    btnCarregarMais.style.display =
+        quantidadeExibida >= ebooks.length
+            ? 'none'
+            : 'block';
+}
 
 function aplicarFiltros() {
-    
+
     const termoBuscado = inputBusca.value.toLowerCase().trim();
-    //const areaEscolhida = inputArea.value.toLowerCase(); 
 
     const ebooksFiltrados = ebooks.filter(ebook => {
 
-        const categoriaEbook = (ebook.categoria || "").toLowerCase();
-        const tituloEbook = (ebook.titulo || "").toLowerCase();
+        const tituloOk = (ebook.titulo || '')
+            .toLowerCase()
+            .includes(termoBuscado);
 
-        console.log(`categoria: ${categoriaEbook}`);
-        //console.log(`area: ${areaEscolhida}`);
+        const categoriaOk =
+            filtrosSelecionados.size === 0 ||
+            filtrosSelecionados.has(
+                (ebook.categoria || '').toLowerCase()
+            );
 
-        const tituloOk = tituloEbook.includes(termoBuscado);
-        //const areaOk = areaEscolhida === "" || categoriaEbook.includes(areaEscolhida);
-
-        console.log(tituloOk);
-
-        return tituloOk;
+        return tituloOk && categoriaOk;
     });
 
     gerarEbooks(ebooksFiltrados);
+    atualizarContador(ebooksFiltrados.length);
 
     btnCarregarMais.style.display = 'none';
 }
 
-inputBusca.addEventListener('input', aplicarFiltros); 
-//inputArea.addEventListener('change', aplicarFiltros); 
+inputBusca.addEventListener('input', aplicarFiltros);
 
 filterForm.addEventListener('submit', (event) => {
     event.preventDefault();
 });
 
-function gerarCard(ebook){
-    const tagColor = ebook.categoria.toLowerCase().replace(/\s+/g, '-');
+function gerarCard(ebook) {
+
+    const tagColor = ebook.categoria
+        .toLowerCase()
+        .replace(/\s+/g, '-');
+
     return `
         <div class="card">
-            <span class="tag ${tagColor}">${ebook.categoria}</span>
-            <img class="card-image" src=${ebook.imagem} alt="">
+            <span class="tag ${tagColor}">
+                ${ebook.categoria}
+            </span>
+
+            <img
+                class="card-image"
+                src="${ebook.imagem}"
+                alt="${ebook.titulo}"
+            >
+
             <div class="card-info">
                 <h2>${ebook.titulo.substring(0, 25)}</h2>
+
                 <p>${ebook.autor}</p>
-                <p><i class="fa-regular fa-file-lines"></i> ${ebook.paginas} páginas</p>
-                <a class="download" href=""><i class="fa-solid fa-download"></i> Baixar PDF</a>
+
+                <p>
+                    <i class="fa-regular fa-file-lines"></i>
+                    ${ebook.paginas} páginas
+                </p>
+
+                <a class="download" href="">
+                    <i class="fa-solid fa-download"></i>
+                    Baixar PDF
+                </a>
             </div>
         </div>
-    `
+    `;
 }
 
-function gerarEbooks(listEbooks){
+function gerarEbooks(lista) {
+
     const mainCards = document.querySelector('.content');
-    const dtqCards = document.querySelector('#cards_ebooks_destaques');
 
-    const htmlMainCards = listEbooks.map(ebook => gerarCard(ebook)).join('');
+    if (!mainCards) return;
+
+    const htmlMainCards = lista
+        .map(ebook => gerarCard(ebook))
+        .join('');
+
     mainCards.innerHTML = htmlMainCards;
-
-    const htmlDtqCards = listEbooks.filter(ebook => ebook.destaque === true).map(ebook => gerarCard(ebook)).join('');
-    dtqCards.innerHTML = htmlDtqCards;
 }
 
-const btnCarregarMais = document.querySelector('.carregar_mais');
+const botoesFiltro = document.querySelectorAll('.btn-filtros');
+
+botoesFiltro.forEach(botao => {
+
+    botao.addEventListener('click', () => {
+
+        const categoria = botao.textContent
+            .trim()
+            .toLowerCase();
+
+        if (categoria === 'todos' || categoria === 'limpar') {
+            return;
+        }
+
+        if (filtrosSelecionados.has(categoria)) {
+
+            filtrosSelecionados.delete(categoria);
+            botao.classList.remove('ativo');
+
+        } else {
+
+            filtrosSelecionados.add(categoria);
+            botao.classList.add('ativo');
+        }
+
+        aplicarFiltros();
+
+    });
+
+});
+
+btnTodos.addEventListener('click', () => {
+
+    filtrosSelecionados.clear();
+
+    botoesFiltro.forEach(botao => {
+        botao.classList.remove('ativo');
+    });
+
+    inputBusca.value = '';
+    quantidadeExibida = 8;
+
+    gerarEbooks(ebooks.slice(0, quantidadeExibida));
+    atualizarContador(ebooks.length);
+    atualizarBotaoCarregarMais();
+
+});
+
+btnLimpar.addEventListener('click', () => {
+
+    filtrosSelecionados.clear();
+
+    botoesFiltro.forEach(botao => {
+        botao.classList.remove('ativo');
+    });
+
+    inputBusca.value = '';
+    quantidadeExibida = 8;
+
+    gerarEbooks(ebooks.slice(0, quantidadeExibida));
+    atualizarContador(ebooks.length);
+    atualizarBotaoCarregarMais();
+
+});
 
 btnCarregarMais.addEventListener('click', () => {
-    gerarEbooks(ebooks);
-    btnCarregarMais.style.display = 'none';
+
+    quantidadeExibida += 8;
+
+    gerarEbooks(
+        ebooks.slice(0, quantidadeExibida)
+    );
+    atualizarContador(ebooks.length);
+    atualizarBotaoCarregarMais();
+
 });
