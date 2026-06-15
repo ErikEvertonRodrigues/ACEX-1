@@ -10,8 +10,6 @@ async function carregarCursos() {
         const cursos = await resposta.json();
         
         gerarCarrosselCursos(cursos);
-        
-        // Inicia o movimento passando a pista, a classe do card e o estado dele
         setInterval(() => moverCarrossel(pistaCursos, '.img-container', estadoCursos), 3000);
     } catch(erro) {
         console.log("Erro ao carregar o JSON de cursos:", erro);
