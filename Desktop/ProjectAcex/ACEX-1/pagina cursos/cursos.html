@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFBA Paulo Afonso | Minicursos</title>
+    <script src="https://kit.fontawesome.com/898f59f198.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="cursos.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container"><a href="../index.html"><img class="logo" src="../assets/imgs/cacto_e_nome_pretooo.svg" alt=""></a></div>
+
+            <ul class="hamburguer-container hide" type="none">
+                <li class="hamburguer"></li>
+                <li class="hamburguer"></li>
+                <li class="hamburguer"></li>
+            </ul>
+
+            <nav class="navigation">
+                <ul type="none">
+                    <li><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li><a class="nav-link" href="#">Sobre o Curso</a></li>
+                    <li><a class="nav-link" href="./cursos.html">Minicursos</a></li>
+                    <li><a class="nav-link" href="../ebooks/ebooks.html">E-books</a></li>
+                    <li><a class="nav-link" href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="navigation-mob">
+        <ul type="none">
+            <li><a class="nav-link" href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li><a class="nav-link" href="#"><i class="fa-solid fa-circle-question"></i> Sobre o Curso</a></li>
+            <li><a class="nav-link" href="../pagina cursos/cursos.html"><i class="fa-solid fa-play"></i> Minicursos</a></li>
+            <li><a class="nav-link" href="../ebooks/ebooks.html"><i class="fa-solid fa-book"></i> E-books</a></li>
+            <li><a class="nav-link" href="#"><i class="fa-solid fa-phone"></i> Contato</a></li>
+        </ul>
+    </nav>
+
+
+    <main id="topo">
+        <section class="hero">
+            <div class="container_hero">
+                <p class="titulohero">Mandacaru Tech - Extensão</p>
+                <h1 id="titulohero2">Minicursos Disponíveis</h1>
+                <p class="herosubtitulo">
+                    Expanda seus conhecimentos com nossos <strong>minicursos</strong> gratuítos.
+                    Aprenda no seu ritmo com conteúdo de qualidade.
+                </p>
+            </div>
+        </section>
+
+<!-- adicao da funcionalidade de filtros para a pagina de cursos jsguys deixei um form ai p facilitar a vida de vcs -->
+
+        <section class="filtros container">
+
+            <div class="">
+                
+                <h2 class="titulo_secao">Filtre por área</h2>
+                <form class="filters__form" action="#" method="get">
+                    <div class="field">
+                        <label for="area">Área</label>
+                        <select id="area">
+                           <option value="">Todas</option>
+                           <option value="tecnologia">Tecnologia</option>
+                           <option value="design">Design</option>
+                           <option value="banco de dados">Banco de Dados</option>
+                        </select>
+                    </div>
+
+                    <div class="busca">
+                        <label for="busca">Buscar</label>
+                        <input id="busca" type="text" placeholder="Digite o nome do curso" />
+                    </div>
+                    <button class="btn" type="submit">Aplicar filtros</button>
+                </form>
+            </div>
+         </section>
+
+        <section id="cursos" class="catalogo">
+
+            <div class="container">
+                <!-- Cards dos cursos geral -->
+                <div class="cards_cursos" id="cards_cursos"></div>
+                
+                
+                <div class="carregar_mais">
+                    <button class="btn" type="button">Carregar mais</button>
+                </div>
+            </div>
+        </section>  
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col footer-logo">
+                <img class="logo" src="../assets/imgs/somente_nome_claro.svg" alt="">
+            </div>
+            <div class="footer-col footer-logo">
+                <img class="logo" src="../assets/imgs/logo-ifba.png" alt="">
+            </div>
+            <div class="footer-col">
+                <h3>Redes Sociais</h3>
+                <p>Siga-nos nas redes sociais e fique por dentro das novidades</p>
+
+                <div class="redes">
+                    <a href="https://www.instagram.com/mandacarutech_ext/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a>
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-desc">
+            <p>&copy; 2026 IFBA - Instituto Federal da Bahia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="../assets/js/cursos.js"></script>
+    <script src="../assets/js/script.js"></script>
+    </body>
+</html>

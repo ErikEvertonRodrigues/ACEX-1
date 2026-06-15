@@ -1,0 +1,132 @@
+@import url('../assets/css/variables.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: var(--fundo-conteudo);
+    padding-top: 30px;
+}
+
+.hero {
+    text-align: center;
+}
+
+.btn {
+    background-color: var(--verde-escuro);
+}
+
+.btn:hover {
+    background-color: var(--verde-hover);
+}
+
+.container_hero {
+    padding: 18px 10px 26px;
+}
+
+.titulohero {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--muted);
+    margin-bottom: 6px;
+}
+
+.hero h1 {
+    font-size: clamp(30px, 3%, 44px);
+    font-family: var(--poppins);
+}
+
+.herosubtitulo {
+    max-width: 620px;
+    margin: 0 auto 18px;
+}
+
+#cursos {
+    padding-top: 20px;
+}
+
+.cards_cursos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: stretch;
+    gap: 20px;
+}
+
+.course-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #000;
+  text-decoration: none;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.13);
+}
+
+.card_curso .dados {
+    position: relative;
+    background-color: cadetblue;
+    min-height: 180px;
+}
+
+.card_curso .tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    border-radius: 7px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.card_curso .card__body {
+    padding: 5px 20px 20px 20px;
+}
+
+.card_curso .card__body h3 {
+    min-height: 40px;
+    font-family: var(--poppins);
+}
+
+.card_curso .card__body p, .card_curso .card__body span {
+    color: var(--cinza-texto);
+}
+
+.card_curso .card__body p {
+    min-height: 48px;
+}
+
+.card_curso .card__body span {
+    display: inline-block;
+    font-weight: 600;
+}
+
+.carregar_mais {
+    padding: 20px 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    #cursos {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #cursos {
+        padding: 0 5px;
+    }
+}

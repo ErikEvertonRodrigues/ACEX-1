@@ -1,0 +1,430 @@
+@import url('variables.css');
+
+/* Parte inicial, resets e etc.*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--text);
+    min-height: 100vh;
+}
+
+/* Primeira section */
+.inicial {
+    background-color: var(--fundo-principal);
+    height: 80vh;
+}
+
+.inicial > .hero-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 5%;
+}
+
+.hero-container > div {
+    width: 50%;
+}
+
+.hero-container div img {
+    width: 100%;
+    aspect-ratio: 207/197;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    gap: 30px;
+}
+
+.inicio h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+    font-family: var(--poppins);
+    font-weight: 600;
+}
+
+.inicio p {
+    font-size: 1.2rem;
+    color: var(--cinza-texto);
+}
+
+.btn-inicio {
+    background-color: transparent;
+    width: 180px;
+    height: 58px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 2px solid var(--verde-escuro);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--verde-escuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.btn-inicio:hover{
+    background-color: var(--verde-hover);
+    color: #fff;
+    transition-duration: 0.3s;
+}
+ 
+.inicio .hero-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+}
+
+.inicio .hero-icons > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+}
+
+.inicio .hero-icons > div i {
+    border: 2px solid var(--cinza-claro);
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 4px;
+    color: var(--verde-escuro);
+}
+
+.inicio .hero-icons > div p {
+    color: var(--cinza-texto);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Segunda section */
+
+.destaques {
+    padding-top: 30px;
+}
+
+.destaques > .container > h2 {
+    font-size: 2rem;
+    font-family: var(--poppins);
+}
+
+.destaques > div {
+    overflow: hidden;
+}
+
+.carrossel {
+    position: relative;
+    display: flex;
+    gap: 10px;  
+    
+}
+
+.img-container {
+    position: relative;
+    padding: 0;
+    flex: 0 0 calc((100% - 30px) / 4);
+    cursor: pointer;
+}
+
+.img-container:hover {
+    scale: 1.02;
+}
+
+.img-container img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.img-container .tag {
+    padding: 2px 4px;   
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    position: absolute;
+}
+
+.img-container .tag {
+    top: 5px;
+    right: 5px;
+}
+
+.img-container .horas {
+    background-color: rgb(17, 127, 200);
+    top: 5px;
+    left: 5px;
+}
+
+.img-container .title {
+    position: absolute;
+    color: #fff;
+    bottom: 4px;
+    left: 0px;
+    font-size: 1.2rem;
+    background-color: #00000088;
+    width: 100%;
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Terceira section */
+ 
+.sobre-curso {
+    background-color: var(--areia-clara);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+    gap: 30px;
+}
+
+.sobre-curso h1 {
+    color: var(--verde-escuro);
+    font-family: var(--poppins);
+}
+
+.sobre-curso p {
+    font-size: 22px;
+    text-align: center;
+}
+
+.info {
+    background-color: var(--duna);
+    border: 1px rgb(211, 211, 211) solid;
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    height: auto;
+    transition: 0.2s;
+}
+
+.info:hover {
+    border-color: #a32638;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.img-info {
+    width: 50px;
+    height: 50px;
+}
+
+.cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.egresso {
+    background-color: var(--duna);
+    border: 1px rgb(211, 211, 211) solid;
+    border-radius: 8px;
+    padding: 30px;
+    width:76%;
+    height: 250px;
+}
+.egresso li{
+    margin: 5px;
+}
+
+/* Quarta section */
+
+.contato {
+    background-color: #f7f1e5;
+    padding: 40px 0;
+    margin-left: -30px;
+    margin-right: -30px;
+
+}
+
+.contato .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.grupo-inputs {
+    display: flex;
+    flex: 1;
+    border: 1px solid #d8c7a6;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.grupo-inputs input {
+    flex: 1;
+    height: 56px;
+    border: none;
+    outline: none;
+    padding: 0 16px;
+    border-radius: 0;
+}
+
+.grupo-inputs input:first-child {
+    border-right: 1px solid #d8c7a6;
+}
+
+.texto {
+    flex: 1;
+}
+
+.texto h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.texto p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.dados {
+    flex: 1.5;
+}
+
+.dados form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.dados form button {
+    height: 58px;
+    padding: 0 30px;
+    border: none;
+    border-radius: 10px;
+    background: var(--verde-escuro);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: .3s;
+}
+
+.dados form button:hover {
+    background: var(--verde-hover);
+    transform: translateY(-2px);
+}
+
+/* Parte da responsividade */
+
+@media screen and (max-width: 1000px) {
+    .inicial > div {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .inicio h1 {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
+    .destaques > div {
+        padding: 0 20px;
+    }
+
+    .img-container {
+        flex: 0 0 calc((100% - 10px) / 2);
+    }
+    
+    .contato > div {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 898px){
+    /* primeira section */
+    
+    /* Segunda section */
+
+    .info, .egresso {
+        min-height: 250px;
+        height: auto;
+        width: 100%;
+    }
+    .info:hover {
+        transform: scale(1.02);
+    }
+    .egresso p{
+        text-align: start;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-container .card {
+        display: none;
+    }
+
+    .hero-container > div {
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .contato > div {
+        flex-wrap: wrap;
+    }
+
+    .contato p {
+        text-align: left;
+    }
+
+    .contato div {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 578px) {
+    .inicio h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    .img-container {
+        flex: 0 0 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .inicio h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .contato .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dados {
+        width: 100%;
+    }
+
+    .dados form {
+        flex-direction: column;
+    }
+
+    .dados form input,
+    .dados form button {
+        width: 100%;
+    }
+    
+}
