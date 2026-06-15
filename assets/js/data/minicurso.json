@@ -2,21 +2,41 @@
   "python": {
     "nomeCurso": "Introducao a Programacao Python",
     "aulas": [
-      {
-        "id": 1,
-        "titulo": "Introducao ao Python",
-        "tempo": "Duracao: 15:30",
-        "descricao": "Nesta aula voce aprendera os conceitos fundamentais e praticos necessarios para dominar este topico. Assista com atencao e pratique os exercicios propostos.",
-        "videoUrl": "https://www.youtube.com/embed/9JNqj8ARj_4?si=BOoSBQOw4t7umQfW",
-         "conteudo": "<h2>Introdução</h2><p>Git é um sistema de controle de versão...</p><ul><li>Controle de versões</li><li>Branches</li></ul>"
-      },
+{
+  "id": 1,
+  "titulo": "Introducao ao Python",
+  "tempo": "Duracao: 15:30",
+  "descricao": "Nesta aula voce aprendera os conceitos fundamentais e praticos necessarios para dominar este topico. Assista com atencao e pratique os exercicios propostos.",
+  "videoUrl": "https://www.youtube.com/embed/9JNqj8ARj_4?si=BOoSBQOw4t7umQfW",
+  "conteudo": "<h2>Introdução</h2><p>Git é um sistema de controle de versão...</p><ul><li>Controle de versões</li><li>Branches</li></ul>",
+  "materiais": [
+    {
+      "nome": "Apostila PDF",
+      "link": "https://www.google.com"
+    },
+    {
+      "nome": "Documentação Python",
+      "link": "https://docs.python.org/pt-br/3/"
+    }
+  ]
+},
       {
         "id": 2,
         "titulo": "Variaveis e Tipos de Dados",
         "tempo": "Duracao: 22:10",
         "descricao": "Entenda como o Python armazena informações na memória. Vamos aprender sobre Strings, Inteiros, Floats e Booleanos na prática.",
         "videoUrl": "https://www.youtube.com/embed/9JNqj8ARj_4?si=BOoSBQOw4t7umQfW",
-         "conteudo": "<h2>Introdução</h2><p>Git é um sistema de controle de versão...</p><ul><li>Controle de versões</li><li>Branches</li></ul>"
+         "conteudo": "<h2>Introdução</h2><p>Git é um sistema de controle de versão...</p><ul><li>Controle de versões</li><li>Branches</li></ul>",
+         "materiais": [
+  {
+    "nome": "Material 1",
+    "link": "https://..."
+  },
+  {
+    "nome": "Material 2",
+    "link": "https://..."
+  }
+]
       },
       {
         "id": 3,

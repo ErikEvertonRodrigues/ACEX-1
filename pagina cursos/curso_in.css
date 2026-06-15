@@ -155,3 +155,60 @@ body {
         left: 0;
     }
 }
+.curso-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+}
+
+.contato {
+    grid-column: 1 / -1;
+}
+
+.tabs {
+    display: flex;
+    gap: 40px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 15px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #666;
+}
+
+.tab-btn.active {
+    color: #5d9b24;
+    border-bottom: 3px solid #5d9b24;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.lista-materiais {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-materiais li {
+    margin: 15px 0;
+}
+
+.lista-materiais a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: 500;
+}
+
+.lista-materiais a:hover {
+    text-decoration: underline;
+}
