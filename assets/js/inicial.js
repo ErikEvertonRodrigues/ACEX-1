@@ -1,24 +1,38 @@
-const pistaCarrossel = document.querySelector('.carrossel');
-let indiceAtual = 0; 
+const pistaCursos = document.querySelector('#carrossel-cursos');
+const pistaEbooks = document.querySelector('#carrossel-ebooks');
+
+const estadoCursos = { indice: 0 };
+const estadoEbooks = { indice: 0 };
 
 async function carregarCursos() {
     try {
         const resposta = await fetch('./assets/js/data/cursos.json'); 
         const cursos = await resposta.json();
         
-        gerarCarrossel(cursos);
+        gerarCarrosselCursos(cursos);
         
-        // 2. SÓ DEPOIS inicia o movimento automático
-        iniciarCarrosselAutomatico(); 
+        // Inicia o movimento passando a pista, a classe do card e o estado dele
+        setInterval(() => moverCarrossel(pistaCursos, '.img-container', estadoCursos), 3000);
     } catch(erro) {
         console.log("Erro ao carregar o JSON de cursos:", erro);
     }
 }
 
+async function carregarEbooks() {
+    try {
+        const resposta = await fetch('./assets/js/data/ebooks.json'); 
+        const ebooks = await resposta.json();
+        
+        gerarCarrosselEbooks(ebooks);
+        
+        setInterval(() => moverCarrossel(pistaEbooks, '.ebook-card', estadoEbooks), 3500); 
+    } catch(erro) {
+        console.log("Erro ao carregar o JSON de e-books:", erro);
+    }
+}
+
 function gerarCardCurso(curso) {
-
     const tagColor = curso.categoria.toLowerCase().replace(/\s+/g, '-');
-
     return `
         <div class="img-container">
             <img src="${curso.imagem}" alt="Capa do curso">
@@ -28,47 +42,56 @@ function gerarCardCurso(curso) {
     `;
 }
 
-function gerarCarrossel(listaCursos) {
+function gerarCardEbook(ebook) {
+    const tagColor = ebook.categoria.toLowerCase().replace(/\s+/g, '-'); 
+    return `
+        <div class="img-container ebook-card">
+            <img src="${ebook.imagem}" alt="Capa do E-book: ${ebook.titulo}">
+            <span class="tag ${tagColor}">${ebook.categoria}</span>
+        </div>
+    `;
+}
+
+function gerarCarrosselCursos(listaCursos) {
     const htmlCarrossel = listaCursos
         .filter(curso => curso.destaque === true) 
         .map(curso => gerarCardCurso(curso))      
         .join('');                                
     
-    pistaCarrossel.innerHTML = htmlCarrossel;
+    pistaCursos.innerHTML = htmlCarrossel;
 }
 
-function calcularCardsVisiveis() {
-    const areaVisivel = pistaCarrossel.parentElement.offsetWidth;
-    const card = document.querySelector('.img-container');
-
-    if (!card) return 1;
-
-    return Math.round(areaVisivel / card.offsetWidth);
+function gerarCarrosselEbooks(listaEbooks) {
+    const htmlCarrossel = listaEbooks
+        .filter(ebook => ebook.destaque === true) 
+        .map(ebook => gerarCardEbook(ebook))      
+        .join('');                                
+    
+    pistaEbooks.innerHTML = htmlCarrossel;
 }
 
-function moverCarrossel() {
-    const cards = document.querySelectorAll('.img-container');
+function moverCarrossel(pista, classeCard, estado) {
+    if (!pista) return;
+    
+    const cards = pista.querySelectorAll(classeCard);
     if (cards.length === 0) return; 
 
     const espacoEntreCards = 10;
     const larguraCard = cards[0].offsetWidth + espacoEntreCards;
-
-    const cardsVisiveis = calcularCardsVisiveis();
+    const areaVisivel = pista.parentElement.offsetWidth;
+    
+    const cardsVisiveis = Math.round(areaVisivel / cards[0].offsetWidth);
     const indiceMaximo = cards.length - cardsVisiveis;
 
-    indiceAtual++;
+    estado.indice++;
 
-    if (indiceAtual > indiceMaximo) {
-        indiceAtual = 0;
+    if (estado.indice > indiceMaximo) {
+        estado.indice = 0;
     }
 
-    pistaCarrossel.style.transform = `translateX(-${indiceAtual * larguraCard}px)`;
-    pistaCarrossel.style.transition = "transform 0.5s ease-in-out"; 
+    pista.style.transform = `translateX(-${estado.indice * larguraCard}px)`;
+    pista.style.transition = "transform 0.5s ease-in-out"; 
 }
-
-function iniciarCarrosselAutomatico() {
-    setInterval(moverCarrossel, 3000);
-}
-
 
 carregarCursos();
+carregarEbooks();

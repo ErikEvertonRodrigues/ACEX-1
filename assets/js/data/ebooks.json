@@ -7,7 +7,7 @@
         "categoria": "Design",
         "destaque": true,
         "paginas":"152",
-        "imagem": "../assets/imgs/capa.png",
+        "imagem": "./assets/imgs/capa.png",
         "descricao": "perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
     },
     {
@@ -15,9 +15,9 @@
         "titulo": "Memória de Cálculo",
         "autor": "Steve Souders",
         "categoria": "Tecnologia",
-        "destaque": false,
+        "destaque": true,
         "paginas":"152",
-        "imagem": "../assets/imgs/capa_verde.png",
+        "imagem": "./assets/imgs/capa_verde.png",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
     },
     {
@@ -25,9 +25,9 @@
         "titulo": "Banco de Dados",
         "autor": "Steve Souders",
         "categoria": "Banco de dados",
-        "destaque": false,
+        "destaque": true,
         "paginas":"152",
-        "imagem": "../assets/imgs/capa_preta.png",
+        "imagem": "./assets/imgs/capa_preta.png",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
     },
     {
@@ -35,9 +35,9 @@
         "titulo": "Redstone",
         "autor": "Steve Souders",
         "categoria": "Tecnologia",
-        "destaque": false,
+        "destaque": true,
         "paginas":"152",
-        "imagem": "../assets/imgs/capa.png",
+        "imagem": "./assets/imgs/capa.png",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
     },
     {
@@ -47,7 +47,7 @@
         "categoria": "Design",
         "destaque": true,
         "paginas":"152",
-        "imagem": "../assets/imgs/capa_verde.png",
+        "imagem": "./assets/imgs/capa_verde.png",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
     },
     {
@@ -57,7 +57,7 @@
         "categoria": "Tecnologia",
         "destaque": true,
         "paginas":"152",
-        "imagem": "../assets/imgs/capa_preta.png",
+        "imagem": "./assets/imgs/capa_preta.png",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
     },
     {
@@ -65,9 +65,9 @@
         "titulo": "Naruto",
         "autor": "Steve Souders",
         "categoria": "Banco de dados",
-        "destaque": false,
+        "destaque": true,
         "paginas":"152",
-        "imagem": "../assets/imgs/capa.png",
+        "imagem": "./assets/imgs/capa.png",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
     },
     {
@@ -75,9 +75,9 @@
         "titulo": "Yu Yu Hakusho",
         "autor": "Steve Souders",
         "categoria": "Tecnologia",
-        "destaque": false,
+        "destaque": true,
         "paginas":"152",
-        "imagem": "../assets/imgs/capa_verde.png",
+        "imagem": "./assets/imgs/capa_verde.png",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
     },
     {
@@ -85,9 +85,9 @@
         "titulo": "Kimetsu no yiaba",
         "autor": "Steve Souders",
         "categoria": "Banco de dados",
-        "destaque": false,
+        "destaque": true,
         "paginas":"152",
-        "imagem": "../assets/imgs/capa_preta.png",
+        "imagem": "./assets/imgs/capa_preta.png",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
     }
 ]
