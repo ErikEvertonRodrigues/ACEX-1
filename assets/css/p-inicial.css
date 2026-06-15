@@ -177,13 +177,13 @@ body {
 }
 
 .ebook-card {
-    flex: 0 0 calc((100% - 40px) / 5);    
+    flex: 0 0 calc((100% - 40px) / 5);   
 }
 
 .ebook-card img {
-    height: 330px; 
     width: 100%;
     object-fit: cover; 
+    aspect-ratio: 9/13; 
 }
 
 /* Terceira section */
