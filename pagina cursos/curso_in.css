@@ -23,27 +23,48 @@ body {
 }
 
 .curso-info {
-    background: #4f9414;
     color: white;
     padding: 20px;
 }
 
+.curso-info a {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #555;
+}
+
+.curso-info div {
+    min-height: 120px;
+    background-image: linear-gradient(90deg, #6F991D, #9AB324);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 22px;
+    border-radius: 15px;
+}
+
 .curso-info h2 {
+    font-family: var(--inter);
     margin: 15px 0;
-    font-size: 22px;
+    font-size: 20px;
+    width: 75%;
 }
 
 .aulas {
     list-style: none;
 }
 
-.aulas li {
+.aulas .playlist-item {
     padding: 18px 20px;
     border-bottom: 1px solid #ddd;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.aulas li.active {
+.aulas .playlist-item.active {
     background: #edf7e6;
     color: #4f9414;
     font-weight: bold;
@@ -60,11 +81,6 @@ body {
     align-items: center;
 
     margin-bottom: 25px;
-}
-
-.topbar a {
-    text-decoration: none;
-    color: #555;
 }
 
 .topbar button {
@@ -129,32 +145,6 @@ body {
     margin-top: 10px;
 }
 
-@media (max-width: 900px) {
-
-    .open-sidebar {
-        display: block;
-    }
-
-    .curso-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .sidebar {
-        position: fixed;
-        top: 100px;
-        left: -100%;
-
-        width: 300px;
-        height: calc(100vh - 70px);
-
-        transition: .3s;
-        z-index: 100;
-    }
-
-    .sidebar.open {
-        left: 0;
-    }
-}
 .curso-layout {
     display: grid;
     grid-template-columns: 280px 1fr;
@@ -211,4 +201,30 @@ body {
 
 .lista-materiais a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .curso-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 100px;
+        left: -100%;
+
+        width: 300px;
+        height: calc(100vh - 70px);
+
+        transition: .3s;
+        z-index: 100;
+    }
+
+    .open-sidebar {
+        display: block;
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
 }

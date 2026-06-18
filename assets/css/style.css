@@ -345,9 +345,9 @@ footer .footer-container {
 @media screen and (max-width: 1000px) {
     .container {
         width: 100%;
+        padding: 0 20px;
     }
 }
-
 
 @media (max-width: 768px) {
     .container,
@@ -371,4 +371,8 @@ footer .footer-container {
     .logo-container {
         width: 250px;
     }
+}
+
+.hidden {
+    display: none;
 }

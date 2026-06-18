@@ -49,7 +49,10 @@
     <main class="curso-layout">
     <aside class="sidebar">
         <div class="curso-info">
-            <h2 id="curso-titulo-principal"></h2>
+            <a href="cursos.html"><i class="fa-solid fa-arrow-left"></i> Voltar para minicursos</a>
+            <div>
+                <h2 id="curso-titulo-principal"></h2>
+            </div>
         </div>
 
         <ul class="aulas" id="playlist-dinamica">
@@ -59,8 +62,7 @@
     <section class="conteudo">
 
         <div class="topbar">
-            <a href="cursos.html">← Voltar para minicursos</a>
-            <button class="open-sidebar">Exibir aulas</button>
+            <button class="open-sidebar"><i class="fa-solid fa-bars"></i> Exibir aulas</button>
             <button id="btn-proxima-aula">Próxima Aula →</button>
         </div>
 
@@ -76,13 +78,13 @@
 
         <article class="aula-conteudo" id="conteudo-aula">
         </article>
-<section class="contato"> 
+    <section class="contato"> 
         <div class="container"> 
             <div class="texto"> 
                 <h2>Fique por dentro das novidades</h2> 
-                <p>Receba lançamentos de novos e-books, minicursos e conteúdos exclusivos.
-            </p> 
-        </div> 
+                <p>Receba lançamentos de novos e-books, minicursos e conteúdos exclusivos.</p> 
+            </div> 
+
             <div class="dados"> 
                 <form id="form"> 
                     <div class="grupo-inputs"> 
@@ -101,18 +103,20 @@
         const sidebar = document.querySelector('.sidebar');
         
         button.addEventListener('click', () => {
+            event.stopPropagation();
             sidebar.classList.add('open');
-            button.style.display = 'none';
+            button.classList.add('hidden');
         });
 
-        window.addEventListener('click', () => {
-            const buttonClicked = button.contains(event.target);
-            const sidebarClicked = sidebar.contains(event.target);
+        window.addEventListener('click', (event) => {
 
-            if (!buttonClicked && !sidebarClicked) {
-                sidebar.classList.remove('open');
-                button.style.display = "block";
-            }
+            if (
+            !button.contains(event.target) &&
+            !sidebar.contains(event.target)
+        ) {
+            sidebar.classList.remove('open');
+            button.classList.remove('hidden');
+        }
         });
 
     </script>
