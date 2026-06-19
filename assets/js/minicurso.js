@@ -25,9 +25,65 @@ document.addEventListener("DOMContentLoaded", () => {
             tituloAula.textContent = `${index + 1}. ${aula.titulo}`;
         }
 
-        if (conteudoAula) {
-            conteudoAula.innerHTML = aula.conteudo || "<p>Conteúdo não disponível.</p>";
-        }
+       if (conteudoAula) {
+
+    const materiaisHTML = aula.materiais
+        ? aula.materiais.map(material => `
+            <li>
+                <a href="${material.link}" target="_blank">
+                    ${material.nome}
+                </a>
+            </li>
+        `).join("")
+        : "<li>Nenhum material disponível.</li>";
+
+    conteudoAula.innerHTML = `
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="sobre">
+                Sobre esta aula
+            </button>
+
+            <button class="tab-btn" data-tab="materiais">
+                Materiais de apoio
+            </button>
+        </div>
+
+        <div class="tab-content active" id="sobre">
+            ${aula.conteudo || "<p>Conteúdo não disponível.</p>"}
+        </div>
+
+        <div class="tab-content" id="materiais">
+            <ul class="lista-materiais">
+                ${materiaisHTML}
+            </ul>
+        </div>
+    `;
+
+    const botoes = conteudoAula.querySelectorAll(".tab-btn");
+
+    botoes.forEach(botao => {
+
+        botao.addEventListener("click", () => {
+
+            conteudoAula
+                .querySelectorAll(".tab-btn")
+                .forEach(btn => btn.classList.remove("active"));
+
+            conteudoAula
+                .querySelectorAll(".tab-content")
+                .forEach(tab => tab.classList.remove("active"));
+
+            botao.classList.add("active");
+
+            const aba = botao.dataset.tab;
+
+            conteudoAula
+                .querySelector(`#${aba}`)
+                .classList.add("active");
+        });
+
+    });
+}
 
         document.querySelectorAll(".playlist-item").forEach(item => {
             item.classList.remove("active");

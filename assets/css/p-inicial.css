@@ -288,6 +288,7 @@ body {
 }
 
 .texto h2 {
+    font-family: var(--poppins);
     font-size: 2rem;
     margin-bottom: 10px;
     color: #222;
