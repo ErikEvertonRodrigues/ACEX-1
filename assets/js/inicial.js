@@ -76,19 +76,21 @@ function moverCarrossel(pista, classeCard, estado) {
 
     const espacoEntreCards = 10;
     const larguraCard = cards[0].offsetWidth + espacoEntreCards;
-    const areaVisivel = pista.parentElement.offsetWidth;
     
-    const cardsVisiveis = Math.round(areaVisivel / cards[0].offsetWidth);
+    const cardsVisiveis = Math.round(pista.offsetWidth / cards[0].offsetWidth);
     const indiceMaximo = cards.length - cardsVisiveis;
 
+    estado.indice = Math.round(pista.scrollLeft / larguraCard);
     estado.indice++;
 
     if (estado.indice > indiceMaximo) {
         estado.indice = 0;
     }
 
-    pista.style.transform = `translateX(-${estado.indice * larguraCard}px)`;
-    pista.style.transition = "transform 0.5s ease-in-out"; 
+    pista.scrollTo({
+        left: estado.indice * larguraCard,
+        behavior: 'smooth'
+    });
 }
 
 carregarCursos();

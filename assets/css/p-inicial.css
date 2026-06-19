@@ -108,6 +108,41 @@ body {
 
 .destaques {
     padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.cabecalho-destaque {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 15px; 
+}
+
+.cabecalho-destaque h2 {
+    font-size: 2rem;
+    font-family: var(--poppins);
+    margin: 0; 
+}
+
+.btn-saber-mais {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: #d6eab0; 
+    color: var(--verde-escuro); 
+    text-decoration: none;
+    font-weight: 600;
+    font-family: var(--poppins);
+    border-radius: 20px; 
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.btn-saber-mais:hover {
+    background-color: var(--verde-escuro);
+    color: #fff;
+    transform: translateX(4px); 
 }
 
 .destaques > .container > h2 {
@@ -119,11 +154,33 @@ body {
     overflow: hidden;
 }
 
+.destaques .carrossel {
+    margin-bottom: 3rem;
+}
+
+.destaques h2:nth-of-type(2) {
+    margin-top: 1rem; 
+}
+
 .carrossel {
     position: relative;
     display: flex;
     gap: 10px;  
     
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+    scroll-behavior: smooth; 
+    
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+.carrossel::-webkit-scrollbar { 
+    display: none; 
+}
+
+.img-container {
+    scroll-snap-align: start;
 }
 
 .img-container {
@@ -186,6 +243,10 @@ body {
     aspect-ratio: 9/13; 
 }
 
+#carrossel-ebooks {
+    margin-bottom: 0; 
+}
+
 /* Terceira section */
  
 .sobre-curso {
@@ -195,6 +256,7 @@ body {
     flex-direction: column;
     padding: 5%;
     gap: 30px;
+    padding-top: 30px;
 }
 
 .sobre-curso h1 {
@@ -353,6 +415,14 @@ body {
     .contato > div {
         padding: 0 20px;
     }
+
+    .img-container {
+        flex: 0 0 calc((100% - 10px) / 2);
+    }
+    
+    .ebook-card {
+        flex: 0 0 calc((100% - 20px) / 3); 
+    }
 }
 
 @media screen and (max-width: 898px){
@@ -396,6 +466,15 @@ body {
         width: 100%;
     }
 
+    .cabecalho-destaque h2 {
+        font-size: 1.6rem; 
+    }
+    
+    .btn-saber-mais {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+
 }
 
 @media screen and (max-width: 578px) {
@@ -406,6 +485,25 @@ body {
 
     .img-container {
         flex: 0 0 100%;
+    }
+
+    .img-container {
+        flex: 0 0 100%; /* Cursos: 1 por tela */
+    }
+    
+
+    .ebook-card {
+        flex: 0 0 calc((100% - 10px) / 2); 
+    }
+
+    .cabecalho-destaque {
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 10px; 
+    }
+    
+    .cabecalho-destaque h2 {
+        font-size: 1.5rem;
     }
 }
 
@@ -442,7 +540,8 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: center;
-    padding: 70px 0;
+    padding-top: 0; 
+    padding-bottom: 70px;
 }
 
 .sc-index-label {
