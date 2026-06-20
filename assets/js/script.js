@@ -8,8 +8,25 @@ hamburguer.addEventListener("click", () => {
 
 const links = document.querySelectorAll('.nav-link');
 
+function normalize(path) {
+  path = path.replace(/index\.html$/, '');
+  path = path.replace(/\.html$/, '');
+
+  if (path.endsWith('/') && path.length > 1) {
+      path = path.slice(0, -1);
+  }
+
+  return path;
+}
+
+const currentPage = normalize(window.location.pathname);
+
 links.forEach(link => {
-  if (link.href == window.location.href) {
+  const path = normalize(link.pathname);
+
+  console.log(`${currentPage} --- ${path}`);
+
+  if (path === currentPage) {
     link.classList.add('active');
   }
 });
