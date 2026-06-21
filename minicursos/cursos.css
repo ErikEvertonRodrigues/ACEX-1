@@ -58,6 +58,9 @@ main {
 
 .filtros-container .principio {
     width: 1300px;
+    h1 {
+        font-family: var(--poppins);
+    }
 }
 
 .filtros-container h1 {
@@ -78,6 +81,7 @@ main {
 }
 
 .filtros-container h3 {
+    font-family: var(--inter);
     margin-top: 15px;
 }
 
@@ -90,6 +94,7 @@ main {
     border: 2px solid #d7d4c0;
     border-radius: 12px;
     overflow: hidden;
+    font-family: var(--inter);
 }
 
 #busca {
@@ -152,6 +157,7 @@ main {
 
 .filtros-container p {
     color: #7e7e7e;
+    font-family: var(--inter);
 }
 
 .filtros-container hr {
@@ -191,6 +197,7 @@ main {
     width: 100%;
     color: #000;
     text-decoration: none;
+    animation: aparecer 500ms;
 }
 
 .course-card:hover {
