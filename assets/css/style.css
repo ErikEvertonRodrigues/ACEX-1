@@ -317,12 +317,15 @@ footer .footer-container {
     height: 50px;
     border-radius: 5px;
     color: #000;
-    background-color: #33b154;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     text-decoration: none;
+    transition: 100ms;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .redes a i {
