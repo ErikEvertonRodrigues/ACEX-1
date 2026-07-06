@@ -12,7 +12,6 @@ h1, h2, h3 {
 
 /* ── Hero ───────────────────────────────────────────── */
 .sc-hero {
-    background-color: var(--fundo-principal);
     padding: 60px 0 50px;
     text-align: center;
     border-bottom: 1px solid var(--cinza-claro);
@@ -21,7 +20,6 @@ h1, h2, h3 {
 .sc-hero h1 {
     font-size: clamp(2rem, 5vw, 3.5rem);
     font-family: var(--poppins);
-    color: var(--produto-profundo);
     margin: 8px 0 14px;
 }
 
@@ -45,7 +43,6 @@ h1, h2, h3 {
 
 /* ── Seção Projeto ACEX I ───────────────────────────── */
 .sc-projeto {
-    background-color: var(--fundo-conteudo);
     padding: 70px 0;
 }
 
@@ -59,7 +56,6 @@ h1, h2, h3 {
 .sc-projeto-texto h2 {
     font-size: clamp(1.6rem, 3vw, 2.4rem);
     font-family: var(--poppins);
-    color: var(--produto-profundo);
     margin-bottom: 18px;
     line-height: 1.2;
 }
@@ -122,7 +118,6 @@ h1, h2, h3 {
 
 /* ── Seção Bacharelado ──────────────────────────────── */
 .sc-bacharelado {
-    background-color: var(--fundo-principal);
     padding: 70px 0;
     text-align: center;
 }
@@ -130,7 +125,6 @@ h1, h2, h3 {
 .sc-bacharelado h2 {
     font-size: clamp(1.5rem, 3vw, 2.2rem);
     font-family: var(--poppins);
-    color: var(--produto-profundo);
     margin-bottom: 14px;
 }
 
@@ -193,7 +187,6 @@ h1, h2, h3 {
 
 /* ── Seção O que oferecemos ─────────────────────────── */
 .sc-conteudo {
-    background-color: var(--fundo-conteudo);
     padding: 70px 0;
     text-align: center;
 }
@@ -201,7 +194,6 @@ h1, h2, h3 {
 .sc-conteudo h2 {
     font-size: clamp(1.5rem, 3vw, 2.2rem);
     font-family: var(--poppins);
-    color: var(--produto-profundo);
     margin-bottom: 14px;
 }
 

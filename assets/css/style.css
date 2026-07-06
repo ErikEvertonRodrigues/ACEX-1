@@ -4,8 +4,48 @@
     font-family: var(--inter);
 }
 
+/* COLORS */
+.bg-primary {
+    background-color: var(--bg-primary);
+}
+
+.bg-secondary {
+    background-color: #fff;
+}
+
+.bg-tertiary {
+    background-color: #f7f1e5;
+}
+
+.bg-quaternary {
+    background-color: var(--bg-quaternary);
+}
+
+.color-primary {
+    color: #000;
+}
+
+.bg-dark-primary {
+    background-color: var(--bg-dark-primary);
+}
+
+.color-dark-primary {
+    color: #fff;
+}
+
+.bg-dark-secondary {
+    background-color: var(--bg-dark-secondary);
+}
+.bg-dark-tertiary {
+    background-color: var(--bg-dark-secondary);
+}
+
+.bg-dark-quaternary {
+    background-color: var(--bg-dark-quaternary);
+}
+
+
 header {
-    background-color: #F4EDDA;
     border-bottom: 1px #d4cebd solid;
     height: 100px;
     position: sticky;
@@ -20,10 +60,6 @@ header > div {
     align-items: center;
     padding: 10px 0;
     padding-right: 20px;
-}
-
-.logo-container {
-    width: 300px;
 }
 
 .logo {
@@ -66,6 +102,24 @@ ul.active li:nth-child(3) {
 .navigation ul {
     display: flex;
     gap: 20px;
+}
+
+header > div button {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    transition: .3s;
+}
+
+header > div button:hover {
+    background-color: var(--cinza-claro);
+}
+
+header > div button i {
+    font-size: 20px;
 }
 
 .navigation-mob {
@@ -111,7 +165,6 @@ ul.active li:nth-child(3) {
 }
 
 nav ul li .nav-link {
-    color: #000;
     text-decoration: none;
     padding-bottom: 5px;
 }
@@ -261,7 +314,6 @@ input {
 }
 
 footer {
-    background-color: var(--fundo-principal);
     color: #fff;
     padding: 40px 20px;
     border-top: 2px solid var(--cinza-claro);
@@ -294,12 +346,7 @@ footer .footer-container {
     min-width: 200px;
 }
 
-.footer-col p {
-    color: #000;
-}
-
 .footer-col h3 {
-  color: #000;
   font-size: 1.1rem;
   margin-bottom: 10px;
   font-weight: normal;
@@ -319,7 +366,6 @@ footer .footer-container {
     width: 50px;
     height: 50px;
     border-radius: 5px;
-    color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -345,7 +391,6 @@ footer .footer-container {
 
 .footer-desc p {
     font-size: 1.1rem;
-    color: #000;
 }
 
 @media screen and (max-width: 1000px) {
@@ -362,6 +407,10 @@ footer .footer-container {
     }
     header div {
         padding: 10px 0;
+    }
+
+    .theme-button {
+        display: none;
     }
 
     .hamburguer-container {
@@ -382,3 +431,4 @@ footer .footer-container {
 .hidden {
     display: none;
 }
+

@@ -7,7 +7,7 @@
         "categoria": "Design",
         "destaque": true,
         "paginas":"152",
-        "imagem": "./assets/imgs/capa.png",
+        "imagem": "/assets/imgs/capa.png",
         "descricao": "perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
     },
     {
@@ -17,7 +17,7 @@
         "categoria": "Tecnologia",
         "destaque": true,
         "paginas":"152",
-        "imagem": "./assets/imgs/capa_verde.png",
+        "imagem": "/assets/imgs/capa_verde.png",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
     },
     {
@@ -27,7 +27,7 @@
         "categoria": "Banco de dados",
         "destaque": true,
         "paginas":"152",
-        "imagem": "./assets/imgs/capa_preta.png",
+        "imagem": "/assets/imgs/capa_preta.png",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
     },
     {
@@ -37,7 +37,7 @@
         "categoria": "Tecnologia",
         "destaque": true,
         "paginas":"152",
-        "imagem": "./assets/imgs/capa.png",
+        "imagem": "/assets/imgs/capa.png",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
     },
     {
@@ -47,7 +47,7 @@
         "categoria": "Design",
         "destaque": true,
         "paginas":"152",
-        "imagem": "./assets/imgs/capa_verde.png",
+        "imagem": "/assets/imgs/capa_verde.png",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
     },
     {
@@ -57,7 +57,7 @@
         "categoria": "Tecnologia",
         "destaque": true,
         "paginas":"152",
-        "imagem": "./assets/imgs/capa_preta.png",
+        "imagem": "/assets/imgs/capa_preta.png",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
     },
     {
@@ -67,7 +67,7 @@
         "categoria": "Banco de dados",
         "destaque": true,
         "paginas":"152",
-        "imagem": "./assets/imgs/capa.png",
+        "imagem": "/assets/imgs/capa.png",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
     },
     {
@@ -77,7 +77,7 @@
         "categoria": "Tecnologia",
         "destaque": true,
         "paginas":"152",
-        "imagem": "./assets/imgs/capa_verde.png",
+        "imagem": "/assets/imgs/capa_verde.png",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
     },
     {
@@ -87,7 +87,7 @@
         "categoria": "Banco de dados",
         "destaque": true,
         "paginas":"152",
-        "imagem": "./assets/imgs/capa_preta.png",
+        "imagem": "/assets/imgs/capa_preta.png",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
     }
 ]

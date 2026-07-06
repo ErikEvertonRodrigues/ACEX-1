@@ -8,15 +8,19 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="curso_in.css">
     <script src="https://kit.fontawesome.com/898f59f198.js" crossorigin="anonymous"></script>
-    <script src="../assets/js/script.js" defer></script>
-    <script src="../assets/js/contato.js"></script>
+    <script type="module" src="../assets/js/minicurso.js" defer></script>
+    <script type="module" src="../assets/js/script.js" defer></script>
+    <script src="../assets/js/contato.js" defer></script>
+    
     <link rel="stylesheet" href="../assets/css/contato.css">
 </head>
 
 <body>
-    <header>
+    <header class="bg-primary">
         <div class="container">
-            <div class="logo-container"><a href="../index.html"><img class="logo" src="../assets/imgs/cacto_e_nome_pretooo.svg" alt=""></a></div>
+            <div class="logo-container">
+                <a href="../index.html"><img id="logo" class="logo" src="" alt=""></a>
+            </div>
 
             <ul class="hamburguer-container hide" type="none">
                 <li class="hamburguer"></li>
@@ -26,12 +30,16 @@
 
             <nav class="navigation">
                 <ul type="none">
-                    <li><a class="nav-link" href="../index.html">Inicio</a></li>
-                    <li><a class="nav-link" href="../sobre-nos/sobre-nos.html">Sobre Nós</a></li>
-                    <li><a class="nav-link" href="./cursos.html">Minicursos</a></li>
-                    <li><a class="nav-link" href="../ebooks/ebooks.html">E-books</a></li>
+                    <li><a class="nav-link color-primary" href="../index.html">Inicio</a></li>
+                    <li><a class="nav-link color-primary" href="../sobre-nos/sobre-nos.html">Sobre Nós</a></li>
+                    <li><a class="nav-link color-primary" href="./cursos.html">Minicursos</a></li>
+                    <li><a class="nav-link color-primary" href="../ebooks/ebooks.html">E-books</a></li>
                 </ul>
             </nav>
+
+            <button class="theme-button">
+                
+            </button>
         </div>
         <nav class="navigation-mob">
             <ul type="none">
@@ -44,7 +52,7 @@
     </header>
 
 
-    <main class="curso-layout">
+    <main class="curso-layout bg-quaternary">
     <aside class="sidebar">
         <div class="curso-info">
             <a href="cursos.html"><i class="fa-solid fa-arrow-left"></i> Voltar para minicursos</a>
@@ -64,7 +72,7 @@
             <button id="btn-proxima-aula">Próxima Aula →</button>
         </div>
 
-        <h1 id="titulo-aula"></h1>
+        <h1 id="titulo-aula" class="color-primary"></h1>
 
         <div class="video-container">
             <iframe
@@ -76,6 +84,7 @@
 
         <article class="aula-conteudo" id="conteudo-aula">
         </article>
+    </section>
     <section class="contato"> 
         <div class="container"> 
             <div class="texto"> 
@@ -95,7 +104,6 @@
     </section>
 </main>
 
-    <script src="../assets/js/minicurso.js"></script>
     <script>
         const button = document.querySelector('.open-sidebar');
         const sidebar = document.querySelector('.sidebar');

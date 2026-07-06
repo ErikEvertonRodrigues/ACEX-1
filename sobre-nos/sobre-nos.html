@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="./sobre-nos.css">
 </head>
 <body>
-    <header>
+    <header class="bg-primary">
         <div class="container">
             <div class="logo-container">
-                <a href="../index.html"><img class="logo" src="../assets/imgs/cacto_e_nome_pretooo.svg" alt="Mandacaru Tech"></a>
+                <a href="../index.html"><img id="logo" class="logo" src="" alt="Mandacaru Tech"></a>
             </div>
 
             <ul class="hamburguer-container hide" type="none">
@@ -23,13 +23,18 @@
 
             <nav class="navigation">
                 <ul type="none">
-                    <li><a class="nav-link" href="../index.html">Inicio</a></li>
-                    <li><a class="nav-link active" href="./sobre-nos.html">Sobre Nós</a></li>
-                    <li><a class="nav-link" href="../minicursos/cursos.html">Minicursos</a></li>
-                    <li><a class="nav-link" href="../ebooks/ebooks.html">E-books</a></li>
+                    <li><a class="nav-link color-primary" href="../index.html">Inicio</a></li>
+                    <li><a class="nav-link color-primary" href="./sobre-nos.html">Sobre Nós</a></li>
+                    <li><a class="nav-link color-primary" href="../minicursos/cursos.html">Minicursos</a></li>
+                    <li><a class="nav-link color-primary" href="../ebooks/ebooks.html">E-books</a></li>
                 </ul>
             </nav>
+
+            <button class="theme-button">
+                
+            </button>
         </div>
+
         <nav class="navigation-mob">
             <ul type="none">
                 <li><a class="nav-link" href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
@@ -43,20 +48,20 @@
     <main>
 
         <!-- Hero -->
-        <section class="sc-hero">
+        <section class="sc-hero bg-primary">
             <div class="container">
                 <span class="sc-label">Mandacaru Tech — Extensão</span>
-                <h1>Sobre Nós</h1>
+                <h1 class="color-primary">Sobre Nós</h1>
                 <p>Conheça o projeto, a disciplina e tudo que o Mandacaru Tech oferece para a comunidade.</p>
             </div>
         </section>
 
         <!-- Projeto ACEX I -->
-        <section class="sc-projeto">
+        <section class="sc-projeto bg-quaternary">
             <div class="container sc-projeto-grid">
                 <div class="sc-projeto-texto">
-                    <span class="sc-projeto-label">Projeto ACEX I</span>
-                    <h2>Tecnologia, aprendizagem e extensão</h2>
+                    <span class="sc-projeto-label color-primary">Projeto ACEX I</span>
+                    <h2 class="color-primary">Tecnologia, aprendizagem e extensão</h2>
                     <p>
                         O Mandacaru Tech é uma iniciativa desenvolvida pela turma de ACEX I,
                         com o objetivo de produzir e compartilhar conteúdos introdutórios
@@ -87,10 +92,10 @@
         </section>
 
         <!-- Sobre o Bacharelado -->
-        <section class="sc-bacharelado">
+        <section class="sc-bacharelado bg-primary">
             <div class="container">
                 <span class="sc-label">IFBA — Paulo Afonso</span>
-                <h2>Bacharelado em Ciência da Computação</h2>
+                <h2 class="color-primary">Bacharelado em Ciência da Computação</h2>
                 <p class="sc-bach-desc">
                     O Bacharelado em Ciência da Computação do IFBA prepara profissionais para desenvolver soluções
                     tecnológicas inovadoras, com sólida base teórica e prática em diversas áreas da computação.
@@ -130,10 +135,10 @@
         </section>
 
         <!-- O que você vai encontrar -->
-        <section class="sc-conteudo">
+        <section class="sc-conteudo bg-quaternary">
             <div class="container">
                 <span class="sc-label">O que oferecemos</span>
-                <h2>Conteúdo produzido pelos estudantes</h2>
+                <h2 class="color-primary">Conteúdo produzido pelos estudantes</h2>
                 <p class="sc-bach-desc">
                     Todo o material disponível no portal foi criado com cuidado pelos alunos da turma ACEX I,
                     revisado e organizado para garantir qualidade e acessibilidade.
@@ -186,32 +191,32 @@
 
     </main>
 
-    <footer>
+    <footer class="bg-primary">
         <div class="footer-container">
             <div class="footer-col footer-logo">
-                <img class="logo" src="../assets/imgs/somente_nome_claro.svg" alt="">
+                <img id="logo-footer" class="logo" src="" alt="">
             </div>
             <div class="footer-col footer-logo">
-                <img class="logo" src="../assets/imgs/logo-ifba.png" alt="">
+                <img id="logo-ifba" class="logo" src="../assets/imgs/logo-ifba.png" alt="">
             </div>
             <div class="footer-col">
-                <h3>Redes Sociais</h3>
-                <p>Siga-nos nas redes sociais e fique por dentro das novidades</p>
+                <h3 class="color-primary">Redes Sociais</h3>
+                <p class="color-primary">Siga-nos nas redes sociais e fique por dentro das novidades</p>
                 <div class="redes">
                     <a href="https://www.instagram.com/mandacarutech_ext/" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-instagram color-primary"></i>
                     </a>
                     <a>
-                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-youtube color-primary"></i>
                     </a>
                 </div>
             </div>
         </div>
         <div class="footer-desc">
-            <p>&copy; 2026 Mandacaru Tech. Todos os direitos reservados.</p>
+            <p class="color-primary">&copy; 2026 Mandacaru Tech. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <script src="../assets/js/script.js"></script>
+    <script type="module" src="../assets/js/script.js"></script>
 </body>
 </html>
