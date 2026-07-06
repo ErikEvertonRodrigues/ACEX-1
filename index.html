@@ -9,40 +9,52 @@
     <link rel="stylesheet" href="./assets/css/p-inicial.css">
 </head>
 <body>
-    <header>
+    <header class="bg-primary">
         <div class="container">
-            <div class="logo-container"><img class="logo" src="./assets/imgs/cacto_e_nome_pretooo.svg" alt=""></div>
+            <div class="logo-container"><img id="logo" class="logo" src="" alt=""></div>
 
             <ul class="hamburguer-container hide" type="none">
-                <li class="hamburguer"></li>
-                <li class="hamburguer"></li>
-                <li class="hamburguer"></li>
+                <li class="hamburguer bg-quinary"></li>
+                <li class="hamburguer bg-quinary"></li>
+                <li class="hamburguer bg-quinary"></li>
             </ul>
 
             <nav class="navigation">
                 <ul type="none">
-                    <li><a class="nav-link" href="./index.html">Inicio</a></li>
-                    <li><a class="nav-link" href="./sobre-nos/sobre-nos.html">Sobre Nós</a></li>
-                    <li><a class="nav-link" href="./minicursos/cursos.html">Minicursos</a></li>
-                    <li><a class="nav-link" href="./ebooks/ebooks.html">E-books</a></li>
+                    <li><a class="nav-link color-primary" href="./index.html">Inicio</a></li>
+                    <li><a class="nav-link color-primary" href="./sobre-nos/sobre-nos.html">Sobre Nós</a></li>
+                    <li><a class="nav-link color-primary" href="./minicursos/cursos.html">Minicursos</a></li>
+                    <li><a class="nav-link color-primary" href="./ebooks/ebooks.html">E-books</a></li>
                 </ul>
             </nav>
+
+            <button class="theme-button">
+                
+            </button>
         </div>
         <nav class="navigation-mob">
             <ul type="none">
-                <li><a class="nav-link" href="./index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
-                <li><a class="nav-link" href="./sobre-nos/sobre-nos.html"><i class="fa-solid fa-circle-question"></i> Sobre Nós</a></li>
-                <li><a class="nav-link" href="./minicursos/cursos.html"><i class="fa-solid fa-play"></i> Minicursos</a></li>
-                <li><a class="nav-link" href="./ebooks/ebooks.html"><i class="fa-solid fa-book"></i> E-books</a></li>
+                <li><a class="nav-link color-primary" href="./index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                <li><a class="nav-link color-primary" href="./sobre-nos/sobre-nos.html"><i class="fa-solid fa-circle-question"></i> Sobre Nós</a></li>
+                <li><a class="nav-link color-primary" href="./minicursos/cursos.html"><i class="fa-solid fa-play"></i> Minicursos</a></li>
+                <li><a class="nav-link color-primary" href="./ebooks/ebooks.html"><i class="fa-solid fa-book"></i> E-books</a></li>
+                <li>
+                    <div>
+                        <label class="switch">
+                            <input type="checkbox" id="theme-toggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="inicial">   
+        <section class="inicial bg-primary">   
             <div class="container hero-container">
                 <div class="inicio">
-                    <h1>Aprenda. <br>Evolua. <br><span class="destaque">Transforme.</span></h1>
+                    <h1 class="color-primary">Aprenda. <br>Evolua. <br><span class="destaque">Transforme.</span></h1>
                     <p>Ebooks e minicursos práticos para você aprender, aplicar e crescer na área de tecnologia.</p>
                     <a class="btn-inicio" href="#destaques">Ver minicursos</a>
                     <div class="hero-icons">
@@ -62,11 +74,11 @@
             </div>
         </section>
 
-        <section class="destaques" id="destaques">
+        <section class="destaques bg-secundary" id="destaques">
         <div class="container">
             
             <div class="cabecalho-destaque">
-                <h2>Cursos em Destaque</h2>
+                <h2 class="color-primary">Cursos em Destaque</h2>
                 <a href="./minicursos/cursos.html" class="btn-saber-mais">
                     Saber mais <i class="fa-solid fa-arrow-right"></i>
                 </a>
@@ -74,7 +86,7 @@
             <div class="carrossel" id="carrossel-cursos"></div>
 
             <div class="cabecalho-destaque" style="margin-top: 2rem;">
-                <h2>E-books em Destaque</h2>
+                <h2 class="color-primary">E-books em Destaque</h2>
                 <a href="./ebooks/ebooks.html" class="btn-saber-mais">
                     Saber mais <i class="fa-solid fa-arrow-right"></i>
                 </a>
@@ -84,11 +96,11 @@
         </div>
         </section>
 
-        <section class="sobre-curso" id="2">
+        <section class="sobre-curso bg-secundary" id="2">
             <div class="container sc-index-grid">
                 <div class="sc-index-texto">
                     <span class="sc-index-label">Projeto ACEX I</span>
-                    <h2>Tecnologia, aprendizagem e extensão</h2>
+                    <h2 class="color-primary">Tecnologia, aprendizagem e extensão</h2>
                     <p>O Mandacaru Tech é uma iniciativa desenvolvida pela turma de ACEX I,
                     com o objetivo de produzir e compartilhar conteúdos introdutórios
                     em computação para a comunidade. O projeto integra ensino, prática
@@ -122,10 +134,10 @@
                 </div>
             </div>
         </section>
-    <section class="contato">
+    <section class="contato bg-tertiary">
         <div class="container">
             <div class="texto">
-                <h2>Fique por dentro das novidades</h2>
+                <h2 class="color-primary">Fique por dentro das novidades</h2>
                 <p>Receba lançamentos de novos e-books, minicursos e conteúdos exclusivos.</p>
             </div>
 
@@ -142,33 +154,33 @@
         </div>
     </section>
     </main>
-    <footer>
+    <footer class="bg-primary">
         <div class="footer-container">
             <div class="footer-col footer-logo">
-                <img class="logo" src="assets/imgs/somente_nome_claro.svg" alt="">
+                <img id="logo-footer" class="logo" src="" alt="">
             </div>
             <div class="footer-col footer-logo">
-                <img class="logo" src="assets/imgs/logo-ifba.png" alt="">
+                <img id="logo-ifba" class="logo" src="" alt="">
             </div>
             <div class="footer-col">
-                <h3>Redes Sociais</h3>  
-                <p>Siga-nos nas redes sociais e fique por dentro das novidades</p>
+                <h3 class="color-primary">Redes Sociais</h3>  
+                <p class="color-primary">Siga-nos nas redes sociais e fique por dentro das novidades</p>
 
                 <div class="redes">
                     <a href="https://www.instagram.com/mandacarutech_ext/" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-instagram color-primary"></i>
                     </a>
                     <a>
-                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-youtube color-primary"></i>
                     </a>
                 </div>
             </div>
         </div>
         <div class="footer-desc">
-            <p>&copy; 2026 Mandacaru Tech. Todos os direitos reservados.</p>
+            <p class="color-primary">&copy; 2026 Mandacaru Tech. Todos os direitos reservados.</p>
         </div>
     </footer>
-    <script src="assets/js/script.js"></script>
+    <script type="module" src="assets/js/script.js"></script>
     <script src="assets/js/inicial.js"></script>
     <script src="assets/js/contato.js"></script>
 </body>

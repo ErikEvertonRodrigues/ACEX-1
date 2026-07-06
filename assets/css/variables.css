@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Poppins:wght@500;600;800&display=swap');
 
 :root {
-    --fundo-principal: #F4EDDA;
+    --bg-primary: #F4EDDA;
+    --bg-quaternary: #FDF8F0;
+    --bg-dark-primary: #101113;
+    --bg-dark-secondary: #0D0E12;
+    --bg-dark-quaternary: #141923;
     --fundo-geral: #FFF9ED;
     --fundo-de-cards: #F3E3C9;
     --verde-escuro: #679227;

@@ -137,7 +137,6 @@ body {
 .aula-conteudo p,
 .aula-conteudo li {
     line-height: 1.8;
-    color: #444;
 }
 
 .aula-conteudo ul {
@@ -168,7 +167,6 @@ body {
     padding: 15px 0;
     font-size: 1rem;
     font-weight: 600;
-    color: #666;
 }
 
 .tab-btn.active {

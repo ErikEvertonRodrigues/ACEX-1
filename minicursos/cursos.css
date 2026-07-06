@@ -7,7 +7,6 @@
 }
 
 main {
-    background-color: var(--fundo-conteudo);
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -33,7 +32,6 @@ main {
     letter-spacing: 2px;
     font-size: 12px;
     font-weight: 600;
-    color: var(--muted);
     margin-bottom: 6px;
 }
 

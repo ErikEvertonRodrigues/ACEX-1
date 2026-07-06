@@ -14,7 +14,6 @@ body {
 
 /* Primeira section */
 .inicial {
-    background-color: var(--fundo-principal);
     height: 80vh;
 }
 
@@ -250,7 +249,6 @@ body {
 /* Terceira section */
  
 .sobre-curso {
-    background-color: var(--areia-clara);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -313,7 +311,6 @@ body {
 /* Quarta section */
 
 .contato {
-    background-color: #f7f1e5;
     padding: 40px 0;
 }
 
@@ -353,7 +350,6 @@ body {
     font-family: var(--poppins);
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #222;
 }
 
 .texto p {
@@ -557,7 +553,6 @@ body {
 .sc-index-texto h2 {
     font-size: clamp(1.6rem, 3vw, 2.4rem);
     font-family: var(--poppins);
-    color: var(--produto-profundo);
     margin-bottom: 18px;
     line-height: 1.2;
 }

@@ -1,3 +1,5 @@
+import { themes } from "./data/themes.js";
+
 const hamburguer = document.querySelector(".hamburguer-container");
 const navigation = document.querySelector(".navigation-mob");
 
@@ -24,8 +26,6 @@ const currentPage = normalize(window.location.pathname);
 links.forEach(link => {
   const path = normalize(link.pathname);
 
-  console.log(`${currentPage} --- ${path}`);
-
   if (path === currentPage) {
     link.classList.add('active');
   }
@@ -49,4 +49,75 @@ window.addEventListener('scroll', () => {
 function toggle() {
   hamburguer.classList.toggle("active");
   navigation.classList.toggle("active");
+}
+
+/* TEMA ESCURO */
+
+const themeButton = document.querySelector(".theme-button");
+const themeToggle = document.getElementById("theme-toggle");
+
+const logo = document.querySelector('#logo');
+const logoFooter = document.querySelector('#logo-footer');
+const logoIfba = document.querySelector('#logo-ifba');
+
+let isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+const savedTheme = localStorage.getItem("theme");
+
+const classMap = {
+  "bg-primary": "bg-dark-primary",
+  "color-primary": "color-dark-primary",
+  "bg-secundary": "bg-dark-secondary",
+  "bg-tertiary": "bg-dark-tertiary",
+  "bg-quaternary": "bg-dark-quaternary",
+  "bg-quinary": "bg-dark-quinary"
+}
+
+function swapThemes(toDark) {
+  Object.entries(classMap).forEach(([light, dark]) => {
+    const from = toDark ? light : dark;
+    const to = toDark ? dark : light;
+
+    document.querySelectorAll(`.${from}`).forEach(el => {
+      el.classList.replace(from, to);
+    });
+  });
+}
+
+export function applyTheme(theme) {
+  localStorage.setItem("theme", theme);
+  const currentTheme = themes[theme];
+  
+  themeButton.innerHTML = currentTheme.icon;
+  logo.src = currentTheme.logo;
+  logoFooter?.setAttribute("src", currentTheme.logoFooter);
+  logoIfba?.setAttribute("src", currentTheme.logoIfba);
+
+  swapThemes(true ? theme == 'dark' : false);
+}
+
+function changeTheme() {
+  isDark = !isDark;
+  console.log(isDark);
+  if (isDark) {
+    applyTheme('dark');
+  } else {
+    applyTheme('light');
+  }
+}
+
+themeButton.addEventListener('click', () => {
+  changeTheme();
+});
+
+themeToggle.addEventListener('change', () => {
+  changeTheme();
+});
+
+if (savedTheme) {
+  applyTheme(savedTheme);
+  themeToggle.cheked = savedTheme === "dark" ? true : false;
+} else {
+  const systemTheme = isDark ? "dark" : "light";
+  applyTheme(systemTheme);
 }

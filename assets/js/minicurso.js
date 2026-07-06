@@ -1,3 +1,5 @@
+import { applyTheme } from "./script.js";
+
 document.addEventListener("DOMContentLoaded", () => {
 
     const urlParams = new URLSearchParams(window.location.search);
@@ -39,11 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     conteudoAula.innerHTML = `
         <div class="tabs">
-            <button class="tab-btn active" data-tab="sobre">
+            <button class="tab-btn active color-primary" data-tab="sobre">
                 Sobre esta aula
             </button>
 
-            <button class="tab-btn" data-tab="materiais">
+            <button class="tab-btn color-primary" data-tab="materiais">
                 Materiais de apoio
             </button>
         </div>
@@ -58,6 +60,9 @@ document.addEventListener("DOMContentLoaded", () => {
             </ul>
         </div>
     `;
+
+    applyContentTheme(conteudoAula);
+    applyTheme(localStorage.getItem("theme"));
 
     const botoes = conteudoAula.querySelectorAll(".tab-btn");
 
@@ -181,3 +186,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
 });
+
+export function applyContentTheme(container) {
+    container
+        .querySelectorAll("h2, p, li")
+        .forEach(el => el.classList.add("color-primary"));
+}
