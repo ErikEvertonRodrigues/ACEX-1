@@ -211,7 +211,7 @@ body {
         top: 100px;
         left: -100%;
 
-        width: 300px;
+        width: min(92vw, 320px);
         height: calc(100vh - 70px);
 
         transition: .3s;
@@ -224,5 +224,66 @@ body {
 
     .sidebar.open {
         left: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .conteudo {
+        padding: 16px;
+    }
+
+    .topbar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .topbar button {
+        width: 100%;
+    }
+
+    .conteudo h1 {
+        font-size: 1.6rem;
+    }
+
+    .video-container {
+        margin-bottom: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100vw;
+    }
+
+    .curso-info {
+        padding: 16px;
+    }
+
+    .curso-info div {
+        min-height: 100px;
+        padding: 18px;
+    }
+
+    .curso-info h2 {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .aulas .playlist-item {
+        padding: 16px;
+    }
+
+    .tabs {
+        gap: 20px;
+    }
+
+    .tab-btn {
+        padding: 12px 0;
+        font-size: 0.95rem;
+    }
+
+    .aula-conteudo ul {
+        margin-left: 18px;
     }
 }

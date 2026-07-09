@@ -395,6 +395,10 @@ body {
         padding: 0 20px;
     }
 
+    .inicial {
+        height: auto;
+    }
+
     .inicio h1 {
         font-size: 5rem;
         line-height: 5rem;
@@ -441,6 +445,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    .inicial {
+        height: auto;
+    }
+
     .hero-container .card {
         display: none;
     }
@@ -448,6 +456,15 @@ body {
     .hero-container > div {
         width: 100%;
         padding: 0 20px;
+    }
+
+    .inicio {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .inicio .hero-icons {
+        justify-content: flex-start;
     }
     
     .contato > div {
@@ -479,6 +496,23 @@ body {
         line-height: 4rem;
     }
 
+    .grupo-inputs {
+        flex-direction: column;
+    }
+
+    .grupo-inputs input:first-child {
+        border-right: none;
+        border-bottom: 1px solid #d8c7a6;
+    }
+
+    .dados form {
+        width: 100%;
+    }
+
+    .dados form button {
+        width: 100%;
+    }
+
     .img-container {
         flex: 0 0 100%;
     }
@@ -507,6 +541,14 @@ body {
     .inicio h1 {
         font-size: 3rem;
         line-height: 3rem;
+    }
+
+    .inicio .hero-icons > div {
+        width: 100%;
+    }
+
+    .inicio .hero-icons {
+        gap: 14px;
     }
 }
 
