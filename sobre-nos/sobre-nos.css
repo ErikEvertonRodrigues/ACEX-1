@@ -318,6 +318,15 @@ h1, h2, h3 {
 }
 
 @media (max-width: 768px) {
+    .sc-hero,
+    .sc-projeto,
+    .sc-bacharelado,
+    .sc-conteudo,
+    .sc-cta {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
     .sc-hero {
         padding: 40px 20px 36px;
     }
@@ -341,6 +350,11 @@ h1, h2, h3 {
 @media (max-width: 480px) {
     .sc-card {
         flex-direction: column;
+    }
+
+    .sc-card,
+    .sc-oferta-item {
+        padding: 18px 16px;
     }
 
     .sc-cta-botoes {

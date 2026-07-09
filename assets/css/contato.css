@@ -116,3 +116,31 @@ body {
     }
     
 }
+
+@media (max-width: 768px) {
+    .contato {
+        padding: 32px 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contato .container {
+        padding: 0 16px;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 520px) {
+    .grupo-inputs {
+        flex-direction: column;
+    }
+
+    .grupo-inputs input:first-child {
+        border-right: none;
+        border-bottom: 1px solid #d8c7a6;
+    }
+
+    .dados form button {
+        width: 100%;
+    }
+}
