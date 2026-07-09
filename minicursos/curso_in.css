@@ -72,6 +72,7 @@ body {
 
 .conteudo {
     padding: 20px 30px;
+    padding-bottom: 50px;
     overflow-y: auto;
 }
 
@@ -225,4 +226,8 @@ body {
     .sidebar.open {
         left: 0;
     }
+}
+
+#container-contato {
+    margin-top: 50px;
 }
