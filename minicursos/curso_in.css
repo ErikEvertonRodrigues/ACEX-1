@@ -225,9 +225,14 @@ body {
     }
 }
 
+<<<<<<< HEAD
 #container {
     margin-top: 50px;
     p {
         margin-bottom: 10px;
     }
+=======
+#container-contato {
+    margin-top: 50px;
+>>>>>>> main
 }
