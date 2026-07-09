@@ -25,6 +25,10 @@
     background-color: #000;
 }
 
+.bg-senary {
+    background-color: #f6f2ea;
+}
+
 .color-primary {
     color: #000;
 }
@@ -50,6 +54,11 @@
 
 .bg-dark-quinary {
     background-color: #fff;
+}
+
+.bg-dark-senary {
+    background-color: #222;
+    border-color: #000;
 }
 
 
