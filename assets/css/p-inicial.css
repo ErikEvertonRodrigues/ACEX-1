@@ -14,7 +14,7 @@ body {
 
 /* Primeira section */
 .inicial {
-    height: 80vh;
+    height: calc(100vh - 115px);
 }
 
 .inicial > .hero-container {
@@ -635,5 +635,9 @@ body {
         grid-template-columns: 1fr;
         gap: 40px;
         padding: 50px 20px;
+    }
+    .inicial {
+        height: auto;
+        padding-bottom: 5%;
     }
 }

@@ -70,7 +70,8 @@ const classMap = {
   "bg-secundary": "bg-dark-secondary",
   "bg-tertiary": "bg-dark-tertiary",
   "bg-quaternary": "bg-dark-quaternary",
-  "bg-quinary": "bg-dark-quinary"
+  "bg-quinary": "bg-dark-quinary",
+  "bg-senary": "bg-dark-senary"
 }
 
 function swapThemes(toDark) {

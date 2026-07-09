@@ -145,11 +145,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     aula.tempo?.replace("Duracao: ", "") || "--:--";
 
                 li.innerHTML = `
-                    <span class="item-title">
+                    <span class="item-title color-primary">
                         ${aula.titulo || "Aula sem título"}
                     </span>
 
-                    <span class="item-time">
+                    <span class="item-time color-primary">
                         ${tempoLimpo}
                     </span>
                 `;
