@@ -116,8 +116,8 @@ themeToggle.addEventListener('change', () => {
 });
 
 if (savedTheme) {
-  applyTheme(savedTheme);
   themeToggle.cheked = savedTheme === "dark" ? true : false;
+  applyTheme(savedTheme);
 } else {
   const systemTheme = isDark ? "dark" : "light";
   applyTheme(systemTheme);

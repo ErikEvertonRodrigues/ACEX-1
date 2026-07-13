@@ -1,3 +1,5 @@
+import { applyTheme } from "./script.js";
+
 let cursos = [];
 let categoriasSelecionadas = [];
 
@@ -154,6 +156,8 @@ function gerarCursos(listaCursos) {
     mainCards.innerHTML = listaCursos
         .map(curso => gerarCard(curso))
         .join('');
+
+    applyTheme(localStorage.getItem("theme"));
 }
 
 btnCarregarMais.addEventListener('click', () => {

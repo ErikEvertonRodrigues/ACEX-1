@@ -1,3 +1,5 @@
+import { applyTheme } from "./script.js";
+
 let ebooks = [];
 let quantidadeExibida = 8;
 
@@ -126,6 +128,7 @@ function gerarEbooks(lista) {
         .join('');
 
     mainCards.innerHTML = htmlMainCards;
+    applyTheme(localStorage.getItem("theme"));
 }
 
 const botoesFiltro = document.querySelectorAll('.btn-filtros');

@@ -150,8 +150,8 @@ header > div button i {
     visibility: hidden;
     opacity: 0;
     transition: 
-        transform 1s ease,
-        opacity 1s ease;
+        transform 500ms ease,
+        opacity 500ms ease;
     z-index: 1000;
 }
 

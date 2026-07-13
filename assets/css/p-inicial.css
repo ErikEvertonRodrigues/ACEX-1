@@ -14,7 +14,7 @@ body {
 
 /* Primeira section */
 .inicial {
-    height: calc(100vh - 115px);
+    height: calc(100vh - 100px);
 }
 
 .inicial > .hero-container {
