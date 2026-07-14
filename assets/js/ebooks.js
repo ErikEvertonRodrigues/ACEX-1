@@ -99,9 +99,9 @@ function gerarCard(ebook) {
             >
 
             <div class="card-info">
-                <h2 class="color-primary">${ebook.titulo.substring(0, 25)}</h2>
+                <h2 class="color-primary">${ebook.titulo.substring(0, 40)}</h2>
 
-                <p class="color-primary">${ebook.autor}</p>
+                <p class="autor color-primary">${ebook.autor}</p>
 
                 <p class="color-primary">
                     <i class="fa-regular fa-file-lines"></i>

@@ -103,9 +103,13 @@ main {
 }
 
 .card-info h2 {
-    font-size: 1.2rem;
-    min-height: 48px;
+    font-size: 1.1rem;
+    min-height: 64px;
     font-family: var(--poppins);
+}
+
+.card-info .autor {
+    min-height: 70px;
 }
 
 .card-info {
