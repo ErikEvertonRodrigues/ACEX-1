@@ -108,6 +108,8 @@ body {
 .destaques {
     padding-top: 30px;
     padding-bottom: 30px;
+    /* compensa o header sticky de 100px ao ancorar em #destaques */
+    scroll-margin-top: 100px;
 }
 
 .cabecalho-destaque {
