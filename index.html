@@ -9,45 +9,54 @@
     <link rel="stylesheet" href="./assets/css/p-inicial.css">
 </head>
 <body>
-    <header>
+    <header class="bg-primary">
         <div class="container">
-            <div class="logo-container"><img class="logo" src="./assets/imgs/cacto_e_nome_pretooo.svg" alt=""></div>
+            <div class="logo-container"><img id="logo" class="logo" src="" alt=""></div>
 
             <ul class="hamburguer-container hide" type="none">
-                <li class="hamburguer"></li>
-                <li class="hamburguer"></li>
-                <li class="hamburguer"></li>
+                <li class="hamburguer bg-quinary"></li>
+                <li class="hamburguer bg-quinary"></li>
+                <li class="hamburguer bg-quinary"></li>
             </ul>
 
             <nav class="navigation">
                 <ul type="none">
-                    <li><a class="nav-link" href="./index.html">Inicio</a></li>
-                    <li><a class="nav-link" href="#">Sobre o Curso</a></li>
-                    <li><a class="nav-link" href="pagina cursos/cursos.html">Minicursos</a></li>
-                    <li><a class="nav-link" href="ebooks/ebooks.html">E-books</a></li>
-                    <li><a class="nav-link" href="#">Contato</a></li>
+                    <li><a class="nav-link color-primary" href="./index.html">Inicio</a></li>
+                    <li><a class="nav-link color-primary" href="./sobre-nos/sobre-nos.html">Sobre Nós</a></li>
+                    <li><a class="nav-link color-primary" href="./minicursos/cursos.html">Minicursos</a></li>
+                    <li><a class="nav-link color-primary" href="./ebooks/ebooks.html">E-books</a></li>
                 </ul>
             </nav>
+
+            <button class="theme-button">
+                
+            </button>
         </div>
+        <nav class="navigation-mob">
+            <ul type="none">
+                <li><a class="nav-link color-primary" href="./index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                <li><a class="nav-link color-primary" href="./sobre-nos/sobre-nos.html"><i class="fa-solid fa-circle-question"></i> Sobre Nós</a></li>
+                <li><a class="nav-link color-primary" href="./minicursos/cursos.html"><i class="fa-solid fa-play"></i> Minicursos</a></li>
+                <li><a class="nav-link color-primary" href="./ebooks/ebooks.html"><i class="fa-solid fa-book"></i> E-books</a></li>
+                <li>
+                    <div>
+                        <label class="switch">
+                            <input type="checkbox" id="theme-toggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <nav class="navigation-mob">
-        <ul type="none">
-            <li><a class="nav-link" href="./index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
-            <li><a class="nav-link" href="#"><i class="fa-solid fa-circle-question"></i> Sobre o Curso</a></li>
-            <li><a class="nav-link" href="./pagina cursos/cursos.html"><i class="fa-solid fa-play"></i> Minicursos</a></li>
-            <li><a class="nav-link" href="./ebooks/ebooks.html"><i class="fa-solid fa-book"></i> E-books</a></li>
-            <li><a class="nav-link" href="#"><i class="fa-solid fa-phone"></i> Contato</a></li>
-        </ul>
-    </nav>
-
     <main>
-        <section class="inicial">   
+        <section class="inicial bg-primary">   
             <div class="container hero-container">
                 <div class="inicio">
-                    <h1>Aprenda. <br>Evolua. <br><span class="destaque">Transforme.</span></h1>
+                    <h1 class="color-primary">Aprenda. <br>Evolua. <br><span class="destaque">Transforme.</span></h1>
                     <p>Ebooks e minicursos práticos para você aprender, aplicar e crescer na área de tecnologia.</p>
-                    <a class="btn-inicio" href="#2">Ver minicursos</a>
+                    <a class="btn-inicio" href="#destaques">Ver minicursos</a>
                     <div class="hero-icons">
                         <div>
                             <i class="fa-solid fa-book-open"></i>
@@ -60,98 +69,118 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img class="alunos" src="./assets/imgs/cacto_claro.svg" alt="Estudantes do IFBA">
+                    <img class="alunos" src="./assets/imgs/cacto_1080p (1).svg" alt="Logo">
                 </div>
             </div>
         </section>
 
-        <section class="destaques">
-            <div class="container">
-                <h2>Destaques</h2>
-
-                <div class="carrossel"></div>
-
+        <section class="destaques bg-secundary" id="destaques">
+        <div class="container">
+            
+            <div class="cabecalho-destaque">
+                <h2 class="color-primary">Cursos em Destaque</h2>
+                <a href="./minicursos/cursos.html" class="btn-saber-mais">
+                    Saber mais <i class="fa-solid fa-arrow-right"></i>
+                </a>
             </div>
-        </section>
+            <div class="carrossel" id="carrossel-cursos"></div>
 
-        <section class="sobre-curso" id="2">
-            <h1>Sobre o curso</h1>
-            <p>O Bacharelado em Ciência da Computação do IFBA prepara profissionais para desenvolver soluções 
-            tecnológicas inovadoras, com sólida base teórica e prática.</p>
-            <div class="cont">
-                <div class="info">
-                    <img class="img-info" src="img/5920.jpg" alt="">
-                    <h3>Formação completa</h3>
-                    <br>
-                    <p>Curso com duração de 4 anos, formando profissionais capacitados para o mercado.</p>
-                </div>
-                <div class="info">
-                    <img class="img-info" src="img/5920.jpg" alt="">
-                    <h3>Formação completa</h3>
-                    <br>
-                    <p>Curso com duração de 4 anos, formando profissionais capacitados para o mercado.</p>
-                </div>
-                <div class="info">
-                    <img class="img-info" src="img/5920.jpg" alt="">
-                    <h3>Formação completa</h3>
-                    <br>
-                    <p>Curso com duração de 4 anos, formando profissionais capacitados para o mercado.</p>
-                </div>
-                <div class="info">
-                    <img class="img-info" src="img/5920.jpg" alt="">
-                    <h3>Formação completa</h3>
-                    <br>
-                    <p>Curso com duração de 4 anos, formando profissionais capacitados para o mercado.</p>
-                </div>
+            <div class="cabecalho-destaque" style="margin-top: 2rem;">
+                <h2 class="color-primary">E-books em Destaque</h2>
+                <a href="./ebooks/ebooks.html" class="btn-saber-mais">
+                    Saber mais <i class="fa-solid fa-arrow-right"></i>
+                </a>
             </div>
-        </section>
-        <section class="contato">
-    <div class="container">
-        <div class="texto">
-            <h2>Fique por dentro das novidades</h2>
-            <p>Receba lançamentos de novos e-books, minicursos e conteúdos exclusivos.</p>
+            <div class="carrossel" id="carrossel-ebooks"></div>
+            
         </div>
+        </section>
 
-        <div class="dados">
-            <form id="form">
-                <div class="grupo-inputs">
-                    <input type="email" placeholder="📧 Seu melhor e-mail" name="email" id="email">
-                    
-                    <input type="number" placeholder="📞 WhatsApp com DDD" name="telefone" id="telefone">
+        <section class="sobre-curso bg-secundary" id="2">
+            <div class="container sc-index-grid">
+                <div class="sc-index-texto">
+                    <span class="sc-index-label">Projeto ACEX I</span>
+                    <h2 class="color-primary">Tecnologia, aprendizagem e extensão</h2>
+                    <p>O Mandacaru Tech é uma iniciativa desenvolvida pela turma de ACEX I,
+                    com o objetivo de produzir e compartilhar conteúdos introdutórios
+                    em computação para a comunidade. O projeto integra ensino, prática
+                    e extensão, fortalecendo a formação dos estudantes e ampliando o
+                    acesso ao conhecimento tecnológico.</p>
+                    <a href="./sobre-nos/sobre-nos.html" class="sc-index-link">Saiba mais <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                    <button type="submit"> Inscrever-se </button>
-            </form>
+
+                <div class="sc-index-cards">
+                    <div class="sc-index-card">
+                        <div class="sc-index-icon">AC</div>
+                        <div class="sc-index-card-body">
+                            <h3>Feito pelos estudantes</h3>
+                            <p>Conteúdo desenvolvido pela turma durante o semestre letivo.</p>
+                        </div>
+                    </div>
+                    <div class="sc-index-card">
+                        <div class="sc-index-icon">AB</div>
+                        <div class="sc-index-card-body">
+                            <h3>Acesso livre para todos</h3>
+                            <p>Material disponível para qualquer pessoa, dentro ou fora da faculdade.</p>
+                        </div>
+                    </div>
+                    <div class="sc-index-card">
+                        <div class="sc-index-icon">ON</div>
+                        <div class="sc-index-card-body">
+                            <h3>Presente nas redes</h3>
+                            <p>Publicações no YouTube e Instagram para alcançar mais pessoas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <section class="contato bg-tertiary">
+        <div class="container">
+            <div class="texto">
+                <h2 class="color-primary">Fique por dentro das novidades</h2>
+                <p>Receba lançamentos de novos e-books, minicursos e conteúdos exclusivos.</p>
+            </div>
+
+            <div class="dados">
+                <form id="form">
+                    <div class="grupo-inputs">
+                        <input type="email" placeholder="📧 Seu melhor e-mail" name="email" id="email">
+                        
+                        <input type="number" placeholder="📞 WhatsApp com DDD" name="telefone" id="telefone">
+                    </div>
+                        <button type="submit"> Inscrever-se </button>
+                </form>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
     </main>
-    <footer>
+    <footer class="bg-primary">
         <div class="footer-container">
             <div class="footer-col footer-logo">
-                <img class="logo" src="assets/imgs/somente_nome_claro.svg" alt="">
+                <img id="logo-footer" class="logo" src="" alt="">
             </div>
             <div class="footer-col footer-logo">
-                <img class="logo" src="assets/imgs/logo-ifba.png" alt="">
+                <img id="logo-ifba" class="logo" src="" alt="">
             </div>
             <div class="footer-col">
-                <h3>Redes Sociais</h3>  
-                <p>Siga-nos nas redes sociais e fique por dentro das novidades</p>
+                <h3 class="color-primary">Redes Sociais</h3>  
+                <p class="color-primary">Siga-nos nas redes sociais e fique por dentro das novidades</p>
 
                 <div class="redes">
                     <a href="https://www.instagram.com/mandacarutech_ext/" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-instagram color-primary"></i>
                     </a>
                     <a>
-                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-youtube color-primary"></i>
                     </a>
                 </div>
             </div>
         </div>
         <div class="footer-desc">
-            <p>&copy; 2026 Mandacaru Tech. Todos os direitos reservados.</p>
+            <p class="color-primary">&copy; 2026 Mandacaru Tech. Todos os direitos reservados.</p>
         </div>
     </footer>
-    <script src="assets/js/script.js"></script>
+    <script type="module" src="assets/js/script.js"></script>
     <script src="assets/js/inicial.js"></script>
     <script src="assets/js/contato.js"></script>
 </body>

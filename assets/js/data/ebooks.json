@@ -2,92 +2,42 @@
 [
     {
         "id": 1,
-        "titulo": "Alta Performance em Sites Web",
-        "autor": "Steve Souders",
-        "categoria": "Design",
+        "titulo": "Descomplicando a Lógica de Programação",
+        "autor": "Lorena Rachel Santos de Souza",
+        "categoria": "Tecnologia",
         "destaque": true,
-        "paginas":"152",
-        "imagem": "../assets/imgs/capa.png",
+        "paginas":"74",
+        "imagem": "/assets/imgs/DescomplicandoALogicaDeProgramacao.png",
         "descricao": "perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
     },
     {
         "id": 2,
-        "titulo": "Memória de Cálculo",
-        "autor": "Steve Souders",
+        "titulo": "Git e Github",
+        "autor": "Maria Clara Leite Dantas e Myllena Sales Oliveira ",
         "categoria": "Tecnologia",
-        "destaque": false,
-        "paginas":"152",
-        "imagem": "../assets/imgs/capa_verde.png",
+        "destaque": true,
+        "paginas":"61",
+        "imagem": "/assets/imgs/Git e Github.png",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
     },
     {
         "id": 3,
-        "titulo": "Banco de Dados",
-        "autor": "Steve Souders",
-        "categoria": "Banco de dados",
-        "destaque": false,
-        "paginas":"152",
-        "imagem": "../assets/imgs/capa_preta.png",
+        "titulo": "Boas Práticas de Segurança Digital",
+        "autor": "Caroline Xavier de Santana e Gustavo Ramon Gomes Sandes",
+        "categoria": "Tecnologia",
+        "destaque": true,
+        "paginas":"47",
+        "imagem": "/assets/imgs/Boas Práticas de Segurança Digital.png",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
     },
     {
        "id": 4,
-        "titulo": "Redstone",
-        "autor": "Steve Souders",
-        "categoria": "Tecnologia",
-        "destaque": false,
-        "paginas":"152",
-        "imagem": "../assets/imgs/capa.png",
-        "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
-    },
-    {
-        "id": 5,
-        "titulo": "Inteligência Artificial",
-        "autor": "Steve Souders",
-        "categoria": "Design",
-        "destaque": true,
-        "paginas":"152",
-        "imagem": "../assets/imgs/capa_verde.png",
-        "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
-    },
-    {
-        "id": 6,
-        "titulo": "Dragon ball",
-        "autor": "Steve Souders",
+        "titulo": "A Lógica do Detetive",
+        "autor": "Dian Fritz Rodrigues Gama Sobrinho",
         "categoria": "Tecnologia",
         "destaque": true,
-        "paginas":"152",
-        "imagem": "../assets/imgs/capa_preta.png",
-        "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
-    },
-    {
-        "id": 7,
-        "titulo": "Naruto",
-        "autor": "Steve Souders",
-        "categoria": "Banco de dados",
-        "destaque": false,
-        "paginas":"152",
-        "imagem": "../assets/imgs/capa.png",
-        "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
-    },
-    {
-        "id": 8,
-        "titulo": "Yu Yu Hakusho",
-        "autor": "Steve Souders",
-        "categoria": "Tecnologia",
-        "destaque": false,
-        "paginas":"152",
-        "imagem": "../assets/imgs/capa_verde.png",
-        "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
-    },
-    {
-       "id": 9,
-        "titulo": "Kimetsu no yiaba",
-        "autor": "Steve Souders",
-        "categoria": "Banco de dados",
-        "destaque": false,
-        "paginas":"152",
-        "imagem": "../assets/imgs/capa_preta.png",
+        "paginas":"46",
+        "imagem": "/assets/imgs/capa.png",
         "descricao": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi quisquam hic eum eaque illo maiores officia obcaecati, perspiciatis dolores soluta delectus excepturi quae, ex enim sequi itaque fuga sit id."
     }
 ]

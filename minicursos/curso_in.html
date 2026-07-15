@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFBA Paulo Afonso | Video do Curso</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="curso_in.css">
+    <script src="https://kit.fontawesome.com/898f59f198.js" crossorigin="anonymous"></script>
+    <script type="module" src="../assets/js/minicurso.js" defer></script>
+    <script type="module" src="../assets/js/script.js" defer></script>
+    <script src="../assets/js/contato.js" defer></script>
+    
+    <link rel="stylesheet" href="../assets/css/contato.css">
+</head>
+
+<body>
+    <header class="bg-primary">
+        <div class="container">
+            <div class="logo-container">
+                <a href="../index.html"><img id="logo" class="logo" src="" alt=""></a>
+            </div>
+
+            <ul class="hamburguer-container hide" type="none">
+                <li class="hamburguer bg-quinary"></li>
+                <li class="hamburguer bg-quinary"></li>
+                <li class="hamburguer bg-quinary"></li>
+            </ul>
+
+            <nav class="navigation">
+                <ul type="none">
+                    <li><a class="nav-link color-primary" href="../index.html">Inicio</a></li>
+                    <li><a class="nav-link color-primary" href="../sobre-nos/sobre-nos.html">Sobre Nós</a></li>
+                    <li><a class="nav-link color-primary" href="./cursos.html">Minicursos</a></li>
+                    <li><a class="nav-link color-primary" href="../ebooks/ebooks.html">E-books</a></li>
+                </ul>
+            </nav>
+
+            <button class="theme-button">
+                
+            </button>
+        </div>
+        <nav class="navigation-mob">
+            <ul type="none">
+                <li><a class="nav-link" href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                <li><a class="nav-link" href="../sobre-nos/sobre-nos.html"><i class="fa-solid fa-circle-question"></i> Sobre Nós</a></li>
+                <li><a class="nav-link" href="../minicursos/cursos.html"><i class="fa-solid fa-play"></i> Minicursos</a></li>
+                <li><a class="nav-link" href="../ebooks/ebooks.html"><i class="fa-solid fa-book"></i> E-books</a></li>
+                <li>
+                    <div>
+                        <label class="switch">
+                            <input type="checkbox" id="theme-toggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="curso-layout bg-quaternary">
+    <aside class="sidebar bg-senary">
+        <div class="curso-info">
+            <a class="color-primary" href="cursos.html"><i class="fa-solid fa-arrow-left color-primary"></i> Voltar para minicursos</a>
+            <div>
+                <h2 id="curso-titulo-principal"></h2>
+            </div>
+        </div>
+
+        <ul class="aulas" id="playlist-dinamica">
+        </ul>
+    </aside>
+
+    <section class="conteudo">
+
+        <div class="topbar">
+            <button class="open-sidebar"><i class="fa-solid fa-bars"></i> Exibir aulas</button>
+            <button id="btn-proxima-aula">Próxima Aula →</button>
+        </div>
+
+        <h1 id="titulo-aula" class="color-primary"></h1>
+
+        <div class="video-container">
+            <iframe
+                id="video-player"
+                title="Video Aula"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <article class="aula-conteudo" id="conteudo-aula">
+        </article>
+        <div class="container" id="container-contato"> 
+            <div class="texto"> 
+                <h2 class="color-primary">Fique por dentro das novidades</h2> 
+                <p class="color-primary">Receba lançamentos de novos e-books, minicursos e conteúdos exclusivos.</p> 
+            </div> 
+
+            <div class="dados"> 
+                <form id="form"> 
+                    <div class="grupo-inputs"> 
+                        <input type="email" placeholder="📧 Seu melhor e-mail" name="email" id="email"> 
+                        <input type="number" placeholder="📞 WhatsApp com DDD" name="telefone" id="telefone"> 
+                    </div> <button type="submit"> Inscrever-se </button> 
+                </form> 
+            </div> 
+        </div>
+    </section>
+</main>
+
+    <script>
+        const button = document.querySelector('.open-sidebar');
+        const sidebar = document.querySelector('.sidebar');
+        
+        button.addEventListener('click', () => {
+            event.stopPropagation();
+            sidebar.classList.add('open');
+            button.classList.add('hidden');
+        });
+
+        window.addEventListener('click', (event) => {
+
+            if (
+            !button.contains(event.target) &&
+            !sidebar.contains(event.target)
+        ) {
+            sidebar.classList.remove('open');
+            button.classList.remove('hidden');
+        }
+        });
+
+    </script>
+</body>
+
+</html>

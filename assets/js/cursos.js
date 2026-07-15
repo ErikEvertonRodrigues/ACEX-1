@@ -1,3 +1,5 @@
+import { applyTheme } from "./script.js";
+
 let cursos = [];
 let categoriasSelecionadas = [];
 
@@ -130,7 +132,7 @@ function gerarCard(curso) {
 
     return `
         <a href="curso_in.html?curso=${curso.link}" class="course-card">
-            <article class="card_curso">
+            <article class="card_curso bg-senary">
                 <div class="dados">
                     <span class="tag ${tagColor}">
                         ${curso.categoria}
@@ -138,9 +140,9 @@ function gerarCard(curso) {
                 </div>
 
                 <div class="card__body">
-                    <h3>${curso.titulo}</h3>
-                    <p>${curso.descricao}</p>
-                    <span>${curso.horas} horas</span>
+                    <h3 class="color-primary">${curso.titulo}</h3>
+                    <p class="color-primary">${curso.descricao}</p>
+                    <span class="color-primary">${curso.horas} horas</span>
                 </div>
             </article>
         </a>
@@ -154,6 +156,8 @@ function gerarCursos(listaCursos) {
     mainCards.innerHTML = listaCursos
         .map(curso => gerarCard(curso))
         .join('');
+
+    applyTheme(localStorage.getItem("theme"));
 }
 
 btnCarregarMais.addEventListener('click', () => {

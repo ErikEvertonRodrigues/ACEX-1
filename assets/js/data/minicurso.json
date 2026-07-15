@@ -4,70 +4,87 @@
     "aulas": [
 {
   "id": 1,
-  "titulo": "Introducao ao Python",
-  "tempo": "Duracao: 15:30",
+  "titulo": "Lógica e Primeiro Código",
+  "tempo": "Duracao: 7:43",
   "descricao": "Nesta aula voce aprendera os conceitos fundamentais e praticos necessarios para dominar este topico. Assista com atencao e pratique os exercicios propostos.",
-  "videoUrl": "https://www.youtube.com/embed/9JNqj8ARj_4?si=BOoSBQOw4t7umQfW",
-  "conteudo": "<h2>Introdução</h2><p>Git é um sistema de controle de versão...</p><ul><li>Controle de versões</li><li>Branches</li></ul>",
+  "videoUrl": "https://www.youtube.com/embed/MoXjOx1Uyr8?si=9-wtMMO_UuUwetQ0",
+  "conteudo": "<h2>Seja bem-vindo(a) ao Minicurso de Python!</h2><p>Nesta primeira aula você dará os primeiros passos na linguagem Python, conhecendo os conceitos fundamentais da lógica de programação e criando seu primeiro programa.</p><ul><li>O que é lógica de programação</li><li>Como um algoritmo funciona</li><li> O que é a linguagem Python</li><li> Instalação e configuração do ambiente</li><li> Criando seu primeiro programa em Python</li><li>Executando um código pela primeira vez</li></ul>",
   "materiais": [
     {
-      "nome": "Apostila PDF",
-      "link": "https://www.google.com"
-    },
-    {
-      "nome": "Documentação Python",
-      "link": "https://docs.python.org/pt-br/3/"
+      "nome": "Apostila PDF 1",
+      "link": "https://drive.google.com/uc?export=download&id=1QYYY8VOQ7c1tD1BBPHBiFpFGkA8FtgSb"
     }
   ]
 },
       {
         "id": 2,
         "titulo": "Variaveis e Tipos de Dados",
-        "tempo": "Duracao: 22:10",
+        "tempo": "Duracao: 14:29",
         "descricao": "Entenda como o Python armazena informações na memória. Vamos aprender sobre Strings, Inteiros, Floats e Booleanos na prática.",
-        "videoUrl": "https://www.youtube.com/embed/9JNqj8ARj_4?si=BOoSBQOw4t7umQfW",
-         "conteudo": "<h2>Introdução</h2><p>Git é um sistema de controle de versão...</p><ul><li>Controle de versões</li><li>Branches</li></ul>",
+        "videoUrl":"https://www.youtube.com/embed/TzjZ51_TYGg?si=c_bQDhb9rDI65J9N",
+         "conteudo": "<h2>Seja bem-vindo(a) ao Minicurso de Python!</h2><p>Nesta aula você aprenderá como armazenar informações utilizando variáveis e como receber dados digitados pelo usuário por meio da função input().</p><ul><li>O que são variáveis</li><li>Regras para declaração de variáveis</li><li> Tipos de dados básicos</li><li> Função input()</li><li>Exibição de informações com print()</li><li>Exemplos práticos</li></ul>",
          "materiais": [
   {
-    "nome": "Material 1",
-    "link": "https://..."
-  },
-  {
-    "nome": "Material 2",
-    "link": "https://..."
+    "nome": "Apostila PDF 2",
+    "link": "https://drive.google.com/uc?export=download&id=1Loibi9-4GXI_5v8H88dIEjVixTxyGlY_"
   }
 ]
       },
       {
         "id": 3,
         "titulo": "Estruturas Condicionais",
-        "tempo": "Duracao: 18:45",
+        "tempo": "Duracao: 16:54",
         "descricao": "Aprenda a tomar decisões no seu código utilizando as estruturas if, elif e else para controlar o fluxo do programa.",
-        "videoUrl": "https://www.youtube.com/embed/9JNqj8ARj_4?si=BOoSBQOw4t7umQfW",
-         "conteudo": "<h2>Introdução</h2><p>Git é um sistema de controle de versão...</p><ul><li>Controle de versões</li><li>Branches</li></ul>"
+        "videoUrl": "https://www.youtube.com/embed/dvxaibohGGU?si=ftx-dp4hz2ZVG8H8",
+        "conteudo": "<h2>Seja bem-vindo(a) ao Minicurso de Python!</h2><p>Nesta aula você aprenderá como tomar decisões dentro dos seus programas utilizando estruturas condicionais.</p><ul><li>Operadores relacionais</li><li>Operadores lógicos</li><li>if</li><li>elif</li><li>else</li><li>Exemplos práticos</li></ul>",
+        "materiais": [
+  {
+    "nome": "Apostila PDF 3",
+    "link": "https://drive.google.com/uc?export=download&id=1lWM4p4Mevkud5wt63G97q_LR3Ea6eH08"
+  }
+]
       },
       {
         "id": 4,
         "titulo": "Loops e Repeticoes",
-        "tempo": "Duracao: 21:10",
+        "tempo": "Duracao: 7:12",
         "descricao": "Domine as estruturas de repetição for e while. Saiba como automatizar tarefas repetitivas de forma eficiente.",
-        "videoUrl": "https://www.youtube.com/embed/9JNqj8ARj_4?si=BOoSBQOw4t7umQfW",
-         "conteudo": "<h2>Introdução</h2><p>Git é um sistema de controle de versão...</p><ul><li>Controle de versões</li><li>Branches</li></ul>"
+        "videoUrl": "https://www.youtube.com/embed/WT_dxxIihiw?si=_a5HlkB_fBt1NoJK",
+        "conteudo": "<h2>Seja bem-vindo(a) ao Minicurso de Python!</h2><p>Nesta aula você aprenderá como repetir instruções utilizando os principais laços de repetição da linguagem Python.</p><ul><li>Estrutura while</li><li>Estrutura for</li><li>Função range()</li><li>break</li><li>continue</li><li>Exemplos práticos</li></ul>",
+        "materiais": [
+  {
+    "nome": "Apostila PDF 4",
+    "link": "https://drive.google.com/uc?export=download&id=1juyTTsUhkZSPY8pPDqiQzy275MhXX5vq"
+  }
+]
       },
       {
         "id": 5,
-        "titulo": "Funcoes em Python",
-        "tempo": "Duracao: 20:20",
+        "titulo": "Listas e Arrays",
+        "tempo": "Duracao: 8:28",
         "descricao": "Aprenda a modularizar seu código criando funções com def, definindo parâmetros, argumentos e retornando valores.",
-        "videoUrl": "https://www.youtube.com/embed/9JNqj8ARj_4?si=BOoSBQOw4t7umQfW",
-         "conteudo": "<h2>Introdução</h2><p>Git é um sistema de controle de versão...</p><ul><li>Controle de versões</li><li>Branches</li></ul>"
+        "videoUrl": "https://www.youtube.com/embed/-G1N9zc5dSA?si=7TK_A_L5R9spxoBX",
+         "conteudo": "<h2>Seja bem-vindo(a) ao Minicurso de Python!</h2><p>Nesta aula você aprenderá como armazenar múltiplos valores utilizando listas em Python.</p><ul><li>Percorrendo listas com loops</li><li>Métodos mais utilizados</li><li>O que são listas</li><li>Criando listas</li><li>Acessando elementos</li><li> Alterando valores</li></ul>",
+        "materiais": [
+  {
+    "nome": "Apostila PDF 5",
+    "link": "https://drive.google.com/uc?export=download&id=1AOAbiAfZpyD-lHfBC3rmyQuw-hzcogiX"
+  }
+]
       },
       {
         "id": 6,
-        "titulo": "Listas e Tuplas",
-        "tempo": "Duracao: 23:00",
+        "titulo": "Funções e Projeto",
+        "tempo": "Duracao: 14:32",
         "descricao": "Trabalhe com coleções de dados. Veja as diferenças entre listas mutáveis e tuplas imutáveis e como manipulá-las.",
-        "videoUrl": "https://www.youtube.com/embed/9JNqj8ARj_4?si=BOoSBQOw4t7umQfW"
+        "videoUrl": "https://www.youtube.com/embed/39S1u5ZvIXI?si=0c9tWKW1YlF1h5hV",
+        "conteudo": "<h2>Seja bem-vindo(a) ao Minicurso de Python!</h2><p>Nesta aula você aprenderá como criar funções em Python e desenvolverá um projeto prático utilizando os principais conceitos estudados até aqui.</p><ul><li>O que são funções</li><li>Definindo funções com def</li><li>Parâmetros</li><li>Retorno de valores</li><li>Organização do código</li><li>Desenvolvimento de um projeto prático</li></ul>",
+        "materiais": [
+  {
+    "nome": "Apostila PDF 6",
+    "link": "https://drive.google.com/uc?export=download&id=1k5-1xXlhTnACMgcvjSKOoopNLTjPje-z"
+  }
+]
       }
     ]
   },
@@ -89,29 +106,120 @@
     {
       "id": 1,
       "titulo": "Introdução ao Desenvolvimento Web",
-      "tempo": "Duracao: 12:30",
-      "videoUrl": "https://www.youtube.com/embed/916GWv2Qs08",
+      "tempo": "Duracao: 4:18",
+      "videoUrl": "https://www.youtube.com/embed/ytG-A0yF00U?si=nk71IB9SlXKRG2hg",
       "conteudo": "<h2>Introdução</h2><p>Nesta aula você conhecerá o funcionamento da Web, navegadores e servidores.</p><h2>O que você aprenderá</h2><ul><li>Como a internet funciona</li><li>Front-end e Back-end</li><li>Tecnologias da Web</li></ul>"
     },
     {
       "id": 2,
-      "titulo": "HTML na Prática",
-      "tempo": "Duracao: 18:45",
-      "videoUrl": "https://www.youtube.com/embed/Fhy-5CtVkiM",
+      "titulo": "Preparando o Ambiente",
+      "tempo": "Duracao: 5:22",
+      "videoUrl": "https://www.youtube.com/embed/YpzyoTY7xVc?si=sAfvSTYqXsDxUfmG",
       "conteudo": "<h2>HTML</h2><p>HTML é a linguagem responsável pela estrutura das páginas web.</p><ul><li>Tags</li><li>Links</li><li>Imagens</li><li>Formulários</li></ul>"
     },
     {
       "id": 3,
-      "titulo": "CSS para Iniciantes",
-      "tempo": "Duracao: 20:15",
-      "videoUrl": "https://www.youtube.com/embed/AGDDdsiZ0Ko",
+      "titulo": "Estrutura Básica de um HTML",
+      "tempo": "Duracao: 5:45",
+      "videoUrl": "https://www.youtube.com/embed/nLQtsn9gH7Q?si=YlD6E0PE9mWZSRk4",
       "conteudo": "<h2>CSS</h2><p>CSS é utilizado para estilizar páginas web.</p><ul><li>Cores</li><li>Fontes</li><li>Flexbox</li><li>Responsividade</li></ul>"
     },
     {
       "id": 4,
-      "titulo": "JavaScript Básico",
-      "tempo": "Duracao: 22:00",
-      "videoUrl": "https://www.youtube.com/embed/Ptbk2af68e8",
+      "titulo": "Textos e Títulos",
+      "tempo": "Duracao: 6:06",
+      "videoUrl": "https://www.youtube.com/embed/PzkR15U_UJ4?si=4bkdm-RlU2aJA-aa",
+      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
+    },
+        {
+      "id": 5,
+      "titulo": "Links e Imagens",
+      "tempo": "Duracao: 7:15",
+      "videoUrl": "https://www.youtube.com/embed/bLe2U9kNKes?si=HZ3Fv9djF8v0i-wn",
+      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
+    },
+        {
+      "id": 6,
+      "titulo": "Listas",
+      "tempo": "Duracao: 4:00",
+      "videoUrl": "https://www.youtube.com/embed/G2GW3LT2_mw?si=eub8KWyQJ6wuUHiM" ,
+      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
+    },
+        {
+      "id": 7,
+      "titulo": "Agrupar Elementos",
+      "tempo": "Duracao: 6:34",
+      "videoUrl": "https://www.youtube.com/embed/uVLd_-SVgzI?si=HpqPjxgkJ1wob0uj" ,
+      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
+    },
+        {
+      "id": 8,
+      "titulo": "Tabelas",
+      "tempo": "Duracao: 7:05",
+      "videoUrl": "https://www.youtube.com/embed/HTl8h_8NQCE?si=MHItDrfNjQRegb_t",
+      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
+    },
+        {
+      "id": 9,
+      "titulo": "Formulários",
+      "tempo": "Duracao: 8:15",
+      "videoUrl": "https://www.youtube.com/embed/VMWSRW1rWyU?si=mQIs9An2Xd3dODrm",
+      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
+    },
+           {
+      "id": 10,
+      "titulo": "Introdução ao CSS",
+      "tempo": "Duracao: 5:15",
+      "videoUrl": "https://www.youtube.com/embed/_gEOh9UF8c4?si=YLWpxxfk1X96yN_9",
+      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
+    },
+           {
+      "id": 11,
+      "titulo": "Seletores",
+      "tempo": "Duracao: 7:06",
+      "videoUrl": "https://www.youtube.com/embed/UdtI3IVXuGQ?si=qEjLOrN5Gr14aDlq",
+      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
+    },
+           {
+      "id": 12,
+      "titulo": "Propriedades CSS",
+      "tempo": "Duracao: 9:11",
+      "videoUrl": "https://www.youtube.com/embed/_asvpJldswA?si=O1fHsPp0j6ABM2ej",
+      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
+    },
+           {
+      "id": 13,
+      "titulo": "Box Model",
+      "tempo": "Duracao: 2:56",
+      "videoUrl": "https://www.youtube.com/embed/GYHGT-t0LCw?si=4ME4UgpoXx2xuT7b",
+      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
+    },
+           {
+      "id": 14,
+      "titulo": "Display (Parte 1)",
+      "tempo": "Duracao: 10:03",
+      "videoUrl": "https://www.youtube.com/embed/qLyopwjMYho?si=edW0TAaayZp6sww0",
+      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
+    },
+           {
+      "id": 15,
+      "titulo": "Display (Parte 2)",
+      "tempo": "Duracao: 4:43",
+      "videoUrl": "https://www.youtube.com/embed/oXeTE0xwMSc?si=802egPOA-WRtbOyx",
+      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
+    },
+           {
+      "id": 16,
+      "titulo": "Flex Direction e Flex Wrap",
+      "tempo": "Duracao: 7:13",
+      "videoUrl": "https://www.youtube.com/embed/py72vKOZ0JQ?si=esxiOunYndYuL072",
+      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
+    },
+           {
+      "id": 17,
+      "titulo": "Projeto Prático",
+      "tempo": "Duracao: 32:03",
+      "videoUrl": "https://www.youtube.com/embed/NyoPtML2Wyw?si=P8AGlygKXd-aDNWP",
       "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
     }
   ]

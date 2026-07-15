@@ -3,20 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="ebooks.css">
-    <link rel="stylesheet" href="../assets/css/animations.css">
+    <title>IFBA Paulo Afonso | Minicursos</title>
     <script src="https://kit.fontawesome.com/898f59f198.js" crossorigin="anonymous"></script>
-    <script type="module" src="../assets/js/ebooks.js" defer></script>
-    <script type="module" src="../assets/js/script.js" defer></script>
-    <title>E-books</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    <link rel="stylesheet" href="cursos.css">
 </head>
 <body>
     <header class="bg-primary">
         <div class="container">
-            <div class="logo-container">
-                <a href="../index.html"><img id="logo" class="logo" src="" alt=""></a>
-            </div>
+            <div class="logo-container"><a href="../index.html"><img id="logo" class="logo" src="" alt=""></a></div>
 
             <ul class="hamburguer-container hide" type="none">
                 <li class="hamburguer bg-quinary"></li>
@@ -28,8 +24,8 @@
                 <ul type="none">
                     <li><a class="nav-link color-primary" href="../index.html">Inicio</a></li>
                     <li><a class="nav-link color-primary" href="../sobre-nos/sobre-nos.html">Sobre Nós</a></li>
-                    <li><a class="nav-link color-primary" href="../minicursos/cursos.html">Minicursos</a></li>
-                    <li><a class="nav-link color-primary" href="./ebooks.html">E-books</a></li>
+                    <li><a class="nav-link color-primary" href="./cursos.html">Minicursos</a></li>
+                    <li><a class="nav-link color-primary" href="../ebooks/ebooks.html">E-books</a></li>
                 </ul>
             </nav>
 
@@ -40,9 +36,9 @@
         <nav class="navigation-mob">
             <ul type="none">
                 <li><a class="nav-link" href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
-                <li><a class="nav-link" href="../sobre-nos/sobre-nos.html"><i class="fa-solid fa-circle-question"></i> Sobre Nós</a></li>
+                <li><a class="nav-link" href="../sobre-nos/sobre-nos.html"><i class="fa-solid fa-circle-question"></i>Sobre Nós</a></li>
                 <li><a class="nav-link" href="../minicursos/cursos.html"><i class="fa-solid fa-play"></i> Minicursos</a></li>
-                <li><a class="nav-link" href="./ebooks.html"><i class="fa-solid fa-book"></i> E-books</a></li>
+                <li><a class="nav-link" href="../ebooks/ebooks.html"><i class="fa-solid fa-book"></i> E-books</a></li>
                 <li>
                     <div>
                         <label class="switch">
@@ -55,45 +51,65 @@
         </nav>
     </header>
 
-    <main class="bg-quaternary">
+    <main id="topo" class="bg-quaternary">
         <section class="hero">
             <div class="container_hero">
                 <p class="titulohero color-primary">Mandacaru Tech - Extensão</p>
-                <h1 class="color-primary" id="titulohero2">E-Books Disponíveis</h1>
+                <h1 id="titulohero2" class="color-primary">Minicursos Disponíveis</h1>
                 <p class="herosubtitulo color-primary">
-                    Expanda seus conhecimentos com nossos <strong>e-books</strong> gratuítos.
+                    Expanda seus conhecimentos com nossos <strong>minicursos</strong> gratuítos.
                     Aprenda no seu ritmo com conteúdo de qualidade.
                 </p>
             </div>
         </section>
+
+<!-- adicao da funcionalidade de filtros para a pagina de cursos jsguys deixei um form ai p facilitar a vida de vcs -->
+
         <section class="filtros-container">
-            <div class="principio">
-                <h4><strong>EXPLORE O CATÁLOGO</strong></h4>
-                <h1 class="color-primary">Encontre seu próximo E-book</h1>
-                <div class="area-busca bg-senary">
-                    <form class="filters__form bg-quaternary" action="#" method="get">
-                        <input class="bg-quaternary color-primary" id="busca" type="text" placeholder="Digite o nome do e-book"/>
-                        <div class="icon "><i class="fa-solid fa-magnifying-glass"></i></div>
-                    </form>
-                    <h3 class="color-primary">Filtrar por área</h3>
-                    <button class="btn-filtros bg-quaternary color-primary" id="todos">Todos</button>
-                    <button class="btn-filtros bg-quaternary color-primary" id="front">Design</button>
-                    <button class="btn-filtros bg-quaternary color-primary" id="back">Banco de dados</button>
-                    <button class="btn-filtros bg-quaternary color-primary" id="data">Tecnologia</button>
-                    <button class="btn-filtros bg-quaternary color-primary" id="limpar">Limpar</button>
-                    <hr>
-                    <p><span id="contador-ebooks">0</span> E-books encontrados</p>
+    <div class="principio">
+        <h4><strong>EXPLORE O CATÁLOGO</strong></h4>
+        <h1 class="color-primary">Encontre seu próximo minicurso</h1>
+
+        <div class="area-busca bg-senary">
+            <form class="filters__form bg-quaternary" action="#" method="get">
+                <input
+                    class="bg-quaternary color-primary"
+                    id="busca"
+                    type="text"
+                    placeholder="Digite o nome do minicurso"
+                />
+                <div class="icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </form>
+
+            <h3 class="color-primary">Filtrar por área</h3>
+
+            <button class="btn-filtros bg-quaternary color-primary" id="todos">Todos</button>
+            <button class="btn-filtros bg-quaternary color-primary" id="design">Design</button>
+            <button class="btn-filtros bg-quaternary color-primary" id="banco">Banco de dados</button>
+            <button class="btn-filtros bg-quaternary color-primary" id="tecnologia">Tecnologia</button>
+            <button class="btn-filtros bg-quaternary color-primary" id="limpar">Limpar</button>
+
+            <hr>
+
+            <p><span id="contador-cursos">0</span> minicursos encontrados</p>
+        </div>
+    </div>
+</section>
+
+        <section id="cursos" class="catalogo">
+
+            <div class="container">
+                <!-- Cards dos cursos geral -->
+                <div class="cards_cursos bg" id="cards_cursos"></div>
+                
+                
+                <div class="carregar_mais">
+                    <button class="btn" type="button">Carregar mais</button>
                 </div>
             </div>
-        </section>
-        
-        <section class="container-content">
-            <div class="content"></div>
-            <div class="carregar_mais">
-                <button class="btn" type="button">Carregar mais</button>
-            </div>
-        </section>
-
+        </section>  
     </main>
 
     <footer class="bg-primary">
@@ -109,10 +125,10 @@
                 <p class="color-primary">Siga-nos nas redes sociais e fique por dentro das novidades</p>
 
                 <div class="redes">
-                    <a target="_blank" href="https://www.instagram.com/mandacarutech_ext/">
+                    <a href="https://www.instagram.com/mandacarutech_ext/" target="_blank">
                         <i class="fa-brands fa-instagram color-primary"></i>
                     </a>
-                    <a href="">
+                    <a>
                         <i class="fa-brands fa-youtube color-primary"></i>
                     </a>
                 </div>
@@ -122,5 +138,8 @@
             <p class="color-primary">&copy; 2026 IFBA - Instituto Federal da Bahia. Todos os direitos reservados.</p>
         </div>
     </footer>
-</body>
+    
+    <script type="module" src="../assets/js/cursos.js"></script>
+    <script type="module" src="../assets/js/script.js"></script>
+    </body>
 </html>

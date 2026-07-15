@@ -1,3 +1,5 @@
+import { applyTheme } from "./script.js";
+
 let ebooks = [];
 let quantidadeExibida = 8;
 
@@ -85,7 +87,7 @@ function gerarCard(ebook) {
         .replace(/\s+/g, '-');
 
     return `
-        <div class="card">
+        <div class="card bg-senary">
             <span class="tag ${tagColor}">
                 ${ebook.categoria}
             </span>
@@ -97,11 +99,11 @@ function gerarCard(ebook) {
             >
 
             <div class="card-info">
-                <h2>${ebook.titulo.substring(0, 25)}</h2>
+                <h2 class="color-primary">${ebook.titulo.substring(0, 40)}</h2>
 
-                <p>${ebook.autor}</p>
+                <p class="autor color-primary">${ebook.autor}</p>
 
-                <p>
+                <p class="color-primary">
                     <i class="fa-regular fa-file-lines"></i>
                     ${ebook.paginas} páginas
                 </p>
@@ -126,6 +128,7 @@ function gerarEbooks(lista) {
         .join('');
 
     mainCards.innerHTML = htmlMainCards;
+    applyTheme(localStorage.getItem("theme"));
 }
 
 const botoesFiltro = document.querySelectorAll('.btn-filtros');
