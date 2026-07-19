@@ -77,7 +77,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     margin-bottom: 25px;
 }
 
@@ -85,10 +84,8 @@ body {
     border: none;
     background: #4f9414;
     color: white;
-
     padding: 10px 18px;
     border-radius: 8px;
-
     cursor: pointer;
 }
 
@@ -106,12 +103,9 @@ body {
 .video-container {
     width: 100%;
     aspect-ratio: 16 / 9;
-
     border-radius: 14px;
     overflow: hidden;
-
     background: #111;
-
     margin-bottom: 40px;
 }
 
@@ -208,10 +202,8 @@ body {
         position: fixed;
         top: 100px;
         left: -100%;
-
         width: 300px;
         height: calc(100vh - 70px);
-
         transition: .3s;
         z-index: 100;
     }
@@ -225,14 +217,6 @@ body {
     }
 }
 
-<<<<<<< HEAD
-#container {
-    margin-top: 50px;
-    p {
-        margin-bottom: 10px;
-    }
-=======
 #container-contato {
     margin-top: 50px;
->>>>>>> main
 }
