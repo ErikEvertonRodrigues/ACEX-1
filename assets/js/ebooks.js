@@ -108,7 +108,7 @@ function gerarCard(ebook) {
                     ${ebook.paginas} páginas
                 </p>
 
-                <a class="download" href="">
+                <a class="download" href="${ebook.pdf}" target="_blank">
                     <i class="fa-solid fa-download"></i>
                     Baixar PDF
                 </a>
