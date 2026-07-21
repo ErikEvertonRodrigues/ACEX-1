@@ -108,120 +108,134 @@
       "titulo": "Introdução ao Desenvolvimento Web",
       "tempo": "Duracao: 4:18",
       "videoUrl": "https://www.youtube.com/embed/ytG-A0yF00U?si=nk71IB9SlXKRG2hg",
-      "conteudo": "<h2>Introdução</h2><p>Nesta aula você conhecerá o funcionamento da Web, navegadores e servidores.</p><h2>O que você aprenderá</h2><ul><li>Como a internet funciona</li><li>Front-end e Back-end</li><li>Tecnologias da Web</li></ul>"
+      "conteudo": "<h2>Seja bem-vindo(a) ao Minicurso de Desenvolvimento Web!</h2><p>Nesta aula introdutória você conhecerá os objetivos do curso, a metodologia que será utilizada e o que será abordado ao longo das próximas aulas. Este minicurso foi desenvolvido para quem deseja dar os primeiros passos no desenvolvimento web, aprendendo desde os conceitos fundamentais até a criação de páginas utilizando HTML e CSS.</p><h2>O que você aprenderá</h2><ul><li>Preparação do ambiente de desenvolvimento</li><li>Front-end e Back-end</li><li>Tecnologias da Web</li></ul>"
     },
     {
       "id": 2,
       "titulo": "Preparando o Ambiente",
       "tempo": "Duracao: 5:22",
       "videoUrl": "https://www.youtube.com/embed/YpzyoTY7xVc?si=sAfvSTYqXsDxUfmG",
-      "conteudo": "<h2>HTML</h2><p>HTML é a linguagem responsável pela estrutura das páginas web.</p><ul><li>Tags</li><li>Links</li><li>Imagens</li><li>Formulários</li></ul>"
+      "conteudo": "<h2>Seja bem-vindo(a) ao Minicurso de Desenvolvimento Web!</h2><p>Nesta aula você aprenderá a preparar todo o ambiente necessário para iniciar seus estudos em HTML e CSS.</p><ul><li>Instalação do Visual Studio Code</li><li>Extensões recomendadas</li><li>Organização das pastas do projeto</li><li>Configuração do ambiente de desenvolvimento</li><li>Preparação para criar as primeiras páginas em HTML e CSS</li></ul>"
     },
     {
       "id": 3,
       "titulo": "Estrutura Básica de um HTML",
       "tempo": "Duracao: 5:45",
       "videoUrl": "https://www.youtube.com/embed/nLQtsn9gH7Q?si=YlD6E0PE9mWZSRk4",
-      "conteudo": "<h2>CSS</h2><p>CSS é utilizado para estilizar páginas web.</p><ul><li>Cores</li><li>Fontes</li><li>Flexbox</li><li>Responsividade</li></ul>"
+      "conteudo": "<h2>Seja bem-vindo(a) ao Minicurso de Desenvolvimento Web!</h2><p>Nesta aula você aprenderá como é organizada a estrutura básica de um documento HTML, compreendendo a função de cada elemento que compõe uma página web.</p><ul><li>O que é a estrutura de um documento HTML</li><li>Configuração do idioma da página</li><li>Meta tags essenciais</li><li>Título da página</li></ul>"
     },
     {
       "id": 4,
       "titulo": "Textos e Títulos",
       "tempo": "Duracao: 6:06",
       "videoUrl": "https://www.youtube.com/embed/PzkR15U_UJ4?si=4bkdm-RlU2aJA-aa",
-      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
+      "conteudo": "<h2>Seja bem-vindo(a) ao Minicurso de Desenvolvimento Web!</h2><p>Nesta aula você aprenderá como inserir textos e criar títulos em uma página utilizando HTML. Esses elementos são fundamentais para estruturar o conteúdo de qualquer site, tornando-o organizado, legível e otimizado para mecanismos de busca</p><ul><li>Hierarquia dos títulos</li><li>Inserção de parágrafos</li><li>Organização do conteúdo da página</li><li>Estruturação semântica do conteúdo</li></ul>"
     },
         {
       "id": 5,
       "titulo": "Links e Imagens",
       "tempo": "Duracao: 7:15",
       "videoUrl": "https://www.youtube.com/embed/bLe2U9kNKes?si=HZ3Fv9djF8v0i-wn",
-      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
+      "conteudo": "<h2>Seja bem-vindo(a) ao Minicurso de Desenvolvimento Web!</h2><p>Nesta aula você aprenderá como adicionar links e imagens às suas páginas utilizando HTML. Esses recursos são essenciais para criar sites interativos, facilitar a navegação entre páginas e enriquecer o conteúdo visual do seu projeto.</p><ul><li>Tag a (âncoras)</li><li>Links internos e externos</li><li> Inserção de imagens com a tag img</li><li>Atributos src, alt, width e height</li></ul>"
     },
         {
       "id": 6,
       "titulo": "Listas",
       "tempo": "Duracao: 4:00",
       "videoUrl": "https://www.youtube.com/embed/G2GW3LT2_mw?si=eub8KWyQJ6wuUHiM" ,
-      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
+      "conteudo": "<h2>Seja bem-vindo(a) ao Minicurso de Desenvolvimento Web!</h2><p>Nesta aula você aprenderá como criar listas em HTML para organizar informações de maneira clara e estruturada. As listas são amplamente utilizadas em menus, tópicos, checklists e diversos elementos presentes em páginas web.</p><ul><li>Listas ordenadas</li><li> Listas não ordenadas</li><li>Listas aninhadas</li><li>Organização de conteúdos utilizando listas</li></ul>"
     },
         {
       "id": 7,
       "titulo": "Agrupar Elementos",
       "tempo": "Duracao: 6:34",
       "videoUrl": "https://www.youtube.com/embed/uVLd_-SVgzI?si=HpqPjxgkJ1wob0uj" ,
-      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
+      "conteudo": "<h2>Seja bem-vindo(a) ao Minicurso de Desenvolvimento Web!</h2><p>Nesta aula você aprenderá como agrupar elementos em uma página utilizando as principais tags de organização do HTML. Essa prática facilita a estruturação do código, melhora a manutenção do projeto e prepara o documento para receber estilos com CSS.</p><ul><li>Tag div</li><li>Tag span</li><li> Estruturação de blocos de conteúdo</li><li>Preparação da página para estilização com CSS</li></ul>"
     },
         {
       "id": 8,
       "titulo": "Tabelas",
       "tempo": "Duracao: 7:05",
       "videoUrl": "https://www.youtube.com/embed/HTl8h_8NQCE?si=MHItDrfNjQRegb_t",
-      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
-    },
+      "conteudo": "<h2>Seja bem-vindo(a) ao Minicurso de Desenvolvimento Web!</h2><p>Nesta aula você aprenderá como criar tabelas em HTML para organizar informações em linhas e colunas. As tabelas são muito utilizadas para exibir dados estruturados de forma clara e organizada.</p><ul><li>Tag table</li><li>Linhas, colunas e cabeçalhos</li><li>Organização de dados em tabelas</li><li>Estrutura básica de tabelas HTML</li></ul>"
+      },
         {
       "id": 9,
       "titulo": "Formulários",
       "tempo": "Duracao: 8:15",
       "videoUrl": "https://www.youtube.com/embed/VMWSRW1rWyU?si=mQIs9An2Xd3dODrm",
-      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
-    },
+      "conteudo": "<h2>Seja bem-vindo(a) ao Minicurso de Desenvolvimento Web!</h2><p>Nesta aula você aprenderá como criar formulários em HTML, um dos recursos mais importantes para desenvolver páginas interativas e permitir a comunicação entre usuários e aplicações web.</p><ul><li>O que são formulários HTML</li><li>Labels, botões e placeholders</li><li>Tipos de entrada</li><li>Boas práticas na criação de formulários</li></ul>"
+      },
            {
       "id": 10,
       "titulo": "Introdução ao CSS",
       "tempo": "Duracao: 5:15",
       "videoUrl": "https://www.youtube.com/embed/_gEOh9UF8c4?si=YLWpxxfk1X96yN_9",
-      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
+      "conteudo": "<h2>Seja bem-vindo(a) ao Minicurso de Desenvolvimento Web!</h2><p>Você aprenderá como aplicar estilos aos elementos HTML, tornando seus sites mais bonitos, organizados e profissionais</p><ul><li>O que é CSS</li><li>Como o CSS funciona</li><li>Seletores básicos</li><li>Primeiras propriedades de estilização</li></ul>"
     },
            {
       "id": 11,
       "titulo": "Seletores",
       "tempo": "Duracao: 7:06",
       "videoUrl": "https://www.youtube.com/embed/UdtI3IVXuGQ?si=qEjLOrN5Gr14aDlq",
-      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
+      "conteudo": "<h2>Seja bem-vindo(a) ao Minicurso de Desenvolvimento Web!</h2><p>Nesta aula você aprenderá o que são os seletores CSS e como utilizá-los para aplicar estilos aos elementos HTML de forma prática e organizada.</p><ul><li>O que são seletores CSS</li><li>Tipos de Seletores</li><li>Agrupamento de seletores</li><li>Boas práticas na utilização de seletores</li></ul>"
     },
            {
       "id": 12,
       "titulo": "Propriedades CSS",
       "tempo": "Duracao: 9:11",
       "videoUrl": "https://www.youtube.com/embed/_asvpJldswA?si=O1fHsPp0j6ABM2ej",
-      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
-    },
+      "conteudo": "<h2>Seja bem-vindo(a) ao Minicurso de Desenvolvimento Web!</h2><p>Nesta aula você conhecerá as principais propriedades do CSS utilizadas para estilizar páginas web. Aprenderemos como alterar cores, tamanhos, fontes, espaçamentos e outros aspectos visuais dos elementos HTML.</p><ul><li>Sintaxe das propriedades CSS</li><li>Tamanho dos textos</li><li> Cores e Fontes</li><li>Organização do código CSS</li></ul>"
+      },
            {
       "id": 13,
       "titulo": "Box Model",
       "tempo": "Duracao: 2:56",
       "videoUrl": "https://www.youtube.com/embed/GYHGT-t0LCw?si=4ME4UgpoXx2xuT7b",
-      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
+      "conteudo": "<h2>Seja bem-vindo(a) ao Minicurso de Desenvolvimento Web!</h2><p>Nesta aula você aprenderá um dos conceitos mais importantes do CSS: o Box Model. Entender como funcionam margin, border, padding e content é fundamental para criar layouts organizados e profissionais.</p><ul><li>O que é o Box Model</li><li>Margin, Border e Padding</li><li>Content</li><li>Inspecionando elementos pelo navegador</li></ul>"
     },
            {
       "id": 14,
       "titulo": "Display (Parte 1)",
       "tempo": "Duracao: 10:03",
       "videoUrl": "https://www.youtube.com/embed/qLyopwjMYho?si=edW0TAaayZp6sww0",
-      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
+      "conteudo":"<h2>Seja bem-vindo(a) ao Minicurso de Desenvolvimento Web!</h2><p>Nesta aula iniciaremos o estudo da propriedade display, entendendo como ela controla o comportamento e a organização dos elementos dentro de uma página HTML.</p><ul><li>O que é a propriedade display</li><li>Elementos block e Elementos inline</li><li>Inline-block</li><li>Exemplos práticos</li></ul>"
     },
            {
       "id": 15,
       "titulo": "Display (Parte 2)",
       "tempo": "Duracao: 4:43",
       "videoUrl": "https://www.youtube.com/embed/oXeTE0xwMSc?si=802egPOA-WRtbOyx",
-      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
+      "conteudo": "<h2>Seja bem-vindo(a) ao Minicurso de Desenvolvimento Web!</h2><p>Dando continuidade ao estudo da propriedade display, nesta aula veremos novos exemplos práticos e entenderemos como ela influencia diretamente na construção de layouts modernos.</p><ul><li>Casos de uso</li><li>Organização dos elementos</li><li>Boas práticas</li><li>Preparação para o Flexbox</li></ul>"
     },
            {
       "id": 16,
       "titulo": "Flex Direction e Flex Wrap",
       "tempo": "Duracao: 7:13",
       "videoUrl": "https://www.youtube.com/embed/py72vKOZ0JQ?si=esxiOunYndYuL072",
-      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
+      "conteudo": "<h2>Seja bem-vindo(a) ao Minicurso de Desenvolvimento Web!</h2><p>Nesta aula iniciaremos o estudo do Flexbox, aprendendo duas propriedades fundamentais para organizar elementos em layouts modernos: flex-direction e flex-wrap.</p><ul><li>Introdução ao Flexbox</li><li>display: flex</li><li>flex-direction</li><li>Organização de layouts responsivos</li></ul>"
     },
            {
       "id": 17,
-      "titulo": "Projeto Prático",
+      "titulo": "Projeto Prático(Parte 1)",
       "tempo": "Duracao: 32:03",
       "videoUrl": "https://www.youtube.com/embed/NyoPtML2Wyw?si=P8AGlygKXd-aDNWP",
-      "conteudo": "<h2>JavaScript</h2><p>JavaScript adiciona interatividade às páginas.</p><ul><li>Variáveis</li><li>Funções</li><li>Eventos</li><li>DOM</li></ul>"
+      "conteudo": "<h2>Seja bem-vindo(a) ao Minicurso de Desenvolvimento Web!</h2><p>Nesta aula desenvolveremos um projeto utilizando HTML e CSS, aplicando os principais conceitos estudados durante as aulas para construir uma página organizada, estilizada e funcional.</p><ul><li> Estrutura HTML</li><li>Propriedades CSS</li><li>Links e imagens</li><li> Box Model</li><li>Display</li></ul>",
+      "materiais": [
+  {
+    "nome": "Link para baixar os arquivos",
+    "link": "https://drive.google.com/drive/folders/1N9xrSAD-aFsUvV3k_LIJhn25NGTDMymR"
+  }
+]
+    },
+               {
+      "id": 18,
+      "titulo": "Projeto Prático(Parte 2)",
+      "tempo": "Duracao: 32:02",
+      "videoUrl": "https://www.youtube.com/embed/CDMcw9lTxrE?si=aPqxoW2YxFQ-SHhB",
+      "conteudo": "<h2>Seja bem-vindo(a) ao Minicurso de Desenvolvimento Web!</h2><p>Nesta aula daremos continuidade ao desenvolvimento do projeto prático do minicurso, aplicando os conceitos estudados ao longo das aulas para construir uma página web completa, organizada e responsiva.</p><ul><li>Continuação do projeto prático</li><li>Aplicação de estilos com CSS</li><li>Utilização de seletores e propriedades</li><li>Organização do layout</li><li>Boas práticas no desenvolvimento web</li></ul>"
     }
+    
   ]
 }
 }
