@@ -1,21 +1,21 @@
 [
     {
-      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPndEjRei_mhmTX1qV6XcfWgB8DQKNW1tUO2IY7_eNug&s=10",
+      "imagem": "https://i.postimg.cc/h41wR9fh/capa-playlist.png",
       "categoria": "Tecnologia",
-      "titulo": "Desenvolvimento Web",
-      "descricao": "HTML, CSS e JavaScript para projetos reais.",
-      "horas": "40 horas",
+      "titulo": "HTML e CSS para o Desenvolvimento Web",
+      "descricao": "Curso de HTML e CSS para desenvolvimento de projetos reais.",
+      "horas": "3",
       "link": "dweb",
       "destaque": true
     },
     {
-      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsHZvfWNxb7-8zwU2FM1W2yhcCQFZIW0jyMEYlQAIddw&s=10",
+      "imagem": "https://i.postimg.cc/brr1McGX/capa-playlist-(2).png",
       "categoria": "Tecnologia",
-      "titulo": "Git e GitHub",
-      "descricao": "Controle de versão e hospedagem de projetos.",
-      "horas": "20 horas",
+      "titulo": "Introdução a Programação Python",
+      "descricao": "Curso introdutório a linguagem de programação Python.",
+      "horas": "2 ",
       "link": "#",
-      "destaque": false
+      "destaque": true
     }
 ]
 

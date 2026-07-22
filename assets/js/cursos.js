@@ -133,7 +133,7 @@ function gerarCard(curso) {
     return `
         <a href="curso_in.html?curso=${curso.link}" class="course-card">
             <article class="card_curso bg-senary">
-                <div class="dados">
+                <div class="dados" style="background-image: url('${curso.imagem}')">
                     <span class="tag ${tagColor}">
                         ${curso.categoria}
                     </span>
