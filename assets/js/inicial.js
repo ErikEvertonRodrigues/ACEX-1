@@ -32,21 +32,21 @@ async function carregarEbooks() {
 function gerarCardCurso(curso) {
     const tagColor = curso.categoria.toLowerCase().replace(/\s+/g, '-');
     return `
-        <div class="img-container">
+        <a class="img-container" href="./minicursos/curso_in.html?curso=${curso.link}">
             <img src="${curso.imagem}" alt="Capa do curso">
             <p class="title">${curso.titulo}</p>
             <span class="tag ${tagColor}">${curso.categoria}</span>
-        </div>
+        </a>
     `;
 }
 
 function gerarCardEbook(ebook) {
-    const tagColor = ebook.categoria.toLowerCase().replace(/\s+/g, '-'); 
+    const tagColor = ebook.categoria.toLowerCase().replace(/\s+/g, '-');
     return `
-        <div class="img-container ebook-card">
+        <a class="img-container ebook-card" href="./ebooks/ebooks.html">
             <img src="${ebook.imagem}" alt="Capa do E-book: ${ebook.titulo}">
             <span class="tag ${tagColor}">${ebook.categoria}</span>
-        </div>
+        </a>
     `;
 }
 

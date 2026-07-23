@@ -98,6 +98,13 @@ body {
     font-size: 2rem;
 }
 
+/* usa as fontes padrao do site no lugar do serif global de style.css */
+.conteudo h1,
+.aula-conteudo h2,
+.aula-conteudo h3 {
+    font-family: var(--poppins);
+}
+
 .open-sidebar {
     display: none;
 }

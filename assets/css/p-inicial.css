@@ -189,6 +189,10 @@ body {
     padding: 0;
     flex: 0 0 calc((100% - 30px) / 4);
     cursor: pointer;
+    /* cards viraram links: remove sublinhado e cor padrao de <a> */
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .img-container:hover {

@@ -86,6 +86,7 @@ main {
     border-radius: 20px;
     transition: 100ms;
     animation: aparecer 500ms;
+    cursor: pointer; /* clicar no card abre o e-book online */
     &:hover {
         transform: translateY(-4px);
     }
