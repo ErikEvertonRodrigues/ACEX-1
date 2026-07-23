@@ -87,7 +87,7 @@ function gerarCard(ebook) {
         .replace(/\s+/g, '-');
 
     return `
-        <div class="card bg-senary">
+        <div class="card bg-senary" data-pdf="${ebook.pdf}">
             <span class="tag ${tagColor}">
                 ${ebook.categoria}
             </span>
@@ -108,7 +108,7 @@ function gerarCard(ebook) {
                     ${ebook.paginas} páginas
                 </p>
 
-                <a class="download" href="${ebook.pdf}" target="_blank">
+                <a class="download" href="${ebook.pdf}" download="${ebook.titulo}.pdf">
                     <i class="fa-solid fa-download"></i>
                     Baixar PDF
                 </a>
@@ -130,6 +130,18 @@ function gerarEbooks(lista) {
     mainCards.innerHTML = htmlMainCards;
     applyTheme(localStorage.getItem("theme"));
 }
+
+// Clicar no card abre o e-book online; o botão "Baixar PDF" segue baixando direto
+document.querySelector('.content').addEventListener('click', (evento) => {
+
+    if (evento.target.closest('.download')) return;
+
+    const card = evento.target.closest('.card[data-pdf]');
+
+    if (card && card.dataset.pdf) {
+        window.open(card.dataset.pdf, '_blank');
+    }
+});
 
 const botoesFiltro = document.querySelectorAll('.btn-filtros');
 
